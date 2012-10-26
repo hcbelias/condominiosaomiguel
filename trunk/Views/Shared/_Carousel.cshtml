@@ -1,0 +1,20 @@
+﻿@model CondominioSaoMiguel.Models.CarouselModel
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#@Model.Id').carousel({
+            interval: '@Model.Interval'
+        })
+    });
+</script>
+<div id="@Model.Id" class="carousel slide">
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+        @for (int i = 0; i < Model.ItemList.Count; i++)
+        {
+            <div class="active item">@Model.ItemList.ElementAt(i)</div>
+        }
+    </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
