@@ -1,7 +1,0 @@
-c:\users\henrique\documents\visual studio 2010\Projects\CondominioSaoMiguel\CondominioSaoMiguel\bin\CondominioSaoMiguel.dll
-c:\users\henrique\documents\visual studio 2010\Projects\CondominioSaoMiguel\CondominioSaoMiguel\bin\CondominioSaoMiguel.pdb
-c:\users\henrique\documents\visual studio 2010\Projects\CondominioSaoMiguel\CondominioSaoMiguel\bin\EntityFramework.dll
-c:\users\henrique\documents\visual studio 2010\Projects\CondominioSaoMiguel\CondominioSaoMiguel\bin\EntityFramework.xml
-c:\users\henrique\documents\visual studio 2010\Projects\CondominioSaoMiguel\CondominioSaoMiguel\obj\Debug\ResolveAssemblyReference.cache
-c:\users\henrique\documents\visual studio 2010\Projects\CondominioSaoMiguel\CondominioSaoMiguel\obj\Debug\CondominioSaoMiguel.dll
-c:\users\henrique\documents\visual studio 2010\Projects\CondominioSaoMiguel\CondominioSaoMiguel\obj\Debug\CondominioSaoMiguel.pdb
