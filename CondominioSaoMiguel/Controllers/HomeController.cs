@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
 
@@ -10,8 +11,6 @@ namespace CondominioSaoMiguel.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Welcome to ASP.NET MVC!";
-
             return View();
         }
 
@@ -20,4 +19,5 @@ namespace CondominioSaoMiguel.Controllers
             return View();
         }
     }
+
 }
