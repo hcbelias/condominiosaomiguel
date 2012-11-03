@@ -1,4 +1,6 @@
-﻿
+﻿@{
+    
+}
 <div class="container navbar-wrapper">
     <div class="navbar navbar-inverse">
         <div class="navbar-inner">
@@ -7,14 +9,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <a class="brand"  href="@Url.Action("Index")">Condomínio São Miguel</a>
+            <a class="brand"  href="@Url.Action("Index", "Home")">Condomínio São Miguel</a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
-                    <li class="active"><a href="@Url.Action("Index")">Home</a></li>
-                    <li><a href="@Url.Action("Localizacao")">Localização</a></li>
-                    <li><a href="@Url.Action("Fotos")">Fotos</a></li>
-                    <li><a href="@Url.Action("Contato")">Contato</a></li>                               
-                    <li><a href="@Url.Action("About")">Sobre</a></li>
+                    <li class="active"><a href="@Url.Action("Index", "Home")">Home</a></li>
+                    <li><a href="@Url.Action("Index", "About")">Sobre</a></li>
+                    <li><a href="@Url.Action("Index", "Localization")">Localização</a></li>
+                    <li><a href="@Url.Action("Index", "PhotoGallery")">Fotos</a></li>
+                    <li><a href="@Url.Action("Index", "Contact")">Contato</a></li>                                                   
                 </ul>                
             </div>
         </div>

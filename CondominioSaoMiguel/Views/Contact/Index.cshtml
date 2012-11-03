@@ -1,0 +1,38 @@
+﻿@using CondominioSaoMiguel.Util
+@model CondominioSaoMiguel.Models.ContactModel
+@{
+    ViewBag.Title = "Condomínio São Miguel";
+}
+@Html.Partial("_HeaderImage")
+<div class="control-group row-fluid span12">
+    <label class="control-label" >
+        <b>Endereço</b></label>
+    <div class="controls">
+        <div class="input-prepend">
+            <span class="add-on"><i class="icon-home"></i></span>
+            <input disabled="disabled"  class="input-xxlarge" type="text" title='@Constants.Information.COMPLETE_ADDRESS' value='@Constants.Information.COMPLETE_ADDRESS' />
+        </div>
+        <br />
+        <label class="control-label" >
+            <b>Telefone</b></label>
+        <div class="input-prepend">
+            <span class="add-on"><i class="icon-user"></i></span>
+            <input disabled="disabled" type="text" title='@Constants.Information.PRIMARY_PHONE' value='@Constants.Information.PRIMARY_PHONE'/>
+        </div>
+        <div class="input-prepend">
+            <span class="add-on"><i class="icon-user"></i></span>
+            <input disabled="disabled" type="text" title='@Constants.Information.SECUNDARY_PHONE' value='@Constants.Information.SECUNDARY_PHONE'/>
+        </div>
+        <br />
+        <label class="control-label">
+            <b>Email</b></label>
+        <div class="input-prepend">
+            <span class="add-on"><i class="icon-envelope"></i></span>
+            <input disabled="disabled" type="text" title='@Constants.Information.PRIMARY_EMAIL' value='@Constants.Information.PRIMARY_EMAIL' />
+        </div>
+        <div class="input-prepend">
+            <span class="add-on"><i class="icon-envelope"></i></span>
+            <input disabled="disabled" type="text" title='@Constants.Information.SECUNDARY_EMAIL' value='@Constants.Information.SECUNDARY_EMAIL' />
+        </div>
+    </div>
+</div>

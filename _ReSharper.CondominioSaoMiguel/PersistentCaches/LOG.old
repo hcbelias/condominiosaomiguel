@@ -1,1 +1,5 @@
-2012/10/29-23:07:16.757 1050 Delete type=3 #1
+2012/11/02-23:08:13.044 1aa8 Recovering log #6
+2012/11/02-23:08:13.206 1aa8 Level-0 table #8: started
+2012/11/02-23:08:13.318 1aa8 Level-0 table #8: 269282 bytes OK
+2012/11/02-23:08:13.426 1aa8 Delete type=0 #6
+2012/11/02-23:08:13.426 1aa8 Delete type=3 #4

@@ -10,12 +10,14 @@
         <link href="../../Content/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="../../Content/condominio-sao-miguel.css" rel="stylesheet" type="text/css" />
     </head>
-    <body>
+    <body>        
         <header>
             @Html.Partial("_Header")
         </header>
-        <section id="main">
-            @RenderBody()
+        <section id="main" style="height: 100%;">
+            <div class="container marketing">
+                @RenderBody()
+            </div>
         </section>
         <footer>                       
             @Html.Partial("_Footer")
