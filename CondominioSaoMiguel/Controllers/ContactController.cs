@@ -12,31 +12,49 @@ namespace CondominioSaoMiguel.Controllers
 {
     public class ContactController : BaseController
     {
-        public override ActionResult GetPartialIndexView(BaseModel model)
+        public ActionResult GetPartialIndexView(ContactModel model)
         {
-            return PartialView("Index", (ContactModel)model);
+            return PartialView("Index", model);
         }
 
-        public ActionResult SendEmail(ContactModel contato)
+        public ActionResult SendEmail(ContactModel contact)
         {
-            if (ModelState.IsValid)
+            if (ValidateModel())
             {
                 try{
-                    SendEmail(contato.Email, contato.Name, contato.DDD, contato.Phone, contato.Message);
+                    SendEmail(contact.Email, contact.Name, contact.DDD ?? 000, contact.Phone??00000000, contact.Message);
+
                 }
                 catch(Exception error)
                 {
-                    ModelState.AddModelError(string.Empty, "Ocorreu um erro ao enviar e-mail.");
+                    SetError();
+                    return GetPartialIndexView(contact);
                 }
+                return GetPartialIndexView(new ContactModel());
             }
-            return GetPartialIndexView(contato);
+            return GetPartialIndexView(contact);
         }
 
+        private bool ValidateModel()
+        {
+            ViewBag.ModelValid = ModelState.IsValid;
+            if (!ModelState.IsValid)
+                SetError();
+            return ModelState.IsValid;
+        }
+
+        private void SetError()
+        {
+            ViewBag.Error = true;
+        }
+
+        
         private void SendEmail(string email, string name, int ddd, int phone, string mensagem)
         {
             MailMessage mail = new MailMessage();
             SmtpClient smtp = new SmtpClient(ConfigurationReader.GetEmailServerAddress());
             mail.To.Add(new MailAddress(ConfigurationReader.GetEmailManager()));
+            mail.To.Add(new MailAddress(ConfigurationReader.GetEmailAdmin()));
             mail.From = new MailAddress(ConfigurationReader.GetEmailDefault());
             mail.Subject = Constants.Messages.MSG_EMAIL_SUBJECT;
             mail.Body = BuildEmailBody(email,name,ddd,phone,mensagem);            

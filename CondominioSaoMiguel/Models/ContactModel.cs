@@ -6,19 +6,24 @@ namespace CondominioSaoMiguel.Models
 {
     public class ContactModel : BaseModel
     {
-        [Required(ErrorMessage = Constants.Messages.MSG_FIELD_REQUIRED)]
+        [Required]
+        [Display(Name = "Email")]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = Constants.Messages.MSG_FIELD_REQUIRED)]
+        [Display(Name = "Nome")]
+        [Required]
         public string Name { get; set; }
 
         [Range(000, 999)]
-        public int DDD { get; set; }
+        [Display(Name = "DDD")]
+        public int? DDD { get; set; }
 
         [Range(000000000, 999999999)]
-        public int Phone { get; set; }
+        [Display(Name = "Telefone")]
+        public int? Phone { get; set; }
 
-        [Required(ErrorMessage = Constants.Messages.MSG_FIELD_REQUIRED)]
+        [Display(Name = "Mensagem")]
+        [Required]
         public string Message { get; set; }
     }
 }

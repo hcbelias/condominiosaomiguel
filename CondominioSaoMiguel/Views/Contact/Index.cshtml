@@ -2,37 +2,134 @@
 @model CondominioSaoMiguel.Models.ContactModel
 @{
     ViewBag.Title = "Condomínio São Miguel";
+    bool isModelValid = (ViewBag.ModelValid == null) || (ViewBag.ModelValid == true);
+    bool error = (ViewBag.Error != null) && (ViewBag.Error == true);
 }
-@Html.Partial("_HeaderImage")
+
+<script type="text/javascript">
+
+    $("#sendMessageForm").submit(function () {
+        
+        var queryString = $("#sendMessageForm").serialize() + '&';
+        $.post(
+        'Contact/SendEmail',
+        queryString,
+        function (data) {
+            debugger;
+            $("#main-panel").html(data);
+            $('.alert').show();
+
+        });
+        return false;
+    });
+
+
+</script>
 <div class="control-group row-fluid span12">
     <label class="control-label" >
         <b>Endereço</b></label>
     <div class="controls">
         <div class="input-prepend">
             <span class="add-on"><i class="icon-home"></i></span>
-            <input disabled="disabled"  class="input-xxlarge" type="text" title='@Constants.Information.COMPLETE_ADDRESS' value='@Constants.Information.COMPLETE_ADDRESS' />
+            <input readonly="readonly"  class="input-xxlarge" type="text" title='@Constants.Information.COMPLETE_ADDRESS' value='@Constants.Information.COMPLETE_ADDRESS' />
         </div>
         <br />
         <label class="control-label" >
             <b>Telefone</b></label>
         <div class="input-prepend">
             <span class="add-on"><i class="icon-user"></i></span>
-            <input disabled="disabled" type="text" title='@Constants.Information.PRIMARY_PHONE' value='@Constants.Information.PRIMARY_PHONE'/>
+            <input readonly="readonly" type="text" title='@Constants.Information.PRIMARY_PHONE' value='@Constants.Information.PRIMARY_PHONE'/>
         </div>
         <div class="input-prepend">
             <span class="add-on"><i class="icon-user"></i></span>
-            <input disabled="disabled" type="text" title='@Constants.Information.SECUNDARY_PHONE' value='@Constants.Information.SECUNDARY_PHONE'/>
+            <input readonly="readonly" type="text" title='@Constants.Information.SECUNDARY_PHONE' value='@Constants.Information.SECUNDARY_PHONE'/>
         </div>
         <br />
         <label class="control-label">
             <b>Email</b></label>
         <div class="input-prepend">
             <span class="add-on"><i class="icon-envelope"></i></span>
-            <input disabled="disabled" type="text" title='@Constants.Information.PRIMARY_EMAIL' value='@Constants.Information.PRIMARY_EMAIL' />
+            <input readonly="readonly" type="text" class="input-xlarge" title='@Constants.Information.PRIMARY_EMAIL' value='@Constants.Information.PRIMARY_EMAIL' />
         </div>
         <div class="input-prepend">
             <span class="add-on"><i class="icon-envelope"></i></span>
-            <input disabled="disabled" type="text" title='@Constants.Information.SECUNDARY_EMAIL' value='@Constants.Information.SECUNDARY_EMAIL' />
+            <input readonly="readonly" type="text" class="input-xlarge" title='@Constants.Information.SECUNDARY_EMAIL' value='@Constants.Information.SECUNDARY_EMAIL' />
         </div>
-    </div>
+        <br/>
+        <div id="sendMessage">
+            
+            <label class="control-label">
+                <b>Contato</b></label>
+            
+            @if (error)
+            {
+                <div id="message-error" style="display: none;"  class="alert alert-error">
+                    @if (isModelValid)
+                    {
+                        @Html.Raw("Ocorreu um erro ao enviarmensagem. <br/ > Porfavor, entre em contato pelo(s) telefone(s): <br/>")
+                        @Constants.Information.PRIMARY_PHONE
+                        <br/>
+                        @Constants.Information.SECUNDARY_PHONE
+                    }
+                    else
+                    {
+                        @Html.ValidationSummary()
+                    }
+                </div>
+            }
+            else
+            {
+                <div id="message-success" style="display: none;" class="alert alert-success">Mensagem enviada com sucesso</div>
+            }
+            
+
+            @using (Ajax.CustomBeginForm("SendEmail", "Contact", new AjaxOptions() { InsertionMode = InsertionMode.Replace, UpdateTargetId = "sendMessage", HttpMethod = "Post" }, new { @id = "sendMessageForm", @class = "form-horizontal" }))
+            {
+                
+                <div class="control-group">
+                    <label class="control-label" for="inputEmail">Email</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(model => model.Email, new { maxlength = 200, @class = "span6", id = "inputEmail" })
+                    </div>
+                </div>
+                
+                <div class="control-group">
+                    <label class="control-label" for="inputName">Nome</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(model => model.Name, new { maxlength = 100, @class = "span6", id="inputName" })
+                    </div>
+                </div>
+                
+                <div class="control-group">
+                        <label class="control-label" for="inputDDD">DDD</label>                        
+                    <div class="controls">
+                    
+                        @Html.TextBoxFor(model => model.DDD, new { maxlength = 3, @class = "span2", id = "inputDDD", onkeypress = "return isNumberKey(event)" })
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputPhone">Telefone</label>
+                    <div class="controls">
+                        
+                    
+                        @Html.TextBoxFor(model => model.Phone, new { maxlength = 9, @class = "span4", id = "inputPhone", onkeypress = "return isNumberKey(event)" })
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputMessage">Mensagem</label>
+                    <div class="controls">
+                        
+                        @Html.TextAreaFor(model => model.Message, new { @class = "span12", id = "inputMessage", rows = "4" })
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button id="sendButton" class="btn btn-primary" type="submit" title="Enviar" >
+                        <i class="icon-envelope icon-white"></i>Enviar</button>
+                    </div>
+                </div>          
+            }
+        </div>
+        
+    </div>    
 </div>
