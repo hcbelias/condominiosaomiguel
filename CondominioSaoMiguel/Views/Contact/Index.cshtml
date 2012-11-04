@@ -12,20 +12,22 @@
         
         var queryString = $("#sendMessageForm").serialize() + '&';
         $.post(
-        'Contact/SendEmail',
-        queryString,
-        function (data) {
-            debugger;
-            $("#main-panel").html(data);
-            $('.alert').show();
+            'Contact/SendEmail',
+            queryString,
+            function (data) {
+                debugger;
+                $("#main-panel").html(data);
+                $('.alert').show();
 
-        });
+            });
         return false;
     });
 
 
 </script>
-<div class="control-group row-fluid span12">
+<h3>Contato</h3>
+<div class="control-group row-fluid span12" style="margin-bottom: 75px;">
+    
     <label class="control-label" >
         <b>Endereço</b></label>
     <div class="controls">
@@ -59,7 +61,7 @@
         <div id="sendMessage">
             
             <label class="control-label">
-                <b>Contato</b></label>
+                <b>Informações</b></label>
             
             @if (error)
             {
@@ -101,7 +103,7 @@
                 </div>
                 
                 <div class="control-group">
-                        <label class="control-label" for="inputDDD">DDD</label>                        
+                    <label class="control-label" for="inputDDD">DDD</label>                        
                     <div class="controls">
                     
                         @Html.TextBoxFor(model => model.DDD, new { maxlength = 3, @class = "span2", id = "inputDDD", onkeypress = "return isNumberKey(event)" })
@@ -125,7 +127,7 @@
                 <div class="control-group">
                     <div class="controls">
                         <button id="sendButton" class="btn btn-primary" type="submit" title="Enviar" >
-                        <i class="icon-envelope icon-white"></i>Enviar</button>
+                            <i class="icon-envelope icon-white"></i>Enviar</button>
                     </div>
                 </div>          
             }
