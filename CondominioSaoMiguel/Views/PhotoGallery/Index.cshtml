@@ -2,4 +2,21 @@
 @{
     ViewBag.Title = "Condomínio São Miguel";
 }
-<h3>Fotos</h3>
+<script type="text/javascript">
+    function openImageModal(element) {
+        var imageSource = "imageSource=" + $(element).attr('src');
+        openModal('PhotoGallery', 'OpenImageModal', imageSource, "#image-modal");
+    }
+</script>
+<div class="row-fluid">
+        <div class="span4">
+            <img src="../../Content/img/PortariaPrincipal.png" onclick="openImageModal(this);" alt="Portaria Principal"/>
+        </div><!-- /.span4 -->
+        <div class="span4">
+            <img src="../../Content/img/PortariaGanesh.png" onclick="openImageModal(this);" alt="Portaria Ganesh"/>
+        </div><!-- /.span4 -->
+        <div class="span4">
+            <img src="../../Content/img/PortariaBranir.png" onclick="openImageModal(this);" alt="Portaria Branir"/>
+        </div>
+</div>      
+@Html.Partial("_Modal", "image-modal")

@@ -35,7 +35,7 @@ namespace CondominioSaoMiguel.Controllers
 
         protected ActionResult GetJSON(object model, string view, bool success)
         {
-            return Json(new { Success = success, Data = RenderRazorViewToString(view, model) });
+            return Json(new { Success = success, Data = RenderRazorViewToString(view, model) }, JsonRequestBehavior.AllowGet);
         }
 
         #region Rendering

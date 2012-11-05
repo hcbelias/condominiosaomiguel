@@ -17,3 +17,18 @@ function isNumberKey(e) {
     else
         return false;
 }
+
+
+function openModal(controller, method, queryString, modalSelector) {
+    debugger;
+    $.get(controller + '/' + method, queryString, null)
+            .complete(function (data) {
+                debugger;
+                $(modalSelector).html(data.responseText);
+                $(modalSelector).modal({
+                    backdrop: true,
+                    show: true
+                });
+                
+            });
+}
