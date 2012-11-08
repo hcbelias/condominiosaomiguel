@@ -7,6 +7,7 @@
 }
 
 <script type="text/javascript">
+    
 
     $("#sendMessageForm").submit(function () {
         
@@ -18,17 +19,18 @@
                 debugger;
                 $("#main-panel").html(data);
                 $('.alert').show();
-
+        
             });
         return false;
     });
 
 
 </script>
-<h3>Contato</h3>
-<div class="control-group row-fluid span12" style="margin-bottom: 75px;">
-    
-    <label class="control-label" >
+
+<div class="control-group row-fluid" style="margin-bottom: 75px; margin-top: 30px;">
+    <div class="span6" style=" margin-left: 30px;">
+        
+         <label class="control-label" >
         <b>Endereço</b></label>
     <div class="controls">
         <div class="input-prepend">
@@ -57,7 +59,12 @@
             <span class="add-on"><i class="icon-envelope"></i></span>
             <input readonly="readonly" type="text" class="input-xlarge" title='@Constants.Information.SECUNDARY_EMAIL' value='@Constants.Information.SECUNDARY_EMAIL' />
         </div>
-        <br/>
+
+    </div>
+   
+        
+    </div>    
+   <div class="span6" style="margin-left: 0px;">
         <div id="sendMessage">
             
             <label class="control-label">
@@ -91,14 +98,16 @@
                 <div class="control-group">
                     <label class="control-label" for="inputEmail">Email</label>
                     <div class="controls">
-                        @Html.TextBoxFor(model => model.Email, new { maxlength = 200, @class = "span6", id = "inputEmail" })
+
+                        @Html.TextBoxFor(model => model.Email, new { maxlength = 200, @class = "input-xlarge", id = "inputEmail" })
+
                     </div>
                 </div>
                 
                 <div class="control-group">
                     <label class="control-label" for="inputName">Nome</label>
                     <div class="controls">
-                        @Html.TextBoxFor(model => model.Name, new { maxlength = 100, @class = "span6", id="inputName" })
+                        @Html.TextBoxFor(model => model.Name, new { maxlength = 100, @class = "input-xlarge", id = "inputName" })
                     </div>
                 </div>
                 
@@ -106,7 +115,7 @@
                     <label class="control-label" for="inputDDD">DDD</label>                        
                     <div class="controls">
                     
-                        @Html.TextBoxFor(model => model.DDD, new { maxlength = 3, @class = "span2", id = "inputDDD", onkeypress = "return isNumberKey(event)" })
+                        @Html.TextBoxFor(model => model.DDD, new { maxlength = 3, @class = "input-mini", id = "inputDDD", onkeypress = "return isNumberKey(event)" })
                     </div>
                 </div>
                 <div class="control-group">
@@ -114,14 +123,14 @@
                     <div class="controls">
                         
                     
-                        @Html.TextBoxFor(model => model.Phone, new { maxlength = 9, @class = "span4", id = "inputPhone", onkeypress = "return isNumberKey(event)" })
+                        @Html.TextBoxFor(model => model.Phone, new { maxlength = 9, @class = "input-medium", id = "inputPhone", onkeypress = "return isNumberKey(event)" })
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="inputMessage">Mensagem</label>
                     <div class="controls">
                         
-                        @Html.TextAreaFor(model => model.Message, new { @class = "span12", id = "inputMessage", rows = "4" })
+                        @Html.TextAreaFor(model => model.Message, new { @class = "input-xxlarge", id = "inputMessage", rows = "4" })
                     </div>
                 </div>
                 <div class="control-group">
@@ -133,5 +142,8 @@
             }
         </div>
         
-    </div>    
+        
+
+    </div>
+ 
 </div>

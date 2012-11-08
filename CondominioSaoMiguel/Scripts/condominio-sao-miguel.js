@@ -31,4 +31,11 @@ function openModal(controller, method, queryString, modalSelector) {
                 });
                 
             });
+        }
+
+function disable(formSelector, disable) {
+
+    $(formSelector).find('input').each(function() {
+        $(this).attr("disabled", disable);
+    });
 }

@@ -8,6 +8,7 @@ namespace CondominioSaoMiguel.Models
     {
         [Required]
         [Display(Name = "Email")]
+        [EmailAddress(ErrorMessage = "Necessário informar um e-mail válido - example@example.com")]
         public string Email { get; set; }
 
         [Display(Name = "Nome")]
