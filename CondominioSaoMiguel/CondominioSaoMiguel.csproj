@@ -88,6 +88,7 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\ApartmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LocalizationController.cs" />
     <Compile Include="Controllers\PhotoGalleryController.cs" />
@@ -222,6 +223,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_CustomCarousel.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Apartment\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
