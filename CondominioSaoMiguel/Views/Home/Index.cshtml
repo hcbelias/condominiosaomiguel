@@ -3,45 +3,49 @@
     ViewBag.Title = "Condomínio São Miguel";
 }
 
+<script type="text/javascript">
+
+        
+</script>
 <div class="row-fluid">
-    <div class="span6">
+    @*<div class="span6">
         <div id="myCarousel" class="carousel pull-left" data-interval="3000" style="border: 1px solid black;width: 750px; margin-top: 50px ; margin-left: 70px; margin-right: auto;">    
-            <div class="carousel-inner" >
-                <div class="item active" name="item1">
-                    <img src="../../Content/img/PortariaBranir.png" />
+            <div class="carousel-inner" style="height: auto" >
+                <div class="item "  style="height: auto" name="item1">
+                    @Html.Partial("_StandartImage", "../../Content/img/PortariaPrincipal.png")                    
                     <div class="container">
                         <div class="carousel-caption carouselCaptionTransparence">
-                            <h1 class="headerCarouselCaption">Segurança</h1>
-                            @*<p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>*@
-              
+                            <h1 class="headerCarouselCaption">Conforto</h1>
+                          
                         </div>
                     </div>
                 </div>
 
-                <div class="item" name="item2">
-                    <img src="../../Content/img/PortariaGanesh.png" />
+                <div class="item active"  style="height: auto" name="item2">
+                    @Html.Partial("_StandartImage", "../../Content/img/PortariaGanesh.png")                    
                     <div class="container">
                         <div class="carousel-caption carouselCaptionTransparence">
-                            <h1 class="headerCarouselCaption">Conforto</h1>
-                            @*<p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>*@             
+                            <h1 class="headerCarouselCaption">Segurança</h1>
+                          
                         </div>
                     </div>
                 </div>
-                <div class="item" name="item3">
-                    <img src="../../Content/img/PortariaGanesh.png" />
+                <div class="item" style="height: auto"  name="item3">
+                    @Html.Partial("_StandartImage", "../../Content/img/PortariaBranir.png")
                     <div class="container">
                         <div class="carousel-caption carouselCaptionTransparence">
-                            <h1 class="headerCarouselCaption">Lazer</h1>
-                            @*<p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>*@
+                            <h1 class="headerCarouselCaption">Tranquilidade</h1>
+                          
                         </div>
                     </div>
                 </div>
+
             </div>
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
             <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
         </div>
-    </div>
-    <div class="span6" style="margin-left: 0px;">
+    </div>*@
+    <div class="span12" style="margin: 0px;">
         <div class="well" style="margin-top: 50px ; ">
             <h1 style="padding-top: 30px;">Condomínio São Miguel</h1>
             <br/>
@@ -57,15 +61,16 @@
               
 
             </p>
-                        <p class="lead">
+            <p class="lead">
               
                 Nosso objetivo é a satisfação e tranquilidade dos moradores do condomínio, visando a proporcionar um ambiente agradável a todos.
 
             </p>
         
-      </div>
+        </div>
     </div>
 
 </div>
+
 
       @Html.Partial("_Footer")
