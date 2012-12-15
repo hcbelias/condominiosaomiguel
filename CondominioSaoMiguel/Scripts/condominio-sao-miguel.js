@@ -1,4 +1,5 @@
 function replaceOnComplete(controller, method, queryString, elementReplacedSelector) {
+    
     $.post(controller + '/' + method, queryString, null)
             .complete(function (data) {
                 $(elementReplacedSelector).html(data.responseText);
@@ -20,10 +21,10 @@ function isNumberKey(e) {
 
 
 function openModal(controller, method, queryString, modalSelector) {
-    debugger;
+    
     $.get(controller + '/' + method, queryString, null)
             .complete(function (data) {
-                debugger;
+                
                 $(modalSelector).html(data.responseText);
                 $(modalSelector).modal({
                     backdrop: true,
