@@ -40,3 +40,14 @@ function disable(formSelector, disable) {
         $(this).attr("disabled", disable);
     });
 }
+
+$(document).ready(function () {
+    $(".nav li").mouseover(function () {
+        if (!$(this).hasClass('active')) {
+            $(this).addClass('active');
+            $(this).mouseout(function () {
+                $(this).removeClass('active');
+            });
+        }
+    });
+});

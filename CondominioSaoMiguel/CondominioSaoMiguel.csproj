@@ -112,11 +112,8 @@
     <Content Include="Content\bootstrap\js\bootstrap.js" />
     <Content Include="Content\bootstrap\js\bootstrap.min.js" />
     <Content Include="Content\condominio-sao-miguel.css" />
-    <Content Include="Content\img\CondominioSaoMiguelFlash_128.gif" />
     <Content Include="Content\img\FundoMenuItemSelecionado.jpg" />
-    <Content Include="Content\img\FundoMenuItemSelecionado.png" />
     <Content Include="Content\img\ImagemHome.jpg" />
-    <Content Include="Content\img\ImagemHomeHorizontal.jpg" />
     <Content Include="Content\img\loading-bars.gif" />
     <Content Include="Content\img\loading.gif" />
     <Content Include="Content\img\Logo.jpg" />
@@ -240,7 +237,7 @@
     <Content Include="Views\Apartment\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\_StandartImage.cshtml" />
+    <Content Include="Views\Shared\_StandardImage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\ebrima.ttf" />
