@@ -1,10 +1,50 @@
-﻿
-<div class="footer">
-    <p class="muted" style="text-align: center">@CondominioSaoMiguel.Util.Constants.Information.SECUNDARY_EMAIL - @CondominioSaoMiguel.Util.Constants.Information.PRIMARY_EMAIL</p>
-    <p class="muted" style="text-align: center">@CondominioSaoMiguel.Util.Constants.Information.COMPLETE_ADDRESS</p>
-    <p class="muted" style="text-align: center">Condomínio São Miguel - Desde 1997 </p>
-      </div>
-
-
-
-
+﻿<div class="container">
+    <div class="footer-content">
+        <div class="row-fluid">
+            <div class="span7">
+                <div class="row-fluid" style="font-style: italic; font-family: Nueva Std;
+                    font-size: xx-large;">
+                    Rua Joaquim Esteves de Oliveira, 328 - Jd São Carlos
+                </div>
+                <div class="row-fluid">
+                    <div class="span12 " style="margin-top: 15px;">
+                        <ul class="phonelist">
+                            
+                            <li>
+                                @Html.Partial("_DDD", "35")
+                            </li>
+                            <li>
+                                @Html.Partial("_Phone", "3291-3236")
+                            </li>
+                            <li>
+                                @Html.Partial("_DDD", "35")
+                            </li>
+                            <li>
+                                @Html.Partial("_Phone", "8838-3459")
+                            </li>
+                            <li>
+                                @Html.Partial("_DDD", "35")
+                            </li>
+                            <li>
+                                @Html.Partial("_Phone", "8843-3140")
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="span5">
+                <div class="row-fluid">
+                    <img style="margin: 10px;" class="pull-left" src="../../Content/img/IconeEmail.jpg"/>
+                    <div class="span10">
+                        <div class="row-fluid">
+                            @Html.Partial("_Email", CondominioSaoMiguel.Util.Constants.Information.PRIMARY_EMAIL)
+                        </div>
+                        <div class="row-fluid">
+                            @Html.Partial("_Email", CondominioSaoMiguel.Util.Constants.Information.SECUNDARY_EMAIL)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
