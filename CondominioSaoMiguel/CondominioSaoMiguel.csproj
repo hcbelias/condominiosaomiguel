@@ -118,8 +118,8 @@
     <Content Include="Content\img\ImagemHome.jpg" />
     <Content Include="Content\img\loading-bars.gif" />
     <Content Include="Content\img\loading.gif" />
-    <Content Include="Content\img\Logo.jpg" />
-    <Content Include="Content\img\LogoMenu.jpg" />
+    <Content Include="Content\img\LogoClaro.png" />
+    <Content Include="Content\img\nav-icon.png" />
     <Content Include="Content\img\PortariaBranir.png" />
     <Content Include="Content\img\PortariaGanesh.png" />
     <Content Include="Content\img\PortariaPrincipal.png" />

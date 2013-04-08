@@ -3698,14 +3698,13 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar {
   overflow: visible;
-  margin-bottom: 20px;
+  
   *position: relative;
   *z-index: 2;
 }
 .navbar-inner {
   min-height: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  
   background-color: #0167a7;
   background-image: -moz-linear-gradient(top, #0167a7, #0167a7);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0167a7), to(#0167a7));
@@ -3898,7 +3897,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar .nav > li > a {
   float: none;
-  padding: 10px 15px 10px;
+  padding: 15px 15px 15px 15px;
   color: #f2f2f2;
   text-decoration: none;
   text-shadow: 0 1px 0 #0167a7;
@@ -3918,9 +3917,7 @@ input[type="submit"].btn.btn-mini {
   color: #eeeeee;
   text-decoration: none;
   background-color: #014874;
-  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
-  -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+  
 }
 .navbar .btn-navbar {
   display: none;
