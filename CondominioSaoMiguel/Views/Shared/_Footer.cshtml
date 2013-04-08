@@ -19,18 +19,21 @@
                                 @Html.Partial("_DDD", "35")
                                 @Html.Partial("_Phone", "8838-3459")
                             </li>
+                            <li class="visible-desktop">
+                                @Html.Partial("_FacebookLike")
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="span5">
                 <div class="row-fluid">
-                    <img style="margin: 10px;" class="pull-left" src="../../Content/img/IconeEmail.jpg"/>
+                    <img onclick="replaceOnComplete('Contact', 'IndexPartialView', null, '#body-content');" style="margin: 10px;" class="pull-left" src="../../Content/img/IconeEmail.jpg"/>
                     <div class="span10">
-                        <div class="row-fluid">
+                        <div class="row-fluid visible-desktop">
                             @Html.Partial("_Email", CondominioSaoMiguel.Util.Constants.Information.PRIMARY_EMAIL)
                         </div>
-                        <div class="row-fluid">
+                        <div class="row-fluid visible-desktop">
                             @Html.Partial("_Email", CondominioSaoMiguel.Util.Constants.Information.SECUNDARY_EMAIL)
                         </div>
                     </div>

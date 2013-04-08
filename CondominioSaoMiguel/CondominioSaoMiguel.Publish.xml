@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
-  <publishProfile publishUrl="C:\Users\Henrique\Desktop\condominio" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="/hcbelias/condominiosaomiguel.com.br/wwwroot" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="True" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="True" profileName="Deploy" publishMethod="FileSystem" replaceMatchingFiles="True" userName="hcbelias" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAkF/bSXRGpUKkWmQRzhX8vAAAAAACAAAAAAAQZgAAAAEAACAAAAA/W/tHvn5dM8VOPw9Hl2jqvUcSL9qsm4is30uiPsiuCQAAAAAOgAAAAAIAACAAAAAM/8mh4t6UTXEbq14nFgcuqZj7zphRo0cK8bjESDxAVCAAAAA6sljxLbbFjZLeoY1I4/M7o3O7Ckvo3B+Drn4cniebOkAAAABHJiRzl7Jw4teC27NLdKlI+3+v9DRxqIWVq/mgWHRKjqbHjz6tc47Yg9B4GM6e6/VKKMX3vqAJBMkx/qlCSbu7" SelectedForPublish="True">
+  <publishProfile publishUrl="C:\Users\Henrique\Desktop\condominio5" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="/hcbelias/condominiosaomiguel.com.br/wwwroot" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="True" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="True" profileName="Deploy" publishMethod="FileSystem" replaceMatchingFiles="False" userName="hcbelias" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAkF/bSXRGpUKkWmQRzhX8vAAAAAACAAAAAAAQZgAAAAEAACAAAAA/W/tHvn5dM8VOPw9Hl2jqvUcSL9qsm4is30uiPsiuCQAAAAAOgAAAAAIAACAAAAAM/8mh4t6UTXEbq14nFgcuqZj7zphRo0cK8bjESDxAVCAAAAA6sljxLbbFjZLeoY1I4/M7o3O7Ckvo3B+Drn4cniebOkAAAABHJiRzl7Jw4teC27NLdKlI+3+v9DRxqIWVq/mgWHRKjqbHjz6tc47Yg9B4GM6e6/VKKMX3vqAJBMkx/qlCSbu7" SelectedForPublish="True">
     <file relUrl="Scripts/jquery.validate.unobtrusive.js" publishTime="10/21/2012 11:28:40" />
     <file relUrl="Content/img/PortariaPrincipal.png" publishTime="11/25/2012 23:07:54" />
     <file relUrl="Content/themes/base/jquery.ui.resizable.css" publishTime="10/25/2012 22:03:03" />
@@ -8,101 +8,116 @@
     <file relUrl="Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png" publishTime="10/25/2012 22:03:04" />
     <file relUrl="Scripts/MicrosoftAjax.js" publishTime="10/21/2012 11:28:41" />
     <file relUrl="Content/themes/base/jquery.ui.accordion.css" publishTime="10/25/2012 22:03:03" />
-    <file relUrl="img/glyphicons-halflings-white.png" publishTime="12/15/2012 20:59:24" />
-    <file relUrl="img/glyphicons-halflings.png" publishTime="12/15/2012 20:59:24" />
     <file relUrl="bin/EntityFramework.xml" publishTime="10/25/2012 22:03:04" />
+    <file relUrl="Views/Shared/_StandardImage.cshtml" publishTime="11/08/2012 19:46:55" />
     <file relUrl="Scripts/MicrosoftMvcValidation.debug.js" publishTime="10/21/2012 11:28:41" />
     <file relUrl="Content/bootstrap/js/bootstrap.min.js" publishTime="10/30/2012 21:38:20" />
     <file relUrl="Content/themes/base/jquery.ui.button.css" publishTime="10/25/2012 22:03:03" />
     <file relUrl="bin/System.Web.Mvc.dll" publishTime="01/05/2011 18:42:16" />
-    <file relUrl="Web.config" publishTime="11/04/2012 18:36:17" />
+    <file relUrl="Web.config" publishTime="04/08/2013 05:14:22" />
+    <file relUrl="Views/Shared/_DDD.cshtml" publishTime="04/08/2013 02:13:00" />
     <file relUrl="bin/Microsoft.Web.Infrastructure.xml" publishTime="12/20/2010 11:52:36" />
     <file relUrl="Content/themes/base/images/ui-icons_cd0a0a_256x240.png" publishTime="10/25/2012 22:03:03" />
     <file relUrl="Scripts/MicrosoftMvcAjax.js" publishTime="10/21/2012 11:28:41" />
-    <file relUrl="Views/PhotoGallery/Index.cshtml" publishTime="11/09/2012 19:29:49" />
-    <file relUrl="Scripts/condominio-sao-miguel.js" publishTime="12/15/2012 20:53:15" />
-    <file relUrl="Content/bootstrap/css/bootstrap.min.css" publishTime="10/30/2012 21:38:18" />
+    <file relUrl="Views/PhotoGallery/Index.cshtml" publishTime="03/23/2013 14:43:28" />
+    <file relUrl="Content/img/AbaSeguranca.jpg" publishTime="04/08/2013 00:46:29" />
+    <file relUrl="Content/themes/base/images/ui-icons_888888_256x240.png" publishTime="10/25/2012 22:03:03" />
+    <file relUrl="Scripts/condominio-sao-miguel.js" publishTime="04/08/2013 00:54:45" />
+    <file relUrl="Content/bootstrap/css/bootstrap.min.css" publishTime="03/23/2013 22:02:40" />
+    <file relUrl="Content/img/PortariaBranir.png" publishTime="11/25/2012 23:07:03" />
     <file relUrl="Global.asax" publishTime="10/25/2012 22:03:01" />
-    <file relUrl="Views/Home/Index.cshtml" publishTime="11/25/2012 23:12:01" />
+    <file relUrl="Content/condominio-sao-miguel.css" publishTime="04/08/2013 05:12:46" />
     <file relUrl="Content/themes/base/images/ui-icons_454545_256x240.png" publishTime="10/25/2012 22:03:03" />
     <file relUrl="Content/img/loading-bars.gif" publishTime="11/07/2012 22:25:18" />
     <file relUrl="Content/themes/base/images/ui-icons_2e83ff_256x240.png" publishTime="10/25/2012 22:03:03" />
-    <file relUrl="Content/bootstrap/js/bootstrap.js" publishTime="10/30/2012 21:38:20" />
+    <file relUrl="img/glyphicons-halflings-white.png" publishTime="12/15/2012 20:59:24" />
     <file relUrl="Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png" publishTime="10/25/2012 22:03:03" />
     <file relUrl="Views/Shared/_Modal.cshtml" publishTime="11/08/2012 01:09:19" />
-    <file relUrl="Content/themes/base/jquery.ui.all.css" publishTime="10/25/2012 22:03:03" />
+    <file relUrl="Views/Shared/_Phone.cshtml" publishTime="04/08/2013 02:12:41" />
     <file relUrl="bin/System.Web.Razor.xml" publishTime="12/20/2010 11:52:36" />
-    <file relUrl="Views/Apartment/Index.cshtml" publishTime="11/08/2012 01:51:42" />
+    <file relUrl="Views/Apartment/Index.cshtml" publishTime="04/08/2013 04:05:14" />
+    <file relUrl="Content/img/ImagemCondominio.jpg" publishTime="04/08/2013 01:15:29" />
     <file relUrl="Scripts/jquery.unobtrusive-ajax.min.js" publishTime="10/21/2012 11:28:40" />
     <file relUrl="Scripts/jquery-ui-1.8.11.min.js" publishTime="10/21/2012 11:28:41" />
     <file relUrl="bin/System.Web.Mvc.xml" publishTime="02/09/2011 12:26:24" />
     <file relUrl="bin/System.Web.Helpers.xml" publishTime="12/20/2010 00:59:38" />
+    <file relUrl="Views/Structure/Index.cshtml" publishTime="04/08/2013 04:05:19" />
     <file relUrl="Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png" publishTime="10/25/2012 22:03:04" />
-    <file relUrl="Content/img/CondominioSaoMiguelFlash_128.gif" publishTime="11/02/2012 15:25:05" />
+    <file relUrl="Content/img/nav-icon.png" publishTime="07/14/2012 11:34:54" />
     <file relUrl="Content/themes/base/jquery.ui.core.css" publishTime="10/25/2012 22:03:03" />
-    <file relUrl="Views/Shared/_ModalImage.cshtml" publishTime="11/08/2012 01:09:27" />
+    <file relUrl="Views/Shared/_Email.cshtml" publishTime="04/08/2013 02:11:28" />
+    <file relUrl="Views/Shared/_ModalImage.cshtml" publishTime="04/08/2013 04:23:17" />
     <file relUrl="Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png" publishTime="10/25/2012 22:03:03" />
     <file relUrl="Content/bootstrap/img/glyphicons-halflings.png" publishTime="10/30/2012 21:38:18" />
     <file relUrl="Content/themes/base/jquery.ui.base.css" publishTime="10/25/2012 22:03:03" />
-    <file relUrl="Views/Shared/_StandartImage.cshtml" publishTime="11/08/2012 19:46:55" />
-    <file relUrl="bin/System.Web.Helpers.dll" publishTime="01/05/2011 16:45:38" />
-    <file relUrl="Views/Shared/_HeaderImage.cshtml" publishTime="11/03/2012 01:20:54" />
-    <file relUrl="Views/About/Index.cshtml" publishTime="11/09/2012 19:37:25" />
+    <file relUrl="Scripts/jquery.validate.unobtrusive.min.js" publishTime="10/21/2012 11:28:40" />
+    <file relUrl="Content/img/IconeEmail.jpg" publishTime="04/06/2013 18:11:53" />
+    <file relUrl="Views/About/Index.cshtml" publishTime="04/08/2013 01:24:43" />
     <file relUrl="Content/img/loading.gif" publishTime="11/07/2012 22:25:30" />
     <file relUrl="Content/themes/base/jquery.ui.datepicker.css" publishTime="10/25/2012 22:03:03" />
     <file relUrl="Content/bootstrap/img/glyphicons-halflings-white.png" publishTime="10/30/2012 21:38:18" />
     <file relUrl="Content/themes/base/jquery.ui.selectable.css" publishTime="10/25/2012 22:03:03" />
-    <file relUrl="bin/CondominioSaoMiguel.dll" publishTime="12/15/2012 20:59:32" />
+    <file relUrl="bin/CondominioSaoMiguel.dll" publishTime="04/08/2013 05:39:52" />
+    <file relUrl="Content/img/SetaBaixo.png" publishTime="04/08/2013 03:05:36" />
     <file relUrl="Content/themes/base/images/ui-icons_222222_256x240.png" publishTime="10/25/2012 22:03:03" />
     <file relUrl="Views/Shared/_CustomCarousel.cshtml" publishTime="11/07/2012 20:10:48" />
     <file relUrl="packages.config" publishTime="10/25/2012 22:03:04" />
     <file relUrl="Scripts/jquery-1.8.2.min.js" publishTime="11/02/2012 13:08:26" />
+    <file relUrl="Content/img/LogoClaro.png" publishTime="04/07/2013 22:19:42" />
     <file relUrl="bin/System.Web.WebPages.Razor.dll" publishTime="01/05/2011 16:45:38" />
-    <file relUrl="bin/CondominioSaoMiguel.pdb" publishTime="12/15/2012 20:59:32" />
-    <file relUrl="Content/themes/base/jquery.ui.tabs.css" publishTime="10/25/2012 22:03:03" />
-    <file relUrl="Scripts/modernizr-1.7.min.js" publishTime="10/21/2012 11:28:42" />
+    <file relUrl="Content/themes/base/jquery.ui.autocomplete.css" publishTime="10/25/2012 22:03:03" />
+    <file relUrl="bin/CondominioSaoMiguel.pdb" publishTime="04/08/2013 05:39:52" />
+    <file relUrl="Views/Shared/_Header.cshtml" publishTime="04/08/2013 00:17:35" />
+    <file relUrl="Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" publishTime="10/25/2012 22:03:03" />
     <file relUrl="Views/Shared/Error.cshtml" publishTime="11/02/2012 02:54:36" />
-    <file relUrl="Views/Shared/_Footer.cshtml" publishTime="11/08/2012 19:27:54" />
-    <file relUrl="bin/EntityFramework.dll" publishTime="10/25/2012 22:03:04" />
+    <file relUrl="Content/img/SetaDireita.png" publishTime="04/08/2013 03:05:59" />
+    <file relUrl="Views/Shared/_Footer.cshtml" publishTime="04/08/2013 05:39:02" />
+    <file relUrl="Content/img/ImagemHome.jpg" publishTime="04/07/2013 23:28:44" />
     <file relUrl="bin/System.Web.WebPages.Razor.xml" publishTime="12/20/2010 11:52:36" />
     <file relUrl="Scripts/jquery.validate.min.js" publishTime="10/21/2012 11:28:40" />
     <file relUrl="Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png" publishTime="10/25/2012 22:03:03" />
+    <file relUrl="Content/img/SetaEsquerda.png" publishTime="04/08/2013 03:06:15" />
     <file relUrl="Content/themes/base/jquery.ui.dialog.css" publishTime="10/25/2012 22:03:03" />
+    <file relUrl="Content/img/SetaCima.png" publishTime="04/08/2013 03:05:48" />
     <file relUrl="Scripts/jquery.validate-vsdoc.js" publishTime="10/21/2012 11:28:40" />
-    <file relUrl="Scripts/MicrosoftMvcValidation.js" publishTime="10/21/2012 11:28:41" />
     <file relUrl="Scripts/jquery.showLoading.min.js" publishTime="11/07/2012 22:26:57" />
+    <file relUrl="Content/bootstrap/js/bootstrap.js" publishTime="10/30/2012 21:38:20" />
     <file relUrl="bin/System.Web.Razor.dll" publishTime="01/05/2011 16:45:38" />
-    <file relUrl="Views/Shared/_Layout.cshtml" publishTime="12/15/2012 20:53:15" />
-    <file relUrl="Views/Contact/Index.cshtml" publishTime="12/15/2012 21:04:49" />
+    <file relUrl="Views/Shared/_Layout.cshtml" publishTime="04/08/2013 05:25:39" />
+    <file relUrl="Content/img/FundoMenuItemSelecionado.jpg" publishTime="03/23/2013 15:19:03" />
+    <file relUrl="Views/Contact/Index.cshtml" publishTime="04/08/2013 05:12:40" />
+    <file relUrl="Views/Localization/Index.cshtml" publishTime="04/08/2013 04:05:04" />
     <file relUrl="Content/themes/base/jquery.ui.progressbar.css" publishTime="10/25/2012 22:03:03" />
-    <file relUrl="bin/CondominioSaoMiguel.Util.pdb" publishTime="11/03/2012 01:57:43" />
-    <file relUrl="Content/condominio-sao-miguel.css" publishTime="12/04/2012 00:45:35" />
+    <file relUrl="bin/CondominioSaoMiguel.Util.pdb" publishTime="04/08/2013 05:14:21" />
+    <file relUrl="Scripts/MicrosoftMvcValidation.js" publishTime="10/21/2012 11:28:41" />
     <file relUrl="bin/System.Web.WebPages.dll" publishTime="01/05/2011 16:45:38" />
-    <file relUrl="Content/themes/base/images/ui-icons_888888_256x240.png" publishTime="10/25/2012 22:03:03" />
+    <file relUrl="bin/EntityFramework.dll" publishTime="10/25/2012 22:03:04" />
+    <file relUrl="Content/img/AbaLazer.jpg" publishTime="04/08/2013 00:47:21" />
     <file relUrl="Views/_ViewStart.cshtml" publishTime="11/02/2012 02:24:52" />
     <file relUrl="Content/img/PortariaGanesh.png" publishTime="11/25/2012 23:07:32" />
-    <file relUrl="Content/bootstrap/css/bootstrap-responsive.css" publishTime="11/02/2012 18:08:12" />
-    <file relUrl="Content/bootstrap/css/bootstrap-responsive.min.css" publishTime="10/30/2012 21:38:20" />
+    <file relUrl="Content/bootstrap/css/bootstrap-responsive.css" publishTime="04/07/2013 21:21:37" />
+    <file relUrl="Content/bootstrap/css/bootstrap-responsive.min.css" publishTime="03/24/2013 10:01:00" />
     <file relUrl="Scripts/modernizr-1.7.js" publishTime="10/21/2012 11:28:42" />
     <file relUrl="Content/themes/base/jquery.ui.theme.css" publishTime="10/25/2012 22:03:03" />
-    <file relUrl="Views/Shared/_Header.cshtml" publishTime="12/15/2012 20:48:53" />
-    <file relUrl="Views/Localization/Index.cshtml" publishTime="12/15/2012 20:58:09" />
+    <file relUrl="Scripts/modernizr-1.7.min.js" publishTime="10/21/2012 11:28:42" />
+    <file relUrl="Content/themes/base/jquery.ui.all.css" publishTime="10/25/2012 22:03:03" />
     <file relUrl="Views/Web.config" publishTime="11/02/2012 02:24:51" />
     <file relUrl="Scripts/MicrosoftAjax.debug.js" publishTime="10/21/2012 11:28:41" />
-    <file relUrl="bin/CondominioSaoMiguel.Util.dll" publishTime="11/03/2012 01:57:44" />
+    <file relUrl="bin/CondominioSaoMiguel.Util.dll" publishTime="04/08/2013 05:14:21" />
     <file relUrl="bin/System.Web.WebPages.xml" publishTime="12/20/2010 00:59:38" />
     <file relUrl="Scripts/jquery.unobtrusive-ajax.js" publishTime="10/21/2012 11:28:40" />
     <file relUrl="Scripts/MicrosoftMvcAjax.debug.js" publishTime="10/21/2012 11:28:42" />
     <file relUrl="Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png" publishTime="10/25/2012 22:03:03" />
-    <file relUrl="Content/img/PortariaBranir.png" publishTime="11/25/2012 23:07:03" />
+    <file relUrl="bin/System.Web.Helpers.dll" publishTime="01/05/2011 16:45:38" />
     <file relUrl="Content/themes/base/jquery.ui.slider.css" publishTime="10/25/2012 22:03:03" />
-    <file relUrl="Content/bootstrap/css/bootstrap.css" publishTime="11/25/2012 23:22:30" />
+    <file relUrl="Content/bootstrap/css/bootstrap.css" publishTime="04/08/2013 00:00:58" />
     <file relUrl="Scripts/jquery.validate.js" publishTime="10/21/2012 11:28:40" />
     <file relUrl="Scripts/jquery-ui-1.8.11.js" publishTime="10/21/2012 11:28:41" />
     <file relUrl="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png" publishTime="10/25/2012 22:03:04" />
-    <file relUrl="Views/Shared/_FacebookLike.cshtml" publishTime="11/04/2012 20:23:09" />
-    <file relUrl="Scripts/jquery.validate.unobtrusive.min.js" publishTime="10/21/2012 11:28:40" />
-    <file relUrl="Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" publishTime="10/25/2012 22:03:03" />
-    <file relUrl="Content/themes/base/jquery.ui.autocomplete.css" publishTime="10/25/2012 22:03:03" />
+    <file relUrl="Views/Shared/_FacebookLike.cshtml" publishTime="04/08/2013 05:29:55" />
+    <file relUrl="Views/Home/Index.cshtml" publishTime="04/08/2013 00:14:19" />
+    <file relUrl="Content/themes/base/jquery.ui.tabs.css" publishTime="10/25/2012 22:03:03" />
+    <file relUrl="Content/img/AbaConforto.jpg" publishTime="04/08/2013 00:44:08" />
+    <file relUrl="img/glyphicons-halflings.png" publishTime="12/15/2012 20:59:24" />
   </publishProfile>
 </publishData>
