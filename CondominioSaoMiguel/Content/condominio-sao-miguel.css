@@ -22,8 +22,9 @@ html, body
 
 .navbar .nav > li > a
 {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 600;
+    font-style:italic;font-family:Adobe Gothic Std;font-size: large;
+    font-size: large;
+    letter-spacing: 3px;
 }
 
 .navbar .nav > li
@@ -41,6 +42,7 @@ html, body
 {
     background-color: #EFF0ED;
     padding: 20px;
+    padding-bottom: 0px;
 }
 
 .body
@@ -56,7 +58,7 @@ html, body
 .footer-content
 {
     margin: 0 auto;
-    width: 1100px;
+    
     background-color: #EFF0ED;
     padding: 20px;
     color: #A5A29D;
@@ -81,7 +83,72 @@ html, body
     border-left: 1px solid #ccc;
 }
 
-.nav li {
-    font-size: larger;
-    letter-spacing: 1px;
+.media {
+    padding: 10px;
+    font-style:italic;font-family:Adobe Gothic Std;font-size: large;
+    color: #A5A29D;
+   
+}
+
+.title 
+{
+    padding: 5px;
+    font-family:Adobe Gothic Std, sans-serif!important;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #0167a7;
+    font-style: normal;
+}
+
+
+label
+{
+    padding: 5px;
+    font-family:Adobe Gothic Std, sans-serif!important;;
+    font-weight: bold;
+    color: #0167a7;
+    font-style: normal;
+}
+
+.media-body .row-fluid {
+    margin-bottom: 5px;
+}
+
+.structure-description {
+    padding: 5px;
+    display: none !important;
+}
+
+
+.apartment-description {
+    margin-top: 20px;
+}
+.apartment-description li {
+    margin-top: 10px;
+    font-style:italic;font-family:Adobe Gothic Std;font-size: large;
+    color: #A5A29D;
+   
+}
+
+
+.loading-indicator
+{
+    height: 80px;
+    width: 80px;
+    background: url( '../Content/img/loading.gif' );
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.loading-indicator-overlay
+{
+    background-color: #FFFFFF;
+    opacity: 0.6;
+    filter: alpha(opacity = 60);
+}
+
+.loading-indicator-bars
+{
+    background-image: url( '../Content/img/loading-bars.gif' );
+    width: 150px;
 }

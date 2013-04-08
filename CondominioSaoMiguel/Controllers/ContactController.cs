@@ -23,16 +23,17 @@ namespace CondominioSaoMiguel.Controllers
             {
                 try{
                     SendEmail(contact.Email, contact.Name, contact.DDD ?? 000, contact.Phone??00000000, contact.Message);
-
+                    SendEmailCopyToUser(contact.Email, contact.Name, contact.DDD ?? 000, contact.Phone ?? 00000000, contact.Message);
                 }
                 catch(Exception error)
                 {
+                    ModelState.AddModelError(string.Empty, "Ocorreu um erro ao enviar o e-mail. Por favor, entre em contato por telefone.");
                     SetError();
-                    return GetPartialIndexView(contact);
+                    return GetJSON(contact, "Index", false);
                 }
-                return GetPartialIndexView(new ContactModel());
+                return GetJSON(contact, "Index", true);
             }
-            return GetPartialIndexView(contact);
+            return GetJSON(contact, "Index", false);
         }
 
         private bool ValidateModel()
@@ -58,6 +59,17 @@ namespace CondominioSaoMiguel.Controllers
             mail.From = new MailAddress(ConfigurationReader.GetEmailDefault());
             mail.Subject = Constants.Messages.MSG_EMAIL_SUBJECT;
             mail.Body = BuildEmailBody(email,name,ddd,phone,mensagem);            
+            smtp.Send(mail);
+        }
+
+        private void SendEmailCopyToUser(string email, string name, int ddd, int phone, string mensagem)
+        {
+            MailMessage mail = new MailMessage();
+            SmtpClient smtp = new SmtpClient(ConfigurationReader.GetEmailServerAddress());
+            mail.To.Add(new MailAddress(email));
+            mail.From = new MailAddress(ConfigurationReader.GetEmailDefault());
+            mail.Subject = Constants.Messages.MSG_EMAIL_SUBJECT;
+            mail.Body = "Esta é uma cópia do e-mail enviado para o Condomínio São Miguel\n\n" + BuildEmailBody(email, name, ddd, phone, mensagem);
             smtp.Send(mail);
         }
 

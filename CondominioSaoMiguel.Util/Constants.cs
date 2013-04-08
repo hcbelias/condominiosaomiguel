@@ -29,11 +29,11 @@ namespace CondominioSaoMiguel.Util
             internal const String ADDRESS_NUMBER = "382";
             internal const String NEIGHBORHOOD = "Jd. São Lucas";
             internal const String CITY = "Alfenas";
-            internal const String STATE = "Minas Geraes";
+            internal const String STATE = "Minas Gerais";
             internal const String STATE_UF = "MG";
             internal const String DDD = "35";
             internal const String PRIMARY_PHONE = "3291-3996";
-            internal const String SECUNDARY_PHONE = "8838-3459";            
+            internal const String SECUNDARY_PHONE = "8838-3459";
         }
 
         private static class Format

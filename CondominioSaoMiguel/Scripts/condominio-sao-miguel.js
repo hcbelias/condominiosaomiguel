@@ -2,9 +2,8 @@ function replaceOnComplete(controller, method, queryString, elementReplacedSelec
     
     $.post(controller + '/' + method, queryString, null)
             .complete(function (data) {
+                
                 $(elementReplacedSelector).html(data.responseText);
-                $('ul.nav li').removeClass('active');
-                $("#"+controller).parent().addClass('active');
             });
 }
 
@@ -46,8 +45,13 @@ $(document).ready(function () {
         if (!$(this).hasClass('active')) {
             $(this).addClass('active');
             $(this).mouseout(function () {
+                
                 $(this).removeClass('active');
             });
         }
+        $(this).click(function () {
+            
+            $(this).addClass('active');
+        });
     });
 });

@@ -89,6 +89,7 @@
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\ApartmentController.cs" />
+    <Compile Include="Controllers\StructureController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LocalizationController.cs" />
     <Compile Include="Controllers\PhotoGalleryController.cs" />
@@ -113,8 +114,12 @@
     <Content Include="Content\bootstrap\js\bootstrap.js" />
     <Content Include="Content\bootstrap\js\bootstrap.min.js" />
     <Content Include="Content\condominio-sao-miguel.css" />
+    <Content Include="Content\img\AbaConforto.jpg" />
+    <Content Include="Content\img\AbaLazer.jpg" />
+    <Content Include="Content\img\AbaSeguranca.jpg" />
     <Content Include="Content\img\FundoMenuItemSelecionado.jpg" />
     <Content Include="Content\img\IconeEmail.jpg" />
+    <Content Include="Content\img\ImagemCondominio.jpg" />
     <Content Include="Content\img\ImagemHome.jpg" />
     <Content Include="Content\img\loading-bars.gif" />
     <Content Include="Content\img\loading.gif" />
@@ -123,10 +128,10 @@
     <Content Include="Content\img\PortariaBranir.png" />
     <Content Include="Content\img\PortariaGanesh.png" />
     <Content Include="Content\img\PortariaPrincipal.png" />
-    <Content Include="Content\img\SetaBaixo.jpg" />
-    <Content Include="Content\img\SetaCima.jpg" />
-    <Content Include="Content\img\SetaDireita.jpg" />
-    <Content Include="Content\img\SetaEsquerda.jpg" />
+    <Content Include="Content\img\SetaBaixo.png" />
+    <Content Include="Content\img\SetaCima.png" />
+    <Content Include="Content\img\SetaDireita.png" />
+    <Content Include="Content\img\SetaEsquerda.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -212,9 +217,6 @@
     <Content Include="Views\Shared\_Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\_HeaderImage.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Contact\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -246,6 +248,7 @@
     <Content Include="Views\Shared\_DDD.cshtml" />
     <Content Include="Views\Shared\_Phone.cshtml" />
     <Content Include="Views\Shared\_Email.cshtml" />
+    <Content Include="Views\Structure\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

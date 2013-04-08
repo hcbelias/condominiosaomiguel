@@ -9,22 +9,19 @@
 
     <link href="../../Content/condominio-sao-miguel.css" rel="stylesheet" type="text/css" />
     <link href="../../Content/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
-    <style type="text/css">
 
-        @@font-face
-        {
-            font-family: ebrima;
-            src: url('../../Content/ebrima.ttf')
-        }
-    </style>
    
 </head>
 <body>
     <div class="header">
         @Html.Partial("_Header")
     </div>
-    <div class="body">
-        @RenderBody()
+    <div class="body" >
+        <div class="container" >
+            <div style="background-color: white;" class="row-fluid">
+                <div class="span12" style="padding: 12px;" id='body-content'>
+            @RenderBody()
+        </div></div></div>
     </div>
     <div class="footer">
         @Html.Partial("_Footer")
