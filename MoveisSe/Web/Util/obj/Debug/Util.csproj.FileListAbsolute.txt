@@ -1,0 +1,5 @@
+E:\DotNet\CondominioSaoMiguel\MoveisSe\Web\Util\bin\Debug\Util.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\Web\Util\bin\Debug\Util.pdb
+E:\DotNet\CondominioSaoMiguel\MoveisSe\Web\Util\obj\Debug\ResolveAssemblyReference.cache
+E:\DotNet\CondominioSaoMiguel\MoveisSe\Web\Util\obj\Debug\Util.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\Web\Util\obj\Debug\Util.pdb

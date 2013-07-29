@@ -1,4 +1,0 @@
-C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\CondominioSaoMiguel.Util\bin\Debug\CondominioSaoMiguel.Util.dll
-C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\CondominioSaoMiguel.Util\bin\Debug\CondominioSaoMiguel.Util.pdb
-C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\CondominioSaoMiguel.Util\obj\Debug\CondominioSaoMiguel.Util.dll
-C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\CondominioSaoMiguel.Util\obj\Debug\CondominioSaoMiguel.Util.pdb
