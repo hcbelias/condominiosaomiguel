@@ -1,0 +1,4 @@
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\CondominioSaoMiguel.Util\bin\Release\CondominioSaoMiguel.Util.dll
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\CondominioSaoMiguel.Util\bin\Release\CondominioSaoMiguel.Util.pdb
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\CondominioSaoMiguel.Util\obj\Release\CondominioSaoMiguel.Util.dll
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\CondominioSaoMiguel.Util\obj\Release\CondominioSaoMiguel.Util.pdb

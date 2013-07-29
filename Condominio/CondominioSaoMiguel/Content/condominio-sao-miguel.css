@@ -1,0 +1,155 @@
+﻿/* Sticky footer styles
+      -------------------------------------------------- */
+
+html, body
+{
+    padding: 0;
+    height: 100%;
+    background-color: white;
+}
+
+
+.container
+{
+    width: auto;
+    max-width: 1100px;
+}
+
+.navbar .nav > .active > a
+{
+    background-image:url("../Content/img/FundoMenuItemSelecionado.jpg")
+}
+
+.navbar .nav > li > a
+{
+    font-style:italic;font-size: large;
+    font-size: large;
+    letter-spacing: 3px;
+}
+
+.navbar .nav > li
+{
+    width: auto;
+}
+
+.footer
+{
+    background-color: white;
+    padding-top: 20px;
+}
+
+.header
+{
+    background-color: #EFF0ED;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.body
+{
+    background-color: #EFF0ED;
+    height: auto;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+.footer-content
+{
+    margin: 0 auto;
+    
+    background-color: #EFF0ED;
+    padding: 20px;
+    color: #A5A29D;
+}
+
+.phone-number {
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+}
+
+.phonelist {
+    list-style: none;
+    
+}
+
+.phonelist li {
+    float: left;
+    padding-left: 5px;
+}
+
+.phonelist li:first {
+    border-left: 1px solid #ccc;
+}
+
+.media {
+    padding: 10px;
+    font-style:italic;font-size: large;
+    color: #A5A29D;
+   
+}
+
+.title 
+{
+    padding: 5px;
+    
+    font-size: xx-large;
+    font-weight: bold;
+    color: #0167a7;
+    font-style: normal;
+}
+
+
+label
+{
+    padding: 5px;
+    
+    
+    font-weight: bold;
+    color: #0167a7;
+    font-style: normal;
+}
+
+.media-body .row-fluid {
+    margin-bottom: 5px;
+}
+
+.structure-description {
+    padding: 5px;
+    display: none !important;
+}
+
+
+.apartment-description {
+    margin-top: 20px;
+}
+.apartment-description li {
+    margin-top: 10px;
+    font-style:italic;font-size: large;
+    color: #A5A29D;
+   
+}
+
+
+.loading-indicator
+{
+    height: 80px;
+    width: 80px;
+    background: url( '../Content/img/loading.gif' );
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.loading-indicator-overlay
+{
+    background-color: #FFFFFF;
+    opacity: 0.6;
+    filter: alpha(opacity = 60);
+}
+
+.loading-indicator-bars
+{
+    background-image: url( '../Content/img/loading-bars.gif' );
+    width: 150px;
+}
