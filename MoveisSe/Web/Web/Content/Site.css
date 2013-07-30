@@ -6,6 +6,7 @@ html, body
     padding: 0;
     height: 100%;
     background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 
@@ -40,15 +41,15 @@ html, body
 
 .header
 {
-    background-color: #EFF0ED;
+    background-color: #95A8C7;
     padding: 20px;
     padding-bottom: 0px;
 }
 
 .body
 {
-    background-color: #EFF0ED;
-    height: auto;
+    background-color: #E0E0E0;
+    height: 100%;
     width: 100%;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -59,9 +60,9 @@ html, body
 {
     margin: 0 auto;
     
-    background-color: #EFF0ED;
+    background-color: #4A71AF;
     padding: 20px;
-    color: #A5A29D;
+    color: #223452 ! important;
 }
 
 .phone-number {
@@ -152,4 +153,10 @@ label
 {
     background-image: url( '../Content/img/loading-bars.gif' );
     width: 150px;
+}
+
+small-square-top-menu
+{
+    height:30px;
+    width: 120px;
 }
