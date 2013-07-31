@@ -7,7 +7,7 @@ namespace Util
 {
     public static class Constants
     {
-        public const String MOVEIS_SANTA_EDWIGES = "lorem ipsum";
+        public const String MOVEIS_SANTA_EDWIGES = "Móveis Santa Edwiges";
 
         public static class Configuration
         {
