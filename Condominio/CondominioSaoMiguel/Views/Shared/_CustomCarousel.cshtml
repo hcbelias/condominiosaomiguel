@@ -1,125 +1,36 @@
-﻿@model List<String>
-           
-<script type="text/javascript">
-    $(function() {
-        var $carousel = $('#carousel'),
-            $pager = $('#pager');
-
-        //	gather the thumbnails
-        var $thumb = $( '<div class="thumb" />' );
-        $carousel.children().each(function() {
-            var src = $(this).attr( 'src' );
-            $thumb.append( '<img src="' + src.split('/large/').join('/small/') + '" />' );
-        });
-
-        //	duplicate the thumbnails
-        for (var a = 0; a < $carousel.children().length - 1; a++) {
-            $pager.append( $thumb.clone() );
-        }
-
-        //	create large carousel
-        $carousel.carouFredSel({
-            items: {
-                visible: 1,
-                width: 550,
-                height: 310
-            },
-            scroll: {
-                fx: 'directscroll',
-                onBefore: function( data ) {
-                    var oldSrc = data.items.old.attr('src').split('/large/').join('/small/'),
-                        newSrc = data.items.visible.attr('src').split('/large/').join('/small/'),
-                        $t = $thumbs.find('img:first-child[src="' + newSrc + '"]').parent();
-
-                    $t.trigger('slideTo', [$('img[src="' + oldSrc + '"]', $t), 'next']);
-                }
-            }
-        });
-
-        //	create thumb carousels
-        var $thumbs = $('.thumb');
-        $thumbs.each(function( i ) {
-            $(this).carouFredSel({
-                auto: false,
-                scroll: {
-                    fx: 'directscroll'
-                },
-                items: {
-                    start: i+1,
-                    visible: 1,
-                    width: 100,
-                    height: 80
-                }
-            });
-
-            //	click the carousel
-            $(this).click(function() {
-                var src = $(this).children().first().attr('src').split('/small/').join('/large/');
-                $carousel.trigger('slideTo', [$('img[src="' + src + '"]', $carousel), 'next']);
-            });
-        });
-    });
-</script>
-<style type="text/css">
-	
-	#wrapper {
-		width: 660px;
-		height: 310px;
-		margin: -155px 0 0 -330px;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-	}
-	#wrapper:after {
-		content: url(img/shadow.png);
-		position: absolute;
-		bottom: -40px;
-		left: 5px;
-		z-index: 1;
-	}
-	#carousel {
-		width: 550px;
-		height: 310px;
-		overflow: hidden;
-		position: relative;
-		z-index: 2;
-	}
-	#carousel img {
-		display: block;
-		float: left;
-	}
-	#pager {
-		width: 100px;
-		height: 310px;
-		overflow: hidden;
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
-	#pager div {
-		height: 80px;
-		width: 100px;
-	}
-	#pager img {
-		cursor: pointer;
-		display: block;
-		height: 70px;
-		width: 100px;
-		margin-bottom: 10px;
-		float: left;
-	}
-</style>
-<div id="wrapper">
-	<div id="inner">
-		<div id="carousel">
-	
-    <img src="../../Content/img/CondominioSaoMiguelFlash_128.gif" />
-    
-    <img src="../../Content/img/PortariaPrincipal.png" />
-    <img src="../../Content/img/PortariaGanesh.png" />
-    <img src="../../Content/img/PortariaBranir.png" />
-
+﻿<div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item">
+          <img src="../assets/img/examples/slide-01.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+            </div>
+          </div>
         </div>
-		<div id="pager"></div>
-	</div>
-</div>
+        <div class="item active left">
+          <img src="../assets/img/examples/slide-02.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="item next left">
+          <img src="../assets/img/examples/slide-03.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+    </div>

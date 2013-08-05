@@ -8,32 +8,33 @@
         openModal('PhotoGallery', 'OpenImageModal', imageSource, "#image-modal");
     }
 </script>
-
-
-
-<div class="row-fluid" style="margin-top: 30px; margin-left: auto;margin-right: auto;" >
+<div class="row-fluid" style="margin-top: 30px; margin-left: auto; margin-right: auto;">
     <ul class="thumbnails">
-  <li class="span4">
-    <div class="thumbnail">
-        <img src="../../Content/img/PortariaPrincipal.png" onclick="openImageModal(this);" alt="Portaria Principal"/>
-      <h3>Entrada</h3>
-      
-    </div>
-  </li>
         <li class="span4">
             <div class="thumbnail">
-        <img src="../../Content/img/PortariaGanesh.png" onclick="openImageModal(this);" alt="Portaria Ganesh"/>
-                <h3>Ganesh</h3>
-      
+                <img onclick="openImageModal(this);" alt="Portaria Principal" src="@Util.HtmlHelper.GetImageSourceFromFilePath(Server.MapPath("~/Content/img/PortariaPrincipal.PNG"))" class="img-polaroid" />
+                <h3>
+                    Entrada</h3>
             </div>
         </li>
         <li class="span4">
-    <div class="thumbnail">
-        <img src="../../Content/img/PortariaBranir.png" onclick="openImageModal(this);" alt="Portaria Branir"/>
-      <h3>Branir</h3>
-      
-    </div>
-  </li>
-</ul>
-</div>      
+            <div class="thumbnail">
+                <img onclick="openImageModal(this);" alt="Portaria Principal" 
+            src="@Util.HtmlHelper.GetImageSourceFromFilePath(Server.MapPath("~/Content/img/PortariaGanesh.png"))" class="img-polaroid" 
+            onclick="openImageModal(this);" />
+                <h3>
+                    Ganesh</h3>
+            </div>
+        </li>
+        <li class="span4">
+            <div class="thumbnail">
+                <img onclick="openImageModal(this);" alt="Portaria Principal" 
+            src="@Util.HtmlHelper.GetImageSourceFromFilePath(Server.MapPath("~/Content/img/PortariaBranir.png"))" class="img-polaroid" 
+            onclick="openImageModal(this);" />
+                <h3>
+                    Brani</h3>
+            </div>
+        </li>
+    </ul>
+</div>
 @Html.Partial("_Modal", "image-modal")

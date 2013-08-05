@@ -2,3 +2,8 @@ C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Cond
 C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\CondominioSaoMiguel.Util\bin\Debug\CondominioSaoMiguel.Util.pdb
 C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\CondominioSaoMiguel.Util\obj\Debug\CondominioSaoMiguel.Util.dll
 C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\CondominioSaoMiguel.Util\obj\Debug\CondominioSaoMiguel.Util.pdb
+E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel.Util\bin\Debug\CondominioSaoMiguel.Util.dll
+E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel.Util\bin\Debug\CondominioSaoMiguel.Util.pdb
+E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel.Util\obj\Debug\ResolveAssemblyReference.cache
+E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel.Util\obj\Debug\CondominioSaoMiguel.Util.dll
+E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel.Util\obj\Debug\CondominioSaoMiguel.Util.pdb

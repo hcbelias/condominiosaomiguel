@@ -2,11 +2,11 @@
 @{
     ViewBag.Title = "Condomínio São Miguel";
 }
-<img src="../../Content/img/ImagemCondominio.jpg" />
+
+<img src="@Util.HtmlHelper.GetImageSourceFromFilePath(Server.MapPath("~/Content/img/ImagemCondominio.jpg"))" 
+                style="margin:auto;display:block;">
+
 <div class="media" style="background-color: white; padding: 10px">
-    <a class="pull-left span3" style="margin-left: 0px;margin-top: 24px; margin-bottom: 24px;" href="#">
-        <img class="media-object" src="../../Content/img/PortariaBranir.png">
-    </a>
     <div class="media-body">
         <div class="row-fluid">
             <div class="span6">
@@ -20,11 +20,11 @@
         </div>
         <div class="row-fluid">
             <div class="span6">
-                <div class="media">O Condomínio é constituído por sete prédios de 2 andares, com entradas e interfones independentes para cada prédio, em um total de 52 apartamentos.
+                <div class="media">O Condomínio é constituído por sete prédios de dois andares, com entradas e interfones independentes para cada prédio, em um total de 52 apartamentos disponíveis para aluguel.
                 </div>
             </div>
             <div class="span6">
-                <div class="media">Nosso objetivo é a satisfação e tranquilidade dos moradors do Condomínio, visando a proporcionar um ambiente agradável a todos.
+                <div class="media">Nosso objetivo é a satisfação e tranquilidade dos moradores do Condomínio, visando a proporcionar um ambiente agradável a todos.
                 </div>
             </div>
         </div>

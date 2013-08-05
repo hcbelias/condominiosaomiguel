@@ -3,5 +3,5 @@
     ViewBag.Title = "Condomínio São Miguel";
 }
 
-<img src="../../Content/img/ImagemHome.jpg"  />
-
+<img src="@Util.HtmlHelper.GetImageSourceFromFilePath(Server.MapPath("~/Content/img/ImagemHome.jpg"))" 
+                style="margin:auto;display:block;height:540px;">
