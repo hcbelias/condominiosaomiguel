@@ -32,8 +32,8 @@ namespace BLL.DTOAssembler
     
     		#region Primitive Properties
     		p_ReturnObj.Id = p_OriginalObj.Id;
-    		p_ReturnObj.Nome = p_OriginalObj.Nome;
-    		p_ReturnObj.Link = p_OriginalObj.Link;
+    		p_ReturnObj.Name = p_OriginalObj.Name;
+    		p_ReturnObj.Url = p_OriginalObj.Url;
     		p_ReturnObj.ClassName = p_OriginalObj.ClassName;
     		p_ReturnObj.ComboboxText = p_OriginalObj.ComboboxText;
     		#endregion

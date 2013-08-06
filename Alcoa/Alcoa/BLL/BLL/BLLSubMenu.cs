@@ -36,8 +36,8 @@ namespace BLL
     
     		Model.SubMenuModel v_Return = new Model.SubMenuModel();
     				v_Return.Id = this.m_Data.Id;
-    		v_Return.Nome = this.m_Data.Nome;
-    		v_Return.Link = this.m_Data.Link;
+    		v_Return.Name = this.m_Data.Name;
+    		v_Return.Url = this.m_Data.Url;
     		v_Return.ClassName = this.m_Data.ClassName;
     		v_Return.ComboboxText = this.m_Data.ComboboxText;
     		return v_Return;

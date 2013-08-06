@@ -36,7 +36,7 @@ namespace BLL
     
     		Model.PerfilModel v_Return = new Model.PerfilModel();
     				v_Return.Id = this.m_Data.Id;
-    		v_Return.Nome = this.m_Data.Nome;
+    		v_Return.Name = this.m_Data.Name;
     		v_Return.ComboboxText = this.m_Data.ComboboxText;
     		return v_Return;
     	}
