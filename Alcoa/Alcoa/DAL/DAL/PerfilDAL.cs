@@ -10,7 +10,7 @@ namespace DAL
     {
         public void setCombobox()
         {
-            this.ComboboxText = this.Nome;
+            this.ComboboxText = this.Name;
         }
     }
 }

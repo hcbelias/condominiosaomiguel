@@ -33,8 +33,8 @@ namespace Model
     	[Required(ErrorMessageResourceName = "Required", ErrorMessageResourceType = typeof(Util.Internationalization))]
     
     
-    	[Display(Name = "Nome", Prompt = "Nome", ResourceType = typeof(Util.Internationalization))]
-    	public virtual string Nome
+    	[Display(Name = "Name", Prompt = "Name", ResourceType = typeof(Util.Internationalization))]
+    	public virtual string Name
         {
     		get;
     		set;

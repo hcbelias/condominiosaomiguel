@@ -52,18 +52,6 @@ namespace DAL.Data
         }
         private ObjectSet<Perfil> _perfil;
     
-        public ObjectSet<Cidade> Cidade
-        {
-            get { return _cidade  ?? (_cidade = CreateObjectSet<Cidade>("Cidade")); }
-        }
-        private ObjectSet<Cidade> _cidade;
-    
-        public ObjectSet<Estado> Estado
-        {
-            get { return _estado  ?? (_estado = CreateObjectSet<Estado>("Estado")); }
-        }
-        private ObjectSet<Estado> _estado;
-    
         public ObjectSet<Menu> Menu
         {
             get { return _menu  ?? (_menu = CreateObjectSet<Menu>("Menu")); }

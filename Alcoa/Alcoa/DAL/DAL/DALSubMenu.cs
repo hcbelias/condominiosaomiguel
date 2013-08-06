@@ -64,8 +64,8 @@ namespace DAL
     			return new SubMenu();
     		SubMenu v_NewSubMenu = new SubMenu();
     		v_NewSubMenu.Id = p_Model.Id;
-    		v_NewSubMenu.Nome = p_Model.Nome;
-    		v_NewSubMenu.Link = p_Model.Link;
+    		v_NewSubMenu.Name = p_Model.Name;
+    		v_NewSubMenu.Url = p_Model.Url;
     		v_NewSubMenu.ClassName = p_Model.ClassName;
             if (p_Model.Menu != null)
     			v_NewSubMenu.Menu = Menu.GetMenu(p_Model.Menu.Id);
@@ -98,8 +98,8 @@ namespace DAL
     		if(p_Model == null)
     			return ;
     
-    		this.Nome = p_Model.Nome;
-    		this.Link = p_Model.Link;
+    		this.Name = p_Model.Name;
+    		this.Url = p_Model.Url;
     		this.ClassName = p_Model.ClassName;
     	}
     

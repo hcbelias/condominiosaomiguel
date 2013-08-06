@@ -5,8 +5,8 @@
         <th style="width: 8%; text-align:center;">@Html.Label(Constants.Translate.ACOES)
         </th>
 	<th style="text-align:center;">@Html.Label(Internationalization.Id)</th>
-	<th style="text-align:center;">@Html.Label(Internationalization.Nome)</th>
-	<th style="text-align:center;">@Html.Label(Internationalization.Link)</th>
+	<th style="text-align:center;">@Html.Label(Internationalization.Name)</th>
+	<th style="text-align:center;">@Html.Label(Internationalization.Url)</th>
 	<th style="text-align:center;">@Html.Label(Internationalization.ClassName)</th>
 	</thead>
 	@if(Model!=null)
@@ -20,10 +20,10 @@
             </td>
 				
 				
-					<td style="text-align:center;">@Html.DisplayFor(modelItem => item.Nome)</td>
+					<td style="text-align:center;">@Html.DisplayFor(modelItem => item.Name)</td>
 
 				
-					<td style="text-align:center;">@Html.DisplayFor(modelItem => item.Link)</td>
+					<td style="text-align:center;">@Html.DisplayFor(modelItem => item.Url)</td>
 
 				
 					<td style="text-align:center;">@Html.DisplayFor(modelItem => item.ClassName)</td>

@@ -118,12 +118,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Controller.tt</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\ControllerCidade.cs">
-      <DependentUpon>Controller.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Controllers\ControllerEstado.cs">
-      <DependentUpon>Controller.tt</DependentUpon>
-    </Compile>
     <Compile Include="Controllers\ControllerLogin.cs">
       <DependentUpon>Controller.tt</DependentUpon>
     </Compile>
@@ -136,13 +130,12 @@
     <Compile Include="Controllers\ControllerSubMenu.cs">
       <DependentUpon>Controller.tt</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\OptimizationController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IBaseController.cs" />
     <Compile Include="Controllers\PerfilController.cs" />
-    <Compile Include="Controllers\StaticController.cs" />
-    <Compile Include="Controllers\TemplateController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -240,24 +233,18 @@
     </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="WS\GeneralServices.svc" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Imagens\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Paciente\PacienteForm.cshtml" />
-    <Content Include="Views\Paciente\PacienteList.cshtml" />
-    <Content Include="Views\Paciente\PacienteSearch.cshtml" />
-    <Content Include="Views\Paciente\PacienteTableList.cshtml" />
     <Content Include="Views\Shared\Menu.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -270,7 +257,6 @@
     </None>
     <Content Include="Views\Login\Login.cshtml" />
     <Content Include="Views\Shared\_LayoutLogin.cshtml" />
-    <Content Include="Views\Paciente\PacienteInfo.cshtml" />
     <Content Include="Views\Shared\EntityInfo.cshtml">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -282,19 +268,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EntityComboBox.tt</DependentUpon>
     </Content>
-    <Content Include="Views\ExameDados\ExameDadosForm.cshtml" />
-    <Content Include="Views\ExameDados\ExameDadosSearch.cshtml" />
-    <Content Include="Views\ExameDados\ExameDadosTableList.cshtml" />
-    <Content Include="Views\ExameDados\ExameDadosAction.cshtml" />
-    <Content Include="Views\ExameImagem\ExameImagemForm.cshtml" />
-    <Content Include="Views\ExameImagem\ExameImagemSearch.cshtml" />
-    <Content Include="Views\ExameImagem\ExameImagemTableList.cshtml" />
-    <Content Include="Views\Shared\UploadImage.cshtml" />
-    <Content Include="Views\ExameImagem\UploadExameImagem.cshtml" />
-    <Content Include="Views\ExameImagem\ModalExameImage.cshtml" />
-    <Content Include="Views\ExameImagem\ExameImagemAction.cshtml" />
-    <Content Include="Views\Login\DadosPessoais.cshtml" />
-    <Content Include="Views\Cirurgia\HistoricoCirurgia.cshtml" />
     <Content Include="Views\Consulta\ConsultaSearch.cshtml" />
     <Content Include="Views\Consulta\ConsultaTableList.cshtml" />
     <Content Include="Views\Consulta\AnamneseConsultaEricaForm.cshtml" />
@@ -303,8 +276,6 @@
     <Content Include="Views\Consulta\AnamneseConsultaOlavoForm.cshtml" />
     <Content Include="Views\Consulta\AnamneseConsultaRaphaelForm.cshtml" />
     <Content Include="Views\Consulta\Anamnese.cshtml" />
-    <Content Include="Views\Shared\UploadImageSmall.cshtml" />
-    <Content Include="Views\Paciente\PacienteUploadImageSmall.cshtml" />
     <Content Include="Views\Consulta\ConsultaAction.cshtml" />
     <Content Include="Views\Consulta\ConsultaForm.cshtml" />
     <Content Include="Views\Consulta\ConsultaInfo.cshtml" />
@@ -318,24 +289,8 @@
     <Content Include="Views\Consulta\ExameDadosTableList.cshtml" />
     <Content Include="Views\Consulta\ExameImagemTableList.cshtml" />
     <Content Include="Views\Consulta\DadosGeraisForm.cshtml" />
-    <Content Include="Views\Cirurgia\CirurgiaAction.cshtml" />
-    <Content Include="Views\Cirurgia\CirurgiaForm.cshtml" />
-    <Content Include="Views\Cirurgia\CirurgiaSearch.cshtml" />
-    <Content Include="Views\Cirurgia\CirurgiaTableList.cshtml" />
     <Content Include="Views\Chart\IndexChart.cshtml" />
     <Content Include="Views\Consulta\HoraConsultaComboBox.cshtml" />
-    <Content Include="Views\Shared\CidadeAction.cshtml">
-      <DependentUpon>EntityAction.tt</DependentUpon>
-    </Content>
-    <Content Include="Views\Shared\CidadeComboBox.cshtml">
-      <DependentUpon>EntityComboBox.tt</DependentUpon>
-    </Content>
-    <Content Include="Views\Shared\CreateCidade.cshtml">
-      <DependentUpon>EntityCreate.tt</DependentUpon>
-    </Content>
-    <Content Include="Views\Shared\CreateEstado.cshtml">
-      <DependentUpon>EntityCreate.tt</DependentUpon>
-    </Content>
     <Content Include="Views\Shared\CreateLogin.cshtml">
       <DependentUpon>EntityCreate.tt</DependentUpon>
     </Content>
@@ -347,12 +302,6 @@
     </Content>
     <Content Include="Views\Shared\CreateSubMenu.cshtml">
       <DependentUpon>EntityCreate.tt</DependentUpon>
-    </Content>
-    <Content Include="Views\Shared\EditCidade.cshtml">
-      <DependentUpon>EntityEdit.tt</DependentUpon>
-    </Content>
-    <Content Include="Views\Shared\EditEstado.cshtml">
-      <DependentUpon>EntityEdit.tt</DependentUpon>
     </Content>
     <Content Include="Views\Shared\EditLogin.cshtml">
       <DependentUpon>EntityEdit.tt</DependentUpon>
@@ -366,21 +315,12 @@
     <Content Include="Views\Shared\EditSubMenu.cshtml">
       <DependentUpon>EntityEdit.tt</DependentUpon>
     </Content>
-    <Content Include="Views\Shared\CidadeForm.cshtml">
-      <DependentUpon>EntityForm.tt</DependentUpon>
-    </Content>
-    <Content Include="Views\Shared\CidadeInfo.cshtml">
-      <DependentUpon>EntityInfo.tt</DependentUpon>
-    </Content>
-    <Content Include="Views\Shared\CidadeList.cshtml">
-      <DependentUpon>EntityList.tt</DependentUpon>
-    </Content>
-    <Content Include="Views\Shared\CidadeSearch.cshtml">
-      <DependentUpon>EntitySearch.tt</DependentUpon>
-    </Content>
-    <Content Include="Views\Shared\CidadeTableList.cshtml">
-      <DependentUpon>EntityTableList.tt</DependentUpon>
-    </Content>
+    <Content Include="Views\Optimization\Index.cshtml" />
+    <Content Include="Views\Optimization\StackList.cshtml" />
+    <Content Include="Views\Optimization\StackHarbor.cshtml" />
+    <Content Include="Views\Optimization\StackOptimizationResult.cshtml" />
+    <Content Include="Views\Optimization\StackChart.cshtml" />
+    <Content Include="Views\Optimization\StackResultInfo.cshtml" />
     <None Include="Views\Shared\EntityComboBox.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>EntityComboBox.cshtml</LastGenOutput>
@@ -478,13 +418,8 @@
     <Content Include="Views\Shared\TimePicker.cshtml" />
     <Content Include="Views\Shared\CustomSummary.cshtml" />
     <Content Include="Views\Shared\Home.cshtml" />
-    <Content Include="Views\Shared\UploadFile.cshtml" />
     <Content Include="Views\Shared\Modal.cshtml" />
-    <Content Include="Views\Shared\ModalImage.cshtml" />
     <Content Include="Views\Shared\ViewBagMessage.cshtml" />
-    <Content Include="Views\Shared\EstadoAction.cshtml">
-      <DependentUpon>EntityAction.tt</DependentUpon>
-    </Content>
     <Content Include="Views\Shared\LoginAction.cshtml">
       <DependentUpon>EntityAction.tt</DependentUpon>
     </Content>
@@ -496,9 +431,6 @@
     </Content>
     <Content Include="Views\Shared\SubMenuAction.cshtml">
       <DependentUpon>EntityAction.tt</DependentUpon>
-    </Content>
-    <Content Include="Views\Shared\EstadoComboBox.cshtml">
-      <DependentUpon>EntityComboBox.tt</DependentUpon>
     </Content>
     <Content Include="Views\Shared\LoginComboBox.cshtml">
       <DependentUpon>EntityComboBox.tt</DependentUpon>
@@ -512,9 +444,6 @@
     <Content Include="Views\Shared\SubMenuComboBox.cshtml">
       <DependentUpon>EntityComboBox.tt</DependentUpon>
     </Content>
-    <Content Include="Views\Shared\EstadoForm.cshtml">
-      <DependentUpon>EntityForm.tt</DependentUpon>
-    </Content>
     <Content Include="Views\Shared\LoginForm.cshtml">
       <DependentUpon>EntityForm.tt</DependentUpon>
     </Content>
@@ -526,12 +455,6 @@
     </Content>
     <Content Include="Views\Shared\SubMenuForm.cshtml">
       <DependentUpon>EntityForm.tt</DependentUpon>
-    </Content>
-    <Content Include="Views\Shared\IndexCidade.cshtml">
-      <DependentUpon>EntityIndex.tt</DependentUpon>
-    </Content>
-    <Content Include="Views\Shared\IndexEstado.cshtml">
-      <DependentUpon>EntityIndex.tt</DependentUpon>
     </Content>
     <Content Include="Views\Shared\IndexLogin.cshtml">
       <DependentUpon>EntityIndex.tt</DependentUpon>
@@ -545,9 +468,6 @@
     <Content Include="Views\Shared\IndexSubMenu.cshtml">
       <DependentUpon>EntityIndex.tt</DependentUpon>
     </Content>
-    <Content Include="Views\Shared\EstadoInfo.cshtml">
-      <DependentUpon>EntityInfo.tt</DependentUpon>
-    </Content>
     <Content Include="Views\Shared\LoginInfo.cshtml">
       <DependentUpon>EntityInfo.tt</DependentUpon>
     </Content>
@@ -559,9 +479,6 @@
     </Content>
     <Content Include="Views\Shared\SubMenuInfo.cshtml">
       <DependentUpon>EntityInfo.tt</DependentUpon>
-    </Content>
-    <Content Include="Views\Shared\EstadoList.cshtml">
-      <DependentUpon>EntityList.tt</DependentUpon>
     </Content>
     <Content Include="Views\Shared\LoginList.cshtml">
       <DependentUpon>EntityList.tt</DependentUpon>
@@ -575,9 +492,6 @@
     <Content Include="Views\Shared\SubMenuList.cshtml">
       <DependentUpon>EntityList.tt</DependentUpon>
     </Content>
-    <Content Include="Views\Shared\EstadoSearch.cshtml">
-      <DependentUpon>EntitySearch.tt</DependentUpon>
-    </Content>
     <Content Include="Views\Shared\LoginSearch.cshtml">
       <DependentUpon>EntitySearch.tt</DependentUpon>
     </Content>
@@ -589,9 +503,6 @@
     </Content>
     <Content Include="Views\Shared\SubMenuSearch.cshtml">
       <DependentUpon>EntitySearch.tt</DependentUpon>
-    </Content>
-    <Content Include="Views\Shared\EstadoTableList.cshtml">
-      <DependentUpon>EntityTableList.tt</DependentUpon>
     </Content>
     <Content Include="Views\Shared\LoginTableList.cshtml">
       <DependentUpon>EntityTableList.tt</DependentUpon>
@@ -641,7 +552,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>58413</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

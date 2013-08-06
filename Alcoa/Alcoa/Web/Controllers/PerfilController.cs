@@ -50,12 +50,12 @@ namespace WebControllers
                 DataController.Controllers.GetMasterData();
             if (UserManager.User == null)
             {
-                return new MenuModel() { m_Login = new LoginModel() { Email = "Nenhum", Perfil = new PerfilModel() { Nome = "Desconectado" } } };
+                return new MenuModel() { m_Login = new LoginModel() { Email = "Nenhum", Perfil = new PerfilModel() { Name = "Desconectado" } } };
             }
             Model.LoginModel v_Login = v_Controller.GetLoginPeloEmail(UserManager.User.Email);
             if (v_Login == null)
             {
-                return new MenuModel() { m_Login = new LoginModel() { Email = "Nenhum", Perfil = new PerfilModel() { Nome = "Desconectado" } } };
+                return new MenuModel() { m_Login = new LoginModel() { Email = "Nenhum", Perfil = new PerfilModel() { Name = "Desconectado" } } };
             }
             List<Model.MenuModel> v_MenuList = v_Login.Perfil.SubMenu.ToList()
                 .Select(model => model.Menu).Distinct().ToList();
@@ -66,17 +66,17 @@ namespace WebControllers
 
                 DropdownModel v_DropDown = new DropdownModel();
                 v_DropDown.m_SubMenu = new List<DropDownSubMenuModel>();
-                v_DropDown.m_DropDownMenu = i_Menu.Nome;
+                v_DropDown.m_DropDownMenu = i_Menu.Name;
                 v_DropDown.m_IconClS = i_Menu.ClassName;
                 List<Model.SubMenuModel> v_SubMenuList = v_Login.Perfil.SubMenu
-                    .Where(model => model.Menu.Nome == v_DropDown.m_DropDownMenu)
+                    .Where(model => model.Menu.Name == v_DropDown.m_DropDownMenu)
                         .ToList();
 
                 foreach (var i_SubMenu in v_SubMenuList)
                 {
                     DropDownSubMenuModel v_SubMenuDropDown = new DropDownSubMenuModel();
-                    v_SubMenuDropDown.m_Titulo = i_SubMenu.Nome;
-                    v_SubMenuDropDown.m_Link = i_SubMenu.Link;
+                    v_SubMenuDropDown.m_Title= i_SubMenu.Name;
+                    v_SubMenuDropDown.m_Url = i_SubMenu.Url;
                     v_SubMenuDropDown.m_IconClS = i_SubMenu.ClassName;
                     v_DropDown.m_SubMenu.Add(v_SubMenuDropDown);
                 }

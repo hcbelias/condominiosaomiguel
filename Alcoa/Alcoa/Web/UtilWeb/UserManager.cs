@@ -81,7 +81,7 @@ namespace Web.UtilWeb
                     Id = v_Login.Id,
                     Email = v_Login.Email,
                     PerfilId = v_Login.Perfil.Id,
-                    Perfil = v_Login.Perfil.Nome
+                    Perfil = v_Login.Perfil.Name
                 };
             }
             return v_User;

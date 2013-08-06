@@ -49,13 +49,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="DAL\CidadeDAL.cs" />
-    <Compile Include="DAL\DALCidade.cs">
-      <DependentUpon>EntityDAL.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAL\DALEstado.cs">
-      <DependentUpon>EntityDAL.tt</DependentUpon>
-    </Compile>
     <Compile Include="DAL\DALLogin.cs">
       <DependentUpon>EntityDAL.tt</DependentUpon>
     </Compile>
@@ -71,7 +64,6 @@
     <Compile Include="DAL\SubMenuDAL.cs" />
     <Compile Include="DAL\MenuDAL.cs" />
     <Compile Include="DAL\LoginDAL.cs" />
-    <Compile Include="DAL\EstadoDAL.cs" />
     <Compile Include="DAL\PerfilDAL.cs" />
     <Compile Include="DataContext.cs" />
     <Compile Include="DataModel1.Designer.cs">

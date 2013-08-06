@@ -54,8 +54,6 @@ namespace WebControllers
             return Json(new JavaScriptSerializer().Serialize(nameValueCollection));
         }
 
-
-
         new public virtual ActionResult OnCreate(BaseModel p_Model)
         {
             throw new NotImplementedException();
@@ -85,18 +83,6 @@ namespace WebControllers
         public virtual BaseModel GetModelInfo(Int32 p_Identifier)
         {
             throw new NotImplementedException();
-        }
-
-        public string ToHtml(string viewToRender, ViewDataDictionary viewData, ControllerContext controllerContext)
-        {
-            var result = ViewEngines.Engines.FindView(controllerContext, viewToRender, null);
-
-            var output = new StringWriter();
-            var viewContext = new ViewContext(controllerContext, result.View, viewData, controllerContext.Controller.TempData, output);
-            result.View.Render(viewContext, output);
-            result.ViewEngine.ReleaseView(controllerContext, result.View);
-
-            return output.ToString();
         }
 
         public void SetErrorMessage(string p_Message)
@@ -172,7 +158,7 @@ namespace WebControllers
             Util.Enum.Perfil v_Perfil;
 
             bool v_Success = Util.Enum.Perfil.TryParse(
-                DataController.Controllers.GetMasterData().GetLoginPeloEmail(p_Email).Perfil.Nome, out v_Perfil);
+                DataController.Controllers.GetMasterData().GetLoginPeloEmail(p_Email).Perfil.Name, out v_Perfil);
             return v_Success ? v_Perfil : Util.Enum.Perfil.Desconhecido;
         }
 

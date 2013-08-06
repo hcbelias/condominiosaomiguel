@@ -10,7 +10,7 @@ namespace DAL
     {
         public void setCombobox()
         {
-            this.ComboboxText = this.Link;
+            this.ComboboxText = this.Url;
         }
 
     }

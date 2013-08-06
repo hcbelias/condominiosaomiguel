@@ -8,18 +8,12 @@
   <EntityContainer Name="DataModelStoreContainer">
     <EntitySet Name="Login" EntityType="DataModel.Store.Login" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Perfil" EntityType="DataModel.Store.Perfil" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Cidade" EntityType="DataModel.Store.Cidade" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Estado" EntityType="DataModel.Store.Estado" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Menu" EntityType="DataModel.Store.Menu" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="SubMenu" EntityType="DataModel.Store.SubMenu" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="SubMenuPerfil" EntityType="DataModel.Store.SubMenuPerfil" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="PerfilLogin" Association="DataModel.Store.PerfilLogin">
       <End EntitySet="Perfil" Role="Perfil" />
       <End EntitySet="Login" Role="Login" />
-    </AssociationSet>
-    <AssociationSet Name="EstadoCidade" Association="DataModel.Store.EstadoCidade">
-      <End EntitySet="Estado" Role="Estado" />
-      <End EntitySet="Cidade" Role="Cidade" />
     </AssociationSet>
     <AssociationSet Name="MenuSubMenu" Association="DataModel.Store.MenuSubMenu">
       <End EntitySet="Menu" Role="Menu" />
@@ -49,22 +43,6 @@
     </Key>
     <Property Name="Id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
     <Property Name="Nome" Nullable="false" Type="nvarchar(max)" />
-  </EntityType>
-  <EntityType Name="Cidade">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
-    <Property Name="Nome" Nullable="false" Type="nvarchar(max)" />
-    <Property Name="Estado_Id" Nullable="false" Type="int" />
-  </EntityType>
-  <EntityType Name="Estado">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
-    <Property Name="Nome" Nullable="false" Type="nvarchar(max)" />
-    <Property Name="Sigla" Nullable="false" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="Menu">
     <Key>
@@ -101,18 +79,6 @@
       </Principal>
       <Dependent Role="Login">
         <PropertyRef Name="Perfil_Id" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="EstadoCidade">
-    <End Type="DataModel.Store.Estado" Multiplicity="1" Role="Estado" />
-    <End Type="DataModel.Store.Cidade" Multiplicity="*" Role="Cidade" />
-    <ReferentialConstraint>
-      <Principal Role="Estado">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="Cidade">
-        <PropertyRef Name="Estado_Id" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -163,12 +129,6 @@
             <End EntitySet="Perfil" Role="Perfil" />
             <End EntitySet="Login" Role="Login" />
           </AssociationSet>
-          <EntitySet Name="Cidade" EntityType="DataModel.Cidade" />
-          <EntitySet Name="Estado" EntityType="DataModel.Estado" />
-          <AssociationSet Name="EstadoCidade" Association="DataModel.EstadoCidade">
-            <End EntitySet="Estado" Role="Estado" />
-            <End EntitySet="Cidade" Role="Cidade" />
-          </AssociationSet>
           <EntitySet Name="Menu" EntityType="DataModel.Menu" />
           <EntitySet Name="SubMenu" EntityType="DataModel.SubMenu" />
           <AssociationSet Name="MenuSubMenu" Association="DataModel.MenuSubMenu">
@@ -195,33 +155,12 @@
           </Key>
           <Property Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
           <NavigationProperty Name="Login" Relationship="DataModel.PerfilLogin" FromRole="Perfil" ToRole="Login" />
-          <Property Name="Nome" Nullable="false" Type="String" />
+          <Property Name="Name" Nullable="false" Type="String" />
           <NavigationProperty Name="SubMenu" Relationship="DataModel.SubMenuPerfil" FromRole="Perfil" ToRole="SubMenu" />
         </EntityType>
         <Association Name="PerfilLogin">
           <End Type="DataModel.Perfil" Multiplicity="1" Role="Perfil" />
           <End Type="DataModel.Login" Multiplicity="*" Role="Login" />
-        </Association>
-        <EntityType Name="Cidade">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
-          <NavigationProperty Name="Estado" Relationship="DataModel.EstadoCidade" FromRole="Cidade" ToRole="Estado" />
-          <Property Name="Nome" Nullable="false" Type="String" />
-        </EntityType>
-        <EntityType Name="Estado">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
-          <NavigationProperty Name="Cidade" Relationship="DataModel.EstadoCidade" FromRole="Estado" ToRole="Cidade" />
-          <Property Name="Nome" Nullable="false" Type="String" />
-          <Property Name="Sigla" Nullable="false" Type="String" />
-        </EntityType>
-        <Association Name="EstadoCidade">
-          <End Type="DataModel.Estado" Multiplicity="1" Role="Estado" />
-          <End Type="DataModel.Cidade" Multiplicity="*" Role="Cidade" />
         </Association>
         <EntityType Name="Menu">
           <Key>
@@ -229,7 +168,7 @@
           </Key>
           <Property Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
           <NavigationProperty Name="SubMenu" Relationship="DataModel.MenuSubMenu" FromRole="Menu" ToRole="SubMenu" />
-          <Property Name="Nome" Nullable="false" Type="String" />
+          <Property Name="Name" Nullable="false" Type="String" />
           <Property Name="ClassName" Nullable="true" Type="String" />
         </EntityType>
         <EntityType Name="SubMenu">
@@ -239,8 +178,8 @@
           <Property Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
           <NavigationProperty Name="Menu" Relationship="DataModel.MenuSubMenu" FromRole="SubMenu" ToRole="Menu" />
           <NavigationProperty Name="Perfil" Relationship="DataModel.SubMenuPerfil" FromRole="SubMenu" ToRole="Perfil" />
-          <Property Name="Nome" Nullable="false" Type="String" />
-          <Property Name="Link" Nullable="false" Type="String" />
+          <Property Name="Name" Nullable="false" Type="String" />
+          <Property Name="Url" Nullable="false" Type="String" />
           <Property Name="ClassName" Nullable="true" Type="String" />
         </EntityType>
         <Association Name="MenuSubMenu">
@@ -270,24 +209,7 @@
       <EntityTypeMapping TypeName="IsTypeOf(DataModel.Perfil)">
         <MappingFragment StoreEntitySet="Perfil">
           <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Nome" ColumnName="Nome" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Cidade">
-      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Cidade)">
-        <MappingFragment StoreEntitySet="Cidade">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Nome" ColumnName="Nome" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Estado">
-      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Estado)">
-        <MappingFragment StoreEntitySet="Estado">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Nome" ColumnName="Nome" />
-          <ScalarProperty Name="Sigla" ColumnName="Sigla" />
+          <ScalarProperty Name="Name" ColumnName="Nome" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -295,7 +217,7 @@
       <EntityTypeMapping TypeName="IsTypeOf(DataModel.Menu)">
         <MappingFragment StoreEntitySet="Menu">
           <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Name" ColumnName="Nome" />
           <ScalarProperty Name="ClassName" ColumnName="ClassName" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -304,8 +226,8 @@
       <EntityTypeMapping TypeName="IsTypeOf(DataModel.SubMenu)">
         <MappingFragment StoreEntitySet="SubMenu">
           <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Nome" ColumnName="Nome" />
-          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Name" ColumnName="Nome" />
+          <ScalarProperty Name="Url" ColumnName="Link" />
           <ScalarProperty Name="ClassName" ColumnName="ClassName" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -315,14 +237,6 @@
         <ScalarProperty Name="Id" ColumnName="Perfil_Id" />
       </EndProperty>
       <EndProperty Name="Login">
-        <ScalarProperty Name="Id" ColumnName="Id" />
-      </EndProperty>
-    </AssociationSetMapping>
-    <AssociationSetMapping Name="EstadoCidade" TypeName="DataModel.EstadoCidade" StoreEntitySet="Cidade">
-      <EndProperty Name="Estado">
-        <ScalarProperty Name="Id" ColumnName="Estado_Id" />
-      </EndProperty>
-      <EndProperty Name="Cidade">
         <ScalarProperty Name="Id" ColumnName="Id" />
       </EndProperty>
     </AssociationSetMapping>
@@ -368,12 +282,6 @@
         <AssociationConnector Association="DataModel.PerfilLogin">
           <ConnectorPoint PointX="6.75" PointY="2.0189925130208337" />
           <ConnectorPoint PointX="7.5" PointY="2.0189925130208337" />
-        </AssociationConnector>
-        <EntityTypeShape EntityType="DataModel.Cidade" PointX="3" PointY="5" Width="1.5" Height="1.5956835937500031" />
-        <EntityTypeShape EntityType="DataModel.Estado" PointX="0.75" PointY="4.875" Width="1.5" Height="1.7879850268363953" />
-        <AssociationConnector Association="DataModel.EstadoCidade">
-          <ConnectorPoint PointX="2.25" PointY="5.7978417968750016" />
-          <ConnectorPoint PointX="3" PointY="5.7978417968750016" />
         </AssociationConnector>
         <EntityTypeShape EntityType="DataModel.Menu" PointX="0.75" PointY="1.125" Width="1.5" Height="1.7879850268363953" />
         <EntityTypeShape EntityType="DataModel.SubMenu" PointX="3" PointY="0.875" Width="1.5" Height="2.1725878901779652" />

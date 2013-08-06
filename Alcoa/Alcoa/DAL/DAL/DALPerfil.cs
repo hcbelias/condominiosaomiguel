@@ -64,7 +64,7 @@ namespace DAL
     			return new Perfil();
     		Perfil v_NewPerfil = new Perfil();
     		v_NewPerfil.Id = p_Model.Id;
-    		v_NewPerfil.Nome = p_Model.Nome;
+    		v_NewPerfil.Name = p_Model.Name;
     		v_NewPerfil.ComboboxText = p_Model.ComboboxText;
     		return v_NewPerfil;
     	}
@@ -92,7 +92,7 @@ namespace DAL
     		if(p_Model == null)
     			return ;
     
-    		this.Nome = p_Model.Nome;
+    		this.Name = p_Model.Name;
     	}
     
     

@@ -44,10 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseModel.cs" />
-    <Compile Include="Cidade.Model.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\CidadeModel.cs" />
     <Compile Include="Data\ComboBoxModel.cs" />
     <Compile Include="Data\DropDownModel.cs" />
     <Compile Include="Data\HomeModel.cs" />
@@ -56,9 +52,6 @@
     <Compile Include="Data\SubMenuModel.cs" />
     <Compile Include="Data\LoginModel.cs" />
     <Compile Include="Data\IModel.cs" />
-    <Compile Include="Estado.Model.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
     <Compile Include="Login.Model.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>

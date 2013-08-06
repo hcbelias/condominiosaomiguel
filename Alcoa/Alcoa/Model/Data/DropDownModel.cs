@@ -17,9 +17,9 @@ namespace Model
 
     public class DropDownSubMenuModel
     {
-        public String m_Titulo;
+        public String m_Title;
 
-        public String m_Link;
+        public String m_Url;
 
         public String m_IconClS;
     }

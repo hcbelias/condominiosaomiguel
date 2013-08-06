@@ -12,13 +12,13 @@ namespace Model
 
         public bool Equals(MenuModel p_Menu)
         {
-            return this.Nome == p_Menu.Nome;
+            return this.Name == p_Menu.Name;
         }
 
         public override int GetHashCode()
         {
             int v_Hash = 17;
-            v_Hash = v_Hash * 23 + this.Nome.GetHashCode();
+            v_Hash = v_Hash * 23 + this.Name.GetHashCode();
             return v_Hash;
         }
 

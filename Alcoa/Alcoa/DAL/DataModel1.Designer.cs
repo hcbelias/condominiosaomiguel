@@ -20,7 +20,6 @@ using System.Xml.Serialization;
 #region EDM Relationship Metadata
 
 [assembly: EdmRelationshipAttribute("DataModel", "PerfilLogin", "Perfil", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DAL.Perfil), "Login", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DAL.Login))]
-[assembly: EdmRelationshipAttribute("DataModel", "EstadoCidade", "Estado", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DAL.Estado), "Cidade", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DAL.Cidade))]
 [assembly: EdmRelationshipAttribute("DataModel", "MenuSubMenu", "Menu", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DAL.Menu), "SubMenu", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DAL.SubMenu))]
 [assembly: EdmRelationshipAttribute("DataModel", "SubMenuPerfil", "SubMenu", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DAL.SubMenu), "Perfil", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DAL.Perfil))]
 
@@ -109,38 +108,6 @@ namespace DAL
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        public ObjectSet<Cidade> Cidade
-        {
-            get
-            {
-                if ((_Cidade == null))
-                {
-                    _Cidade = base.CreateObjectSet<Cidade>("Cidade");
-                }
-                return _Cidade;
-            }
-        }
-        private ObjectSet<Cidade> _Cidade;
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        public ObjectSet<Estado> Estado
-        {
-            get
-            {
-                if ((_Estado == null))
-                {
-                    _Estado = base.CreateObjectSet<Estado>("Estado");
-                }
-                return _Estado;
-            }
-        }
-        private ObjectSet<Estado> _Estado;
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
         public ObjectSet<Menu> Menu
         {
             get
@@ -191,22 +158,6 @@ namespace DAL
         }
     
         /// <summary>
-        /// Deprecated Method for adding a new object to the Cidade EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
-        /// </summary>
-        public void AddToCidade(Cidade cidade)
-        {
-            base.AddObject("Cidade", cidade);
-        }
-    
-        /// <summary>
-        /// Deprecated Method for adding a new object to the Estado EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
-        /// </summary>
-        public void AddToEstado(Estado estado)
-        {
-            base.AddObject("Estado", estado);
-        }
-    
-        /// <summary>
         /// Deprecated Method for adding a new object to the Menu EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
         public void AddToMenu(Menu menu)
@@ -229,266 +180,6 @@ namespace DAL
     #endregion
 
     #region Entities
-    
-    /// <summary>
-    /// No Metadata Documentation available.
-    /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="DataModel", Name="Cidade")]
-    [Serializable()]
-    [DataContractAttribute(IsReference=true)]
-    public partial class Cidade : EntityObject
-    {
-        #region Factory Method
-    
-        /// <summary>
-        /// Create a new Cidade object.
-        /// </summary>
-        /// <param name="id">Initial value of the Id property.</param>
-        /// <param name="nome">Initial value of the Nome property.</param>
-        public static Cidade CreateCidade(global::System.Int32 id, global::System.String nome)
-        {
-            Cidade cidade = new Cidade();
-            cidade.Id = id;
-            cidade.Nome = nome;
-            return cidade;
-        }
-
-        #endregion
-
-        #region Primitive Properties
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.Int32 Id
-        {
-            get
-            {
-                return _Id;
-            }
-            set
-            {
-                if (_Id != value)
-                {
-                    OnIdChanging(value);
-                    ReportPropertyChanging("Id");
-                    _Id = StructuralObject.SetValidValue(value);
-                    ReportPropertyChanged("Id");
-                    OnIdChanged();
-                }
-            }
-        }
-        private global::System.Int32 _Id;
-        partial void OnIdChanging(global::System.Int32 value);
-        partial void OnIdChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.String Nome
-        {
-            get
-            {
-                return _Nome;
-            }
-            set
-            {
-                OnNomeChanging(value);
-                ReportPropertyChanging("Nome");
-                _Nome = StructuralObject.SetValidValue(value, false);
-                ReportPropertyChanged("Nome");
-                OnNomeChanged();
-            }
-        }
-        private global::System.String _Nome;
-        partial void OnNomeChanging(global::System.String value);
-        partial void OnNomeChanged();
-
-        #endregion
-
-    
-        #region Navigation Properties
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [XmlIgnoreAttribute()]
-        [SoapIgnoreAttribute()]
-        [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("DataModel", "EstadoCidade", "Estado")]
-        public Estado Estado
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Estado>("DataModel.EstadoCidade", "Estado").Value;
-            }
-            set
-            {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Estado>("DataModel.EstadoCidade", "Estado").Value = value;
-            }
-        }
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [BrowsableAttribute(false)]
-        [DataMemberAttribute()]
-        public EntityReference<Estado> EstadoReference
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Estado>("DataModel.EstadoCidade", "Estado");
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Estado>("DataModel.EstadoCidade", "Estado", value);
-                }
-            }
-        }
-
-        #endregion
-
-    }
-    
-    /// <summary>
-    /// No Metadata Documentation available.
-    /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="DataModel", Name="Estado")]
-    [Serializable()]
-    [DataContractAttribute(IsReference=true)]
-    public partial class Estado : EntityObject
-    {
-        #region Factory Method
-    
-        /// <summary>
-        /// Create a new Estado object.
-        /// </summary>
-        /// <param name="id">Initial value of the Id property.</param>
-        /// <param name="nome">Initial value of the Nome property.</param>
-        /// <param name="sigla">Initial value of the Sigla property.</param>
-        public static Estado CreateEstado(global::System.Int32 id, global::System.String nome, global::System.String sigla)
-        {
-            Estado estado = new Estado();
-            estado.Id = id;
-            estado.Nome = nome;
-            estado.Sigla = sigla;
-            return estado;
-        }
-
-        #endregion
-
-        #region Primitive Properties
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.Int32 Id
-        {
-            get
-            {
-                return _Id;
-            }
-            set
-            {
-                if (_Id != value)
-                {
-                    OnIdChanging(value);
-                    ReportPropertyChanging("Id");
-                    _Id = StructuralObject.SetValidValue(value);
-                    ReportPropertyChanged("Id");
-                    OnIdChanged();
-                }
-            }
-        }
-        private global::System.Int32 _Id;
-        partial void OnIdChanging(global::System.Int32 value);
-        partial void OnIdChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.String Nome
-        {
-            get
-            {
-                return _Nome;
-            }
-            set
-            {
-                OnNomeChanging(value);
-                ReportPropertyChanging("Nome");
-                _Nome = StructuralObject.SetValidValue(value, false);
-                ReportPropertyChanged("Nome");
-                OnNomeChanged();
-            }
-        }
-        private global::System.String _Nome;
-        partial void OnNomeChanging(global::System.String value);
-        partial void OnNomeChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.String Sigla
-        {
-            get
-            {
-                return _Sigla;
-            }
-            set
-            {
-                OnSiglaChanging(value);
-                ReportPropertyChanging("Sigla");
-                _Sigla = StructuralObject.SetValidValue(value, false);
-                ReportPropertyChanged("Sigla");
-                OnSiglaChanged();
-            }
-        }
-        private global::System.String _Sigla;
-        partial void OnSiglaChanging(global::System.String value);
-        partial void OnSiglaChanged();
-
-        #endregion
-
-    
-        #region Navigation Properties
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [XmlIgnoreAttribute()]
-        [SoapIgnoreAttribute()]
-        [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("DataModel", "EstadoCidade", "Cidade")]
-        public EntityCollection<Cidade> Cidade
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Cidade>("DataModel.EstadoCidade", "Cidade");
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Cidade>("DataModel.EstadoCidade", "Cidade", value);
-                }
-            }
-        }
-
-        #endregion
-
-    }
     
     /// <summary>
     /// No Metadata Documentation available.
@@ -655,12 +346,12 @@ namespace DAL
         /// Create a new Menu object.
         /// </summary>
         /// <param name="id">Initial value of the Id property.</param>
-        /// <param name="nome">Initial value of the Nome property.</param>
-        public static Menu CreateMenu(global::System.Int32 id, global::System.String nome)
+        /// <param name="name">Initial value of the Name property.</param>
+        public static Menu CreateMenu(global::System.Int32 id, global::System.String name)
         {
             Menu menu = new Menu();
             menu.Id = id;
-            menu.Nome = nome;
+            menu.Name = name;
             return menu;
         }
 
@@ -700,24 +391,24 @@ namespace DAL
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
         [DataMemberAttribute()]
-        public global::System.String Nome
+        public global::System.String Name
         {
             get
             {
-                return _Nome;
+                return _Name;
             }
             set
             {
-                OnNomeChanging(value);
-                ReportPropertyChanging("Nome");
-                _Nome = StructuralObject.SetValidValue(value, false);
-                ReportPropertyChanged("Nome");
-                OnNomeChanged();
+                OnNameChanging(value);
+                ReportPropertyChanging("Name");
+                _Name = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("Name");
+                OnNameChanged();
             }
         }
-        private global::System.String _Nome;
-        partial void OnNomeChanging(global::System.String value);
-        partial void OnNomeChanged();
+        private global::System.String _Name;
+        partial void OnNameChanging(global::System.String value);
+        partial void OnNameChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -788,12 +479,12 @@ namespace DAL
         /// Create a new Perfil object.
         /// </summary>
         /// <param name="id">Initial value of the Id property.</param>
-        /// <param name="nome">Initial value of the Nome property.</param>
-        public static Perfil CreatePerfil(global::System.Int32 id, global::System.String nome)
+        /// <param name="name">Initial value of the Name property.</param>
+        public static Perfil CreatePerfil(global::System.Int32 id, global::System.String name)
         {
             Perfil perfil = new Perfil();
             perfil.Id = id;
-            perfil.Nome = nome;
+            perfil.Name = name;
             return perfil;
         }
 
@@ -833,24 +524,24 @@ namespace DAL
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
         [DataMemberAttribute()]
-        public global::System.String Nome
+        public global::System.String Name
         {
             get
             {
-                return _Nome;
+                return _Name;
             }
             set
             {
-                OnNomeChanging(value);
-                ReportPropertyChanging("Nome");
-                _Nome = StructuralObject.SetValidValue(value, false);
-                ReportPropertyChanged("Nome");
-                OnNomeChanged();
+                OnNameChanging(value);
+                ReportPropertyChanging("Name");
+                _Name = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("Name");
+                OnNameChanged();
             }
         }
-        private global::System.String _Nome;
-        partial void OnNomeChanging(global::System.String value);
-        partial void OnNomeChanged();
+        private global::System.String _Name;
+        partial void OnNameChanging(global::System.String value);
+        partial void OnNameChanged();
 
         #endregion
 
@@ -919,14 +610,14 @@ namespace DAL
         /// Create a new SubMenu object.
         /// </summary>
         /// <param name="id">Initial value of the Id property.</param>
-        /// <param name="nome">Initial value of the Nome property.</param>
-        /// <param name="link">Initial value of the Link property.</param>
-        public static SubMenu CreateSubMenu(global::System.Int32 id, global::System.String nome, global::System.String link)
+        /// <param name="name">Initial value of the Name property.</param>
+        /// <param name="url">Initial value of the Url property.</param>
+        public static SubMenu CreateSubMenu(global::System.Int32 id, global::System.String name, global::System.String url)
         {
             SubMenu subMenu = new SubMenu();
             subMenu.Id = id;
-            subMenu.Nome = nome;
-            subMenu.Link = link;
+            subMenu.Name = name;
+            subMenu.Url = url;
             return subMenu;
         }
 
@@ -966,48 +657,48 @@ namespace DAL
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
         [DataMemberAttribute()]
-        public global::System.String Nome
+        public global::System.String Name
         {
             get
             {
-                return _Nome;
+                return _Name;
             }
             set
             {
-                OnNomeChanging(value);
-                ReportPropertyChanging("Nome");
-                _Nome = StructuralObject.SetValidValue(value, false);
-                ReportPropertyChanged("Nome");
-                OnNomeChanged();
+                OnNameChanging(value);
+                ReportPropertyChanging("Name");
+                _Name = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("Name");
+                OnNameChanged();
             }
         }
-        private global::System.String _Nome;
-        partial void OnNomeChanging(global::System.String value);
-        partial void OnNomeChanged();
+        private global::System.String _Name;
+        partial void OnNameChanging(global::System.String value);
+        partial void OnNameChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
         [DataMemberAttribute()]
-        public global::System.String Link
+        public global::System.String Url
         {
             get
             {
-                return _Link;
+                return _Url;
             }
             set
             {
-                OnLinkChanging(value);
-                ReportPropertyChanging("Link");
-                _Link = StructuralObject.SetValidValue(value, false);
-                ReportPropertyChanged("Link");
-                OnLinkChanged();
+                OnUrlChanging(value);
+                ReportPropertyChanging("Url");
+                _Url = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("Url");
+                OnUrlChanged();
             }
         }
-        private global::System.String _Link;
-        partial void OnLinkChanging(global::System.String value);
-        partial void OnLinkChanged();
+        private global::System.String _Url;
+        partial void OnUrlChanging(global::System.String value);
+        partial void OnUrlChanged();
     
         /// <summary>
         /// No Metadata Documentation available.

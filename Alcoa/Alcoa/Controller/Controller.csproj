@@ -50,12 +50,6 @@
       <DependentUpon>EntityController.tt</DependentUpon>
     </Compile>
     <Compile Include="Controller\MasterDataController.cs" />
-    <Compile Include="Controller\MasterDataControllerCidade.cs">
-      <DependentUpon>EntityController.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Controller\MasterDataControllerEstado.cs">
-      <DependentUpon>EntityController.tt</DependentUpon>
-    </Compile>
     <Compile Include="Controller\MasterDataControllerLogin.cs">
       <DependentUpon>EntityController.tt</DependentUpon>
     </Compile>

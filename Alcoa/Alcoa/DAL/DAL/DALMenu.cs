@@ -64,7 +64,7 @@ namespace DAL
     			return new Menu();
     		Menu v_NewMenu = new Menu();
     		v_NewMenu.Id = p_Model.Id;
-    		v_NewMenu.Nome = p_Model.Nome;
+    		v_NewMenu.Name = p_Model.Name;
     		v_NewMenu.ClassName = p_Model.ClassName;
     		v_NewMenu.ComboboxText = p_Model.ComboboxText;
     		return v_NewMenu;
@@ -93,7 +93,7 @@ namespace DAL
     		if(p_Model == null)
     			return ;
     
-    		this.Nome = p_Model.Nome;
+    		this.Name = p_Model.Name;
     		this.ClassName = p_Model.ClassName;
     	}
     

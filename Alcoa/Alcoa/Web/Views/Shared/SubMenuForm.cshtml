@@ -25,21 +25,21 @@
 	@Html.HiddenFor(model => model.Id)
 			<div class="control-group">
 				<label class="control-label" >
-					@Html.LabelFor(model=>model.Nome)</label>
+					@Html.LabelFor(model=>model.Name)</label>
 				<div class="controls">
-				    @Html.EditorFor(model => model.Nome)
+				    @Html.EditorFor(model => model.Name)
 					<br/>
-					@Html.ValidationMessageFor(model=>model.Nome)
+					@Html.ValidationMessageFor(model=>model.Name)
 				    
 				</div>
 			</div>
 			<div class="control-group">
 				<label class="control-label" >
-					@Html.LabelFor(model=>model.Link)</label>
+					@Html.LabelFor(model=>model.Url)</label>
 				<div class="controls">
-				    @Html.EditorFor(model => model.Link)
+				    @Html.EditorFor(model => model.Url)
 					<br/>
-					@Html.ValidationMessageFor(model=>model.Link)
+					@Html.ValidationMessageFor(model=>model.Url)
 				    
 				</div>
 			</div>
