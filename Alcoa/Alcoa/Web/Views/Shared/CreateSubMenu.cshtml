@@ -1,0 +1,18 @@
+@model Model.SubMenuModel
+
+@{
+    ViewBag.Title = Util.Constants.Page.CREATE +" Novo SubMenu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Boolean v_IsNewModel = Model == null || Model.Id == 0;
+}
+
+@Html.Partial("SubMenuForm", Model)
+
+
+@section Footer
+{
+	@Html.Partial("FooterEdition", !v_IsNewModel)   
+}
+
+
+   

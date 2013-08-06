@@ -1,0 +1,16 @@
+﻿@model Model.HomeModel
+@{
+    if (!String.IsNullOrEmpty(Model.Message) )
+    {
+        string classCSS = "alert alert-info";
+        if (!String.IsNullOrWhiteSpace(Model.ClassCSS))
+        {
+            classCSS = Model.ClassCSS;
+        }
+        
+        <div class="@classCSS">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            @Model.Message
+        </div>
+    }
+}

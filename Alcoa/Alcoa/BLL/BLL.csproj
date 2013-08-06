@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A7DB627-510C-4AEB-86B1-FA000978AA0A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLL</RootNamespace>
+    <AssemblyName>BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BaseBLL.cs" />
+    <Compile Include="BLL\BLLCidade.cs">
+      <DependentUpon>EntityBLL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\BLLEstado.cs">
+      <DependentUpon>EntityBLL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\BLLLogin.cs">
+      <DependentUpon>EntityBLL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\BLLMenu.cs">
+      <DependentUpon>EntityBLL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\BLLPerfil.cs">
+      <DependentUpon>EntityBLL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\BLLSubMenu.cs">
+      <DependentUpon>EntityBLL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\ChartBLL.cs" />
+    <Compile Include="BLL\HttpPostedFileBase.cs" />
+    <Compile Include="BLL\LoginBLL.cs" />
+    <Compile Include="BLL\PerfilBLL.cs" />
+    <Compile Include="BLL\EntityBLL.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityBLL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\SubMenuBLL.cs" />
+    <Compile Include="DTOAssembler\DTOAssembler.cs" />
+    <Compile Include="DTOAssembler\DTOAssembler2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DTOAssembler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTOAssembler\DTOAssemblerCidade.cs">
+      <DependentUpon>DTOAssembler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTOAssembler\DTOAssemblerEstado.cs">
+      <DependentUpon>DTOAssembler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTOAssembler\DTOAssemblerLogin.cs">
+      <DependentUpon>DTOAssembler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTOAssembler\DTOAssemblerMenu.cs">
+      <DependentUpon>DTOAssembler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTOAssembler\DTOAssemblerPerfil.cs">
+      <DependentUpon>DTOAssembler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTOAssembler\DTOAssemblerSubMenu.cs">
+      <DependentUpon>DTOAssembler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTOQuery\DTOQuery.cs" />
+    <Compile Include="DTOQuery\DTOQuery2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DTOQuery.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTOQuery\DTOQueryCidade.cs">
+      <DependentUpon>DTOQuery.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTOQuery\DTOQueryEstado.cs">
+      <DependentUpon>DTOQuery.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTOQuery\DTOQueryLogin.cs">
+      <DependentUpon>DTOQuery.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTOQuery\DTOQueryMenu.cs">
+      <DependentUpon>DTOQuery.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTOQuery\DTOQueryPerfil.cs">
+      <DependentUpon>DTOQuery.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTOQuery\DTOQuerySubMenu.cs">
+      <DependentUpon>DTOQuery.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BLL\EntityBLL.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EntityBLL.cs</LastGenOutput>
+    </None>
+    <None Include="DTOAssembler\DTOAssembler.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DTOAssembler2.cs</LastGenOutput>
+    </None>
+    <None Include="DTOQuery\DTOQuery.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DTOQuery2.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{EBC42DA0-732C-4EFE-87CC-41FC9F7ECFCA}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{535D31A9-C618-4C81-9171-BD9D5909DE8A}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Util.csproj">
+      <Project>{3A9058D1-B384-4343-8CC2-0715A85E5650}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

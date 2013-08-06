@@ -1,0 +1,38 @@
+@using Util
+@model IEnumerable<Model.ConsultaModel>
+<table id="table-list" class="table table-bordered  table-hover table-striped table-condensed">
+    <thead>
+        <th style="width: 8%; text-align: center;">@Html.Label(Constants.Translate.ACOES)
+        </th>
+        <th style="text-align: center;">@Html.Label(Internationalization.DataConsulta)
+        </th>
+        <th style="text-align: center;">@Html.Label(Internationalization.Retorno)
+        </th>
+        <th style="text-align: center;">@Html.Label(Internationalization.QueixaAtual)
+        </th>
+        <th style="text-align: center;">@Html.Label(Internationalization.Paciente)
+        </th>
+    </thead>
+    @if (Model != null)
+    {
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td style="width: 8%; text-align: center;">
+                        @Html.Partial("ConsultaAction", item)
+                    </td>
+                    <td style="text-align: center;">@Html.DisplayFor(modelItem => item.DataConsulta)
+                    </td>
+                    <td style="text-align: center;">@Html.DisplayFor(modelItem => item.Retorno)
+                    </td>
+                    <td style="text-align: center;">@Html.DisplayFor(modelItem => item.QueixaPrincipal)
+                    </td>
+                    <td style="text-align: center;">@Html.DisplayFor(modelItem => item.Paciente.Nome)
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    }
+</table>

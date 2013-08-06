@@ -1,0 +1,88 @@
+﻿@using Model
+@model ExameImagemModel
+<div class="modal-body" style="max-height: 800px;">
+    @using (Html.BeginForm("CreateExameImagem", "Consulta",
+        FormMethod.Post, new { id = "saveExameImagemForm", @class = "form-horizontal", enctype = "multipart/form-data" }))
+    {
+        @Html.Partial("CustomSummary")
+        @Html.Partial("ViewBagMessage")
+        <fieldset>
+            <h1>
+                Exame de Imagens
+            </h1>
+            <div class="row-fluid">
+                <div class="span12">
+                    <legend>Dados</legend>
+                    @Html.HiddenFor(model => model.Id)
+                    @Html.HiddenFor(model => model.Paciente.Id)
+                    <div class="control-group">
+                        <label class="control-label">
+                            @Html.LabelFor(model => model.TipoExame)</label>
+                        <div class="controls">
+                            @Html.Partial("TipoExameComboBox", WebControllers.TipoExameController.GetComboBox(Model != null && Model.TipoExame != null ? Model.TipoExame.Id : 0))
+                            <br />
+                            @Html.ValidationMessageFor(model => model.Paciente)
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">
+                            @Html.LabelFor(model => model.DataExame)</label>
+                        <div class="controls">
+                            @Html.EditorFor(model => model.DataExame)
+                            <br />
+                            @Html.ValidationMessageFor(model => model.DataExame)
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">
+                            @Html.LabelFor(model => model.Indicacao)</label>
+                        <div class="controls">
+                            @Html.EditorFor(model => model.Indicacao)
+                            <br />
+                            @Html.ValidationMessageFor(model => model.Indicacao)
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">
+                            @Html.LabelFor(model => model.Laudo)</label>
+                        <div class="controls">
+                            @Html.EditorFor(model => model.Laudo)
+                            <br />
+                            @Html.ValidationMessageFor(model => model.Laudo)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    }
+</div>
+<div class="modal-footer">
+    <button class="btn" data-dismiss="modal">
+        Fechar</button>
+    <button class="btn btn-success" type="submit" onclick="$('#saveExameImagemForm').submit()">
+        Salvar</button>
+</div>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        validateData();
+        $("#saveExameImagemForm").submit(function (e) {
+            var queryString = $(e.target).serialize() + '&';
+            $.post('CreateExameImagem', queryString, function (data) {
+
+                if (data.Success) {
+                    $("#exameimagem-content").html(data.Data);
+                    closeExameImagemModal();
+                } else {
+                    $("#exameimagemmodal").html(data.Data);
+                }
+            });
+            return false;
+        });
+    });
+
+    function closeExameImagemModal() {
+        closeModal("#exameimagemmodal");
+    }
+
+</script>

@@ -1,0 +1,17 @@
+@model IEnumerable<Model.PacienteModel>
+<div class="container">
+    <div class="row-fluid">
+        <div class="span3">
+            <div class="row-fluid well">
+                @Html.Partial("PacienteSearch", new Model.PacienteModel() { Login = new Model.LoginModel(), Cidade = new Model.CidadeModel() { Nome = "" } })
+                <button class="pull-right btn btn-primary" onclick="$('#searchFormId').submit()">@Util.Constants.Page.BUSCAR</button>
+                <button class="btn btn-success pull-right" style="margin-right:30px;" type="button" onclick="window.location.href='@Url.Action("Create", "Paciente")'; ">
+                    @Util.Constants.Page.NEW
+                </button>
+            </div>
+        </div>
+        <div class="span8 offset1">
+            @Html.Partial("PacienteTableList", Model)
+        </div>
+    </div>
+</div>

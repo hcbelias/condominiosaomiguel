@@ -1,0 +1,42 @@
+@model IEnumerable<Model.ExameImagemModel>
+<table id="table-list" class="table table-bordered  table-hover table-striped table-condensed">
+    <thead>
+        <th style="text-align: center;">@Html.Label(Util.Constants.Translate.ACOES)
+        </th>
+        <th style="text-align: center;">@Html.Label(Util.Internationalization.Indicacao)
+        </th>
+        <th style="text-align: center;">@Html.Label(Util.Constants.Translate.DATAEXAME)
+        </th>
+        <th style="text-align: center;">@Html.Label(Util.Constants.Translate.NOMEPACIENTE)
+        </th>
+    </thead>
+    @if (Model != null)
+    {
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td style="width: 8%; text-align: center;">
+                        @Html.Partial("ExameImagemAction", item)
+                    </td>
+                    <td style="text-align: center;">@Html.DisplayFor(modelItem => item.Indicacao)
+                    </td>
+                    <td style="text-align: center;">@Html.DisplayFor(modelItem => item.DataExame)
+                    </td>
+                    <td style="text-align: center;">@Html.DisplayFor(modelItem => item.Paciente.Nome)
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    }
+</table>
+@Html.Partial("Modal", "image-modal")  
+
+<script type="text/javascript">
+    function openImageModal(p_Identifier) {
+        
+        var queryString = "p_Identifier=" + p_Identifier;
+        openModalAsync('OpenImageModal', queryString, "#image-modal");
+    }
+</script>

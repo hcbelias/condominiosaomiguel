@@ -1,0 +1,27 @@
+@using WebControllers
+@model Model.CirurgiaModel
+@{
+    String method = "Search";
+}
+@using (Html.BeginForm(method, "Cirurgia", FormMethod.Post, new { id = "searchFormId" }))
+{
+ 
+
+    <div class="control-group ">
+        <label class="control-label">
+            @Html.LabelFor(model => model.DataCirurgia)</label>
+        <div class="controls">
+            @Html.EditorFor(model => model.DataCirurgia)
+        </div>
+    </div>
+
+    <div class="control-group ">
+        <label class="control-label">
+            @Html.LabelFor(model => model.Paciente)</label>
+        <div class="controls">
+            <input type="text" id="NomePaciente" name="NomePaciente" class="text-box single-line"
+                placeholder="Nome do Paciente">
+        </div>
+    </div>
+
+}

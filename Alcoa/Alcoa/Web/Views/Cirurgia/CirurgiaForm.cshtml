@@ -1,0 +1,155 @@
+@using WebControllers
+@using Model
+@model Model.CirurgiaModel
+@{
+    Boolean v_IsNewModel = Model == null || Model.Id == 0;
+    String method = v_IsNewModel ? "Create" : "Edit";
+}
+@using (Html.BeginForm(method, "Cirurgia", FormMethod.Post, new { id = "saveFormId", @class = "form-horizontal" }))
+{
+    @Html.Partial("CustomSummary")
+    @Html.Partial("ViewBagMessage")
+    <fieldset>
+        <h1>
+            Cirurgia
+        </h1>
+        <div class="row-fluid">
+            @Html.HiddenFor(model => model.Id)
+            <div class="span6">
+                <legend>Dados da cirurgia</legend>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.DataCirurgia)</label>
+                    <div class="controls">
+                        @Html.EditorFor(model => model.DataCirurgia)
+                        <br />
+                        @Html.ValidationMessageFor(model => model.DataCirurgia)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.Paciente)</label>
+                    <div class="controls">
+                        @Html.Partial("PacienteComboBox", WebControllers.PacienteController.GetComboBox(!v_IsNewModel && Model.Paciente != null ? Model.Paciente.Id : 0))
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.Medico)</label>
+                    <div class="controls">
+                        @Html.Partial("MedicoComboBox", WebControllers.MedicoController.GetComboBox(!v_IsNewModel && Model.Medico != null ? Model.Medico.Id : 0))
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.Nome)</label>
+                    <div class="controls">
+                        @Html.EditorFor(model => model.Nome)
+                        <br />
+                        @Html.ValidationMessageFor(model => model.Nome)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.Observacoes)</label>
+                    <div class="controls">
+                        @Html.EditorFor(model => model.Observacoes)
+                        <br />
+                        @Html.ValidationMessageFor(model => model.Observacoes)
+                    </div>
+                </div>@*
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.DataAlta)</label>
+                    <div class="controls">
+                        @Html.EditorFor(model => model.DataAlta)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.PesoAlta)</label>
+                    <div class="controls">
+                        @Html.EditorFor(model => model.PesoAlta)
+                        <br />
+                        @Html.ValidationMessageFor(model => model.PesoAlta)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.TempoCirurgia)</label>
+                    <div class="controls">
+                        @Html.EditorFor(model => model.TempoCirurgia)
+                    </div>
+                </div>*@
+            </div>
+            <div class="span5">
+                <legend>Avaliação do paciente</legend>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.AvaliacaoEndocrinologica)</label>
+                    <div class="controls">
+                        @Html.EditorFor(model => model.AvaliacaoEndocrinologica)
+                        <br />
+                        @Html.ValidationMessageFor(model => model.AvaliacaoEndocrinologica)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.AvaliacaoCardiologica)</label>
+                    <div class="controls">
+                        @Html.EditorFor(model => model.AvaliacaoCardiologica)
+                        <br />
+                        @Html.ValidationMessageFor(model => model.AvaliacaoCardiologica)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.AvaliacaoPneumologica)</label>
+                    <div class="controls">
+                        @Html.EditorFor(model => model.AvaliacaoPneumologica)
+                        <br />
+                        @Html.ValidationMessageFor(model => model.AvaliacaoPneumologica)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.AvaliacaoNutricional)</label>
+                    <div class="controls">
+                        @Html.EditorFor(model => model.AvaliacaoNutricional)
+                        <br />
+                        @Html.ValidationMessageFor(model => model.AvaliacaoNutricional)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.AvaliacaoPsicologica)</label>
+                    <div class="controls">
+                        @Html.EditorFor(model => model.AvaliacaoPsicologica)
+                        <br />
+                        @Html.ValidationMessageFor(model => model.AvaliacaoPsicologica)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.AvaliacaoFisioterapica)</label>
+                    <div class="controls">
+                        @Html.EditorFor(model => model.AvaliacaoFisioterapica)
+                        <br />
+                        @Html.ValidationMessageFor(model => model.AvaliacaoFisioterapica)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.AvaliacaoAnestesiologica)</label>
+                    <div class="controls">
+                        @Html.EditorFor(model => model.AvaliacaoAnestesiologica)
+                        <br />
+                        @Html.ValidationMessageFor(model => model.AvaliacaoAnestesiologica)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+}
+@using (Html.BeginForm("Index", "Cirurgia", FormMethod.Get, new { id = "cancelFormId" }))
+{ }

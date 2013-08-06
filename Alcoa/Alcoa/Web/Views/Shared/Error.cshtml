@@ -1,0 +1,19 @@
+﻿@model Exception
+
+@{
+    ViewBag.Title = "Erro";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+<h2>Ocorreu um erro na aplicação. Para mais informações, contate os administradores do sistema.</h2>
+@if (Model != null)
+{
+    <div class="alert alert-error">
+        <strong>Message: </strong><br/>
+        @Model.Message<br/><br/>
+        <strong>StackTrace: </strong><br/>
+        @Model.StackTrace<br/><br/>
+        <strong>InnerException: </strong><br/>
+        @Model.InnerException
+    </div>
+}

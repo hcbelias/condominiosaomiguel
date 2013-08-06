@@ -1,0 +1,165 @@
+﻿@using Model
+@using Web.UtilWeb
+@model Model.ConsultaModel
+<ul id="myTab" class="nav nav-tabs">
+    <li class="active"><a href="#aba-paciente" data-toggle="tab">Paciente</a></li>
+    <li class=""><a href="#aba-dadosgerais" data-toggle="tab">Dados gerais</a></li>
+    <li class=""><a href="#aba-anamnese" data-toggle="tab">Anamnese</a></li>
+    <li class=""><a href="#aba-acompanhamento" data-toggle="tab">Acompanhamento</a></li>
+    <li class=""><a href="#aba-examedados" data-toggle="tab">Exames</a></li>
+    <li class=""><a href="#aba-imagemexame" data-toggle="tab">Imagens</a></li>
+</ul>
+<div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade active in" id="aba-paciente">
+        <div class="row-fluid form-horizontal">
+            <div class="control-group">
+                <label class="control-label">
+                    @Html.LabelFor(model => model.Paciente.Nome)</label>
+                <div class="controls">
+                    @Html.DisplayFor(model => model.Paciente.Nome)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">
+                    @Html.LabelFor(model => model.Paciente.DataNascimento)</label>
+                <div class="controls">
+                    @Html.DisplayFor(model => model.Paciente.DataNascimento)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">
+                    @Html.LabelFor(model => model.Paciente.Endereco)</label>
+                <div class="controls">
+                    @Html.DisplayFor(model => model.Paciente.Endereco)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">
+                    @Html.LabelFor(model => model.Paciente.Telefone)</label>
+                <div class="controls">
+                    @Html.DisplayFor(model => model.Paciente.Telefone)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">
+                    @Html.LabelFor(model => model.Paciente.Celular)</label>
+                <div class="controls">
+                    @Html.DisplayFor(model => model.Paciente.Celular)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">
+                    @Html.LabelFor(model => model.Paciente.Cidade)</label>
+                <div class="controls">
+                    @Html.DisplayFor(model => model.Paciente.Cidade.Nome)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">
+                    @Html.LabelFor(model => model.Paciente.Login.Email)</label>
+                <div class="controls">
+                    @Html.DisplayFor(model => model.Paciente.Login.Email, new { @class = "email" })
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">
+                    @Html.LabelFor(model => model.Paciente.CPF)</label>
+                <div class="controls">
+                    @Html.DisplayFor(model => model.Paciente.CPF)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">
+                    @Html.LabelFor(model => model.Paciente.RG)</label>
+                <div class="controls">
+                    @Html.DisplayFor(model => model.Paciente.RG)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">
+                    @Html.LabelFor(model => model.Paciente.Convenio)</label>
+                <div class="controls">
+                    @Html.DisplayFor(model => model.Paciente.Convenio)
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="aba-dadosgerais">
+        <div id="dadosgerais-content">
+            @Html.Partial("DadosGeraisForm", Model)
+        </div>
+    </div>
+    <div class="tab-pane fade" id="aba-anamnese">
+        <div id="anamnese-content">
+            @switch ((Util.Enum.Perfil)WebControllers.PerfilController.GetPerfilEnum(HttpContext.Current.User.Identity.Name))
+            {
+                case (Util.Enum.Perfil.Administrador):
+@*
+    @Html.Partial("AnamneseConsultaEricaForm", Model)
+    @Html.Partial("AnamneseConsultaGuilhermeForm", Model)
+    @Html.Partial("AnamneseConsultaMarcelaForm", Model)
+    @Html.Partial("AnamneseConsultaRaphaelForm", Model)
+    @Html.Partial("AnamneseConsultaOlavoForm", Model)
+    *@
+                
+                @Html.Partial("AnamneseConsultaMarcelaForm", Model)
+           break;
+                case (Util.Enum.Perfil.Cirurgiao):
+                @Html.Partial("AnamneseConsultaGuilhermeForm", Model)
+           break;
+                case (Util.Enum.Perfil.Endocrino):
+                @Html.Partial("AnamneseConsultaOlavoForm", Model)
+           break;
+                case (Util.Enum.Perfil.Nutricionista):
+                @Html.Partial("AnamneseConsultaMarcelaForm", Model)
+           break;
+                case (Util.Enum.Perfil.Psicologa):
+                @Html.Partial("AnamneseConsultaEricaForm", Model)
+           break;
+            }
+        </div>
+    </div>
+    <div class="tab-pane fade" id="aba-acompanhamento">
+        <div id="medidapacientemodal" class="modal hide">
+            @{       
+                if (Model != null && Model.Paciente != null && Model.Paciente.MedidaPaciente != null &&
+                    Model.Paciente.MedidaPaciente.FirstOrDefault(model => model.DataMedicao == DateTime.Today) != null)
+                {
+                @Html.Partial("ModalMedidaPaciente", Model.Paciente.MedidaPaciente.FirstOrDefault(model => model.DataMedicao == DateTime.Today))
+                }
+                else
+                {
+                @Html.Partial("ModalMedidaPaciente", new Model.MedidaPacienteModel() { Paciente = Model.Paciente })
+                }
+            }
+        </div>
+        <div id="acompanhamento-content">
+            @if (Model != null && Model.Paciente != null)
+            {                
+                @Html.Partial("MedidaPacienteTableList", Model.Paciente)
+            }
+        </div>
+    </div>
+    <div class="tab-pane fade" id="aba-examedados">
+        <div id="examedadosmodal" class="modal hide">
+            @Html.Partial("ModalExameDados", new Model.ExameDadosModel() { Paciente = Model.Paciente })
+        </div>
+        <div id="examedados-content">
+            @if (Model != null && Model.Paciente != null && Model.Paciente.ExameDados != null)
+            {
+                @Html.Partial("ExameDadosTableList", Model.Paciente.ExameDados)
+            }
+        </div>
+    </div>
+    <div class="tab-pane fade" id="aba-imagemexame">
+        <div id="exameimagemmodal" class="modal hide">
+            @Html.Partial("ModalExameImagem", new Model.ExameImagemModel() { Paciente = Model.Paciente })
+        </div>
+        <div id="exameimagem-content">
+            @if (Model != null && Model.Paciente != null && Model.Paciente.ExameImagem != null)
+            {
+                @Html.Partial("ExameImagemTableList", Model.Paciente.ExameImagem)
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+@model Model.EstadoModel
+
+@{
+    ViewBag.Title = Util.Constants.Page.EDIT + " Estado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+	Boolean v_IsNewModel = Model == null || Model.Id == 0;	
+}
+@Html.Partial("EstadoForm", Model)
+
+@section Footer
+{
+ @Html.Partial("FooterEdition", !v_IsNewModel)   
+}

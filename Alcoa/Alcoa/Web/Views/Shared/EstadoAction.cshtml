@@ -1,0 +1,15 @@
+@model Model.EstadoModel
+
+<div class="row-fluid">
+    <div class="span6">
+        <a  title="Edição" href="@Url.Action("Edit", "Estado", new { p_Identifier = Model.Id })"><i class="icon-edit">
+        </i></a>
+    </div>
+    <div class="span6">
+        <a title="Detalhes" href="@Url.Action("Info", "Estado", new { p_Identifier = Model.Id})" ><i class="icon-search">
+        </i></a>
+    </div>
+</div>
+
+
+   

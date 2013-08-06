@@ -1,0 +1,42 @@
+﻿@{
+    var ItemList = new List<SelectListItem>();
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "09:00", Value = "09:00" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "09:20", Value = "09:20" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "09:40", Value = "09:40" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "10:00", Value = "10:00" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "10:20", Value = "10:20" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "10:40", Value = "10:40" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "11:00", Value = "11:00" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "11:20", Value = "11:20" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "11:40", Value = "11:40" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "12:00", Value = "12:00" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "12:20", Value = "12:20" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "12:40", Value = "12:40" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "13:00", Value = "13:00" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "13:20", Value = "13:20" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "13:40", Value = "13:40" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "14:00", Value = "14:00" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "14:20", Value = "14:20" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "14:40", Value = "14:40" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "15:00", Value = "15:00" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "15:20", Value = "15:20" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "15:40", Value = "15:40" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "16:00", Value = "16:00" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "16:20", Value = "16:20" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "16:40", Value = "16:20" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "17:00", Value = "17:00" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "17:20", Value = "17:20" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "17:40", Value = "17:40" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "18:00", Value = "18:00" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "18:20", Value = "18:20" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "18:40", Value = "18:40" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "19:00", Value = "19:00" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "19:20", Value = "19:20" });
+    ItemList.Add(new SelectListItem() { Selected = false, Text = "19:40", Value = "19:40" });
+}
+@Html.Partial("ComboBox", new Model.ComboBoxModel()
+{
+    m_Name = "HoraConsulta",
+    m_Id = "HoraConsulta",
+    m_ItemList = ItemList
+})

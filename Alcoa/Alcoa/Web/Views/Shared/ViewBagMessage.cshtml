@@ -1,0 +1,27 @@
+﻿@using System.Web.UI.WebControls
+@{
+    if (ViewBag.Message != null)
+    {
+        string classCSS = "alert alert-info";
+        if (ViewBag.MessageSuccess != null && ViewBag.MessageSuccess)
+        {
+            classCSS = "alert alert-success";
+        }
+        else if (ViewBag.MessageSuccess != null && ViewBag.MessageError)
+        {
+            classCSS = "alert alert-error";
+        }
+
+    <div name="message" class="@classCSS" >
+        <button type="button" class="close" data-dismiss="alert">
+            ×</button>
+        @ViewBag.Message
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("[name='message']").fadeOut(3500);
+        });
+    </script>
+    }
+    
+}

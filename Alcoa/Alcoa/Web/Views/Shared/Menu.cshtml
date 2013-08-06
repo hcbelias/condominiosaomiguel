@@ -1,0 +1,36 @@
+﻿@using WebControllers
+@model Model.MenuModel
+@if (Model != null && Model.m_DropDownMenu != null)
+{
+    <ul class="nav">
+        @foreach (Model.DropdownModel i_Menu in Model.m_DropDownMenu)
+        {
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">
+                @if (!string.IsNullOrEmpty(i_Menu.m_IconClS))
+                {
+                    <i class="@i_Menu.m_IconClS"></i>
+                }
+                @i_Menu.m_DropDownMenu
+            </a>
+                <ul class="dropdown-menu">
+                    @foreach (var i_SubMenu in i_Menu.m_SubMenu)
+                    {
+                        <li><a href="@i_SubMenu.m_Link">
+                            @if (!string.IsNullOrEmpty(i_SubMenu.m_IconClS))
+                            {
+                                <i class="@i_SubMenu.m_IconClS"></i>
+                            }
+                            @i_SubMenu.m_Titulo
+                        </a></li>
+                    }
+                </ul>
+            </li>
+        }
+    </ul>
+}
+@if (HttpContext.Current.User.Identity.IsAuthenticated)
+{
+<p class="navbar-text pull-right">
+    Sair: <a href="/Login/Logout"><i class="icon-user  icon-white"></i>@Model.m_Login.Email
+        - @Model.m_Login.Perfil.Nome</a></p>
+}

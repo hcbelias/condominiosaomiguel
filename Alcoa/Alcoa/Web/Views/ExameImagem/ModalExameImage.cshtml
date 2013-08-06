@@ -1,0 +1,63 @@
+﻿@using Util
+@model Model.ExameImagemModel
+<div class="modal-body">
+    <div class="row-fluid">
+        <div class="span8">
+            @{
+
+                if (!string.IsNullOrEmpty(Model.Imagem))
+                {
+                    <img src="@String.Concat("data:image/jpeg;base64,", @Util.ToBase64(Server.MapPath("~/" + Model.Imagem)))" alt="ImagemExame"
+                         style="max-width: 100%; max-height: 90%; height: 100%; width: 90%" />
+                }
+            }
+            </div>
+                 
+        <div class="span4">
+            
+            <legend>Dados</legend>
+                @Html.HiddenFor(model => model.Id)
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.Laudo)</label>
+                    <div class="controls">
+                        @Html.DisplayFor(model => model.Laudo)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.Indicacao)</label>
+                    <div class="controls">
+                        @Html.DisplayFor(model => model.Indicacao)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.DataExame)</label>
+                    <div class="controls">
+                        @Html.DisplayFor(model => model.DataExame)
+                    </div>
+                </div>
+                
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.Paciente)</label>
+                    <div class="controls">
+                        @Html.DisplayFor(model=>model.Paciente.Nome)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.TipoExame)</label>
+                    <div class="controls">
+                        @Html.DisplayFor(model=>model.TipoExame.Nome)
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+</div>
+<div class="modal-footer">
+    <button class="btn" data-dismiss="modal">
+        Fechar</button>
+</div>

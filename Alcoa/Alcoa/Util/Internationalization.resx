@@ -1,0 +1,963 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Buscar" xml:space="preserve">
+    <value>Procurar</value>
+  </data>
+  <data name="CaminhoImagem" xml:space="preserve">
+    <value>Arquivo</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Celular" xml:space="preserve">
+    <value>Celular</value>
+  </data>
+  <data name="Cidade" xml:space="preserve">
+    <value>Cidade</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Criar</value>
+  </data>
+  <data name="CRM" xml:space="preserve">
+    <value>CRM</value>
+  </data>
+  <data name="Data" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="DataAcompanhamento" xml:space="preserve">
+    <value>Data do Acompanhamento</value>
+  </data>
+  <data name="DataCirurgia" xml:space="preserve">
+    <value>Data da Cirurgia</value>
+  </data>
+  <data name="DataExame" xml:space="preserve">
+    <value>Data do Exame</value>
+  </data>
+  <data name="DataNascimento" xml:space="preserve">
+    <value>Data de Nascimento</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Remover</value>
+  </data>
+  <data name="Descricao" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Endereco" xml:space="preserve">
+    <value>Endereço</value>
+  </data>
+  <data name="HoraInicio" xml:space="preserve">
+    <value>Hora de Início</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="IMC" xml:space="preserve">
+    <value>IMC</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>Novo</value>
+  </data>
+  <data name="Nome" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="Observacoes" xml:space="preserve">
+    <value>Observações</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+  <data name="Peso" xml:space="preserve">
+    <value>Peso</value>
+  </data>
+  <data name="Realizado" xml:space="preserve">
+    <value>Realizado</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Este campo é obrigatório</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="Telefone" xml:space="preserve">
+    <value>Telefone</value>
+  </data>
+  <data name="Tipo" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="Usuario" xml:space="preserve">
+    <value>Usuário</value>
+  </data>
+  <data name="Valor" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="CateterPeridural" xml:space="preserve">
+    <value>Cateter Peridural</value>
+  </data>
+  <data name="DataAlta" xml:space="preserve">
+    <value>Data da alta do hospital</value>
+  </data>
+  <data name="DuracaoCirurgia" xml:space="preserve">
+    <value>Duração da Cirurgia</value>
+  </data>
+  <data name="MotivoUTIPosOperatorio" xml:space="preserve">
+    <value>Motivo da UTI no pós-operatório</value>
+  </data>
+  <data name="PesoAltaHospitalar" xml:space="preserve">
+    <value>Peso do paciente(Após alta do hospital)</value>
+  </data>
+  <data name="PesoAntesCirurgia" xml:space="preserve">
+    <value>Peso do paciente(Antes da cirurgia)</value>
+  </data>
+  <data name="UTIPosOperatorio" xml:space="preserve">
+    <value>UTI Pós-operatório</value>
+  </data>
+  <data name="EditarOuRemover" xml:space="preserve">
+    <value>Editar/Remover</value>
+  </data>
+  <data name="Acoes" xml:space="preserve">
+    <value>Ações</value>
+  </data>
+  <data name="DataAgendamento" xml:space="preserve">
+    <value>Data de Agendamento</value>
+  </data>
+  <data name="DataConsulta" xml:space="preserve">
+    <value>Data da Consulta</value>
+  </data>
+  <data name="Horario" xml:space="preserve">
+    <value>Horário</value>
+  </data>
+  <data name="Retorno" xml:space="preserve">
+    <value>Retorno</value>
+  </data>
+  <data name="Especialidade" xml:space="preserve">
+    <value>Especialidade</value>
+  </data>
+  <data name="NomeMedico" xml:space="preserve">
+    <value>Nome do Médico</value>
+  </data>
+  <data name="Paciente" xml:space="preserve">
+    <value>Paciente</value>
+  </data>
+  <data name="TipoExame" xml:space="preserve">
+    <value>Tipo do Exame</value>
+  </data>
+  <data name="Imagem" xml:space="preserve">
+    <value>Imagem</value>
+  </data>
+  <data name="NomePaciente" xml:space="preserve">
+    <value>Nome do Paciente</value>
+  </data>
+  <data name="Motivo" xml:space="preserve">
+    <value>Motivo</value>
+  </data>
+  <data name="Alimentacao" xml:space="preserve">
+    <value>Alimenta-se bem? Como é seu apetite?</value>
+  </data>
+  <data name="AuxilioPaisNaEscola" xml:space="preserve">
+    <value>Os pais ajudam o pacienta nas atividades escolares?</value>
+  </data>
+  <data name="BronquiteAsma" xml:space="preserve">
+    <value>Bronquite/Asma</value>
+  </data>
+  <data name="ComoReageAoSerContrariado" xml:space="preserve">
+    <value>Como reage quando é contrariado?</value>
+  </data>
+  <data name="CondicaoSaudeMaeNaGravidez" xml:space="preserve">
+    <value>Quais as condições de saúde da mãe durante a gravidez?</value>
+  </data>
+  <data name="CondicoesEmocionaisMaeNaGravidez" xml:space="preserve">
+    <value>Quais as condições emocionais da mãe durante a gravidez?</value>
+  </data>
+  <data name="Desenvolvimento" xml:space="preserve">
+    <value>Andou com que idade? É lento para realizar alguma atividade?</value>
+  </data>
+  <data name="DesmaiouAlgumaVez" xml:space="preserve">
+    <value>Já desmaiou alguma vez?</value>
+  </data>
+  <data name="DorCabeca" xml:space="preserve">
+    <value>Apresenta dor de cabeça?</value>
+  </data>
+  <data name="FazTratamentoMedico" xml:space="preserve">
+    <value>Atualmente, faz algum tratamento médico?</value>
+  </data>
+  <data name="FoiConsultadoEspecialistas" xml:space="preserve">
+    <value>Já procuraram especialitas?</value>
+  </data>
+  <data name="GostaEstudar" xml:space="preserve">
+    <value>Gosta de estudar?</value>
+  </data>
+  <data name="GostaIrEscola" xml:space="preserve">
+    <value>O paciente gosta de ir à escola?</value>
+  </data>
+  <data name="HorarioEstudar" xml:space="preserve">
+    <value>Tem horário para estudar?</value>
+  </data>
+  <data name="LevouQuedaOuSusto" xml:space="preserve">
+    <value>Levou alguma queda ou susto forte?</value>
+  </data>
+  <data name="ProblemaAudicao" xml:space="preserve">
+    <value>Apresenta algum problema de audição?</value>
+  </data>
+  <data name="ProblemasFamilia" xml:space="preserve">
+    <value>Algum parente apresenta problemas relacionados à desmaios, convulsões ou ataques?</value>
+  </data>
+  <data name="ProblemasPosParto" xml:space="preserve">
+    <value>Teve algum problema após o parto?</value>
+  </data>
+  <data name="ProblemaVisao" xml:space="preserve">
+    <value>Apresenta problema de visão?</value>
+  </data>
+  <data name="QuaisAsAtividadesPreferidas" xml:space="preserve">
+    <value>Quais as atividades preferidas?</value>
+  </data>
+  <data name="QuaisMedidasParaDisciplinar" xml:space="preserve">
+    <value>Quais as medidas usadas para disciplinar o paciente?</value>
+  </data>
+  <data name="QueixaAtual" xml:space="preserve">
+    <value>Qual a queixa atual?</value>
+  </data>
+  <data name="RepetiuSerieAlgumaVez" xml:space="preserve">
+    <value>Já repetiu a série alguma vez?</value>
+  </data>
+  <data name="SofreuAcidente" xml:space="preserve">
+    <value>Sofreu algum acidente?</value>
+  </data>
+  <data name="Sono" xml:space="preserve">
+    <value>Como é o sono? Qual horário? Dorme sozinho ou acompanhado?</value>
+  </data>
+  <data name="SubmeteuCirurgia" xml:space="preserve">
+    <value>Submeteu-se a alguma cirurgia?</value>
+  </data>
+  <data name="TemConvulsao" xml:space="preserve">
+    <value>Teve ou tem convulsões?</value>
+  </data>
+  <data name="TempoNascimento" xml:space="preserve">
+    <value>O paciente nasceu com quantos meses?</value>
+  </data>
+  <data name="TempoProblemaFoiObservado" xml:space="preserve">
+    <value>Desde quando o problema foi observado?</value>
+  </data>
+  <data name="TipoParto" xml:space="preserve">
+    <value>Qual tipo de parto?</value>
+  </data>
+  <data name="CPF" xml:space="preserve">
+    <value>CPF</value>
+  </data>
+  <data name="RG" xml:space="preserve">
+    <value>RG</value>
+  </data>
+  <data name="Convenio" xml:space="preserve">
+    <value>Convênio</value>
+  </data>
+  <data name="EstadoCivil" xml:space="preserve">
+    <value>Estado Civil</value>
+  </data>
+  <data name="GrauInstrucao" xml:space="preserve">
+    <value>Grau de Instrução</value>
+  </data>
+  <data name="NomeMae" xml:space="preserve">
+    <value>Nome da mãe</value>
+  </data>
+  <data name="NomePai" xml:space="preserve">
+    <value>Nome do pai</value>
+  </data>
+  <data name="Profissao" xml:space="preserve">
+    <value>Profissão</value>
+  </data>
+  <data name="Sexo" xml:space="preserve">
+    <value>Sexo</value>
+  </data>
+  <data name="Abdome" xml:space="preserve">
+    <value>Abdome</value>
+  </data>
+  <data name="AbscessoParede" xml:space="preserve">
+    <value>Abscesso parede</value>
+  </data>
+  <data name="AcompanhamentoMedico" xml:space="preserve">
+    <value>Acompanhamento médico</value>
+  </data>
+  <data name="Agua" xml:space="preserve">
+    <value>Água</value>
+  </data>
+  <data name="Alcool" xml:space="preserve">
+    <value>Álcool</value>
+  </data>
+  <data name="AlcoolDiariamente" xml:space="preserve">
+    <value>Álcool diariamente</value>
+  </data>
+  <data name="AlimentacaoNoturna" xml:space="preserve">
+    <value>Alimentação noturna</value>
+  </data>
+  <data name="AlimentoGosta" xml:space="preserve">
+    <value>Alimento que mais gosta</value>
+  </data>
+  <data name="AlimentoNaoGosta" xml:space="preserve">
+    <value>Alimento que não gosta</value>
+  </data>
+  <data name="AlteracoesGastricas" xml:space="preserve">
+    <value>Alterações gástricas</value>
+  </data>
+  <data name="Ansiedade" xml:space="preserve">
+    <value>Ansiedade</value>
+  </data>
+  <data name="AntecedentesCirurgicos" xml:space="preserve">
+    <value>Antecedentes cirúgicos</value>
+  </data>
+  <data name="AntecedentesFamiliares" xml:space="preserve">
+    <value>Antecedentes familiares</value>
+  </data>
+  <data name="AntecedentesPatologicos" xml:space="preserve">
+    <value>Antecedentes patológicos</value>
+  </data>
+  <data name="Apneia" xml:space="preserve">
+    <value>Apneia</value>
+  </data>
+  <data name="Arritmias" xml:space="preserve">
+    <value>Arritmias</value>
+  </data>
+  <data name="ArtrosesJoelhos" xml:space="preserve">
+    <value>Artroses nos joelhos</value>
+  </data>
+  <data name="ArtrosesTornozelos" xml:space="preserve">
+    <value>Artroses nos tornozelos</value>
+  </data>
+  <data name="ASA" xml:space="preserve">
+    <value>ASA</value>
+  </data>
+  <data name="Asma" xml:space="preserve">
+    <value>Asma</value>
+  </data>
+  <data name="Atelectasia" xml:space="preserve">
+    <value>Atelectasia</value>
+  </data>
+  <data name="AtividadeFisica" xml:space="preserve">
+    <value>Atividade física</value>
+  </data>
+  <data name="AvaliacaoAnestesiologica" xml:space="preserve">
+    <value>Avaliação anestesiológica</value>
+  </data>
+  <data name="AvaliacaoCardiologica" xml:space="preserve">
+    <value>Availiação cardiológica</value>
+  </data>
+  <data name="AvaliacaoEndocrinologica" xml:space="preserve">
+    <value>Avaliação endocrinológica</value>
+  </data>
+  <data name="AvaliacaoFisioterapica" xml:space="preserve">
+    <value>Avaliação fisioterápica</value>
+  </data>
+  <data name="AvaliacaoNutricional" xml:space="preserve">
+    <value>Avaliação nutricional</value>
+  </data>
+  <data name="AvaliacaoPneumologica" xml:space="preserve">
+    <value>Avaliação pneumológica</value>
+  </data>
+  <data name="AvaliacaoPsicologica" xml:space="preserve">
+    <value>Avaliação psicológica</value>
+  </data>
+  <data name="AVC" xml:space="preserve">
+    <value>AVC</value>
+  </data>
+  <data name="Calorias" xml:space="preserve">
+    <value>Calorias</value>
+  </data>
+  <data name="CarneGorda" xml:space="preserve">
+    <value>Carne gorda</value>
+  </data>
+  <data name="Carotideo" xml:space="preserve">
+    <value>Carotídeo</value>
+  </data>
+  <data name="CirurgiaProposta" xml:space="preserve">
+    <value>Cirurgia proposta</value>
+  </data>
+  <data name="CirurgiasAssociadas" xml:space="preserve">
+    <value>Cirurgias associadas</value>
+  </data>
+  <data name="CirurgiasRealizadas" xml:space="preserve">
+    <value>Cirurgias realizadas</value>
+  </data>
+  <data name="Classificacao" xml:space="preserve">
+    <value>Classificação</value>
+  </data>
+  <data name="Claudicacao" xml:space="preserve">
+    <value>Claudicacao</value>
+  </data>
+  <data name="Colelitiase" xml:space="preserve">
+    <value>Colelitiase</value>
+  </data>
+  <data name="ComoEFimSemana" xml:space="preserve">
+    <value>Como é o fim de semana</value>
+  </data>
+  <data name="ComplicacoesCirurgicas" xml:space="preserve">
+    <value>Complicações cirúrgicas</value>
+  </data>
+  <data name="ComplicacoesClinicas" xml:space="preserve">
+    <value>Complicações clínicas</value>
+  </data>
+  <data name="CompulsaoAlimentar" xml:space="preserve">
+    <value>Compulsão alimentar</value>
+  </data>
+  <data name="Consideracoes" xml:space="preserve">
+    <value>Considerações</value>
+  </data>
+  <data name="ContraIndicacao" xml:space="preserve">
+    <value>Contra-indicação</value>
+  </data>
+  <data name="Coracao" xml:space="preserve">
+    <value>Coração</value>
+  </data>
+  <data name="Coronariopatia" xml:space="preserve">
+    <value>Coronariopatia</value>
+  </data>
+  <data name="DecubitoDorsal" xml:space="preserve">
+    <value>Decubito dorsal</value>
+  </data>
+  <data name="DeiscenciaParede" xml:space="preserve">
+    <value>Deiscencia parede</value>
+  </data>
+  <data name="Depressao" xml:space="preserve">
+    <value>Depressão</value>
+  </data>
+  <data name="Diabetes" xml:space="preserve">
+    <value>Diabetes</value>
+  </data>
+  <data name="Diarreia" xml:space="preserve">
+    <value>Diarréia</value>
+  </data>
+  <data name="Dieta" xml:space="preserve">
+    <value>Dieta</value>
+  </data>
+  <data name="Dismenorreia" xml:space="preserve">
+    <value>Dismenorreia</value>
+  </data>
+  <data name="Dispneia" xml:space="preserve">
+    <value>Dispneia</value>
+  </data>
+  <data name="DocesChocolates" xml:space="preserve">
+    <value>Doces ou chocolates</value>
+  </data>
+  <data name="DoencaHemorroidaria" xml:space="preserve">
+    <value>Doença hemorroidária</value>
+  </data>
+  <data name="DopplerMMII" xml:space="preserve">
+    <value>Doppler MMII</value>
+  </data>
+  <data name="DorAbdominal" xml:space="preserve">
+    <value>Dor abdominal</value>
+  </data>
+  <data name="DorOmbrosCostas" xml:space="preserve">
+    <value>Dor nos ombros/costas</value>
+  </data>
+  <data name="DRGE" xml:space="preserve">
+    <value>DRGE</value>
+  </data>
+  <data name="ECG" xml:space="preserve">
+    <value>ECG</value>
+  </data>
+  <data name="EdemaMembros" xml:space="preserve">
+    <value>Edema membros</value>
+  </data>
+  <data name="EfeitosColaterais" xml:space="preserve">
+    <value>Efeitos colaterais</value>
+  </data>
+  <data name="EndoscopiaDigestivaAlta" xml:space="preserve">
+    <value>Endoscopia digestiva alta</value>
+  </data>
+  <data name="EpisodioDeterminante" xml:space="preserve">
+    <value>Episódio determinante para obesidade</value>
+  </data>
+  <data name="Ereto" xml:space="preserve">
+    <value>Ereto</value>
+  </data>
+  <data name="Esterilidade" xml:space="preserve">
+    <value>Esterilidade</value>
+  </data>
+  <data name="Etilista" xml:space="preserve">
+    <value>Etilista</value>
+  </data>
+  <data name="Evisceracao" xml:space="preserve">
+    <value>Evisceração</value>
+  </data>
+  <data name="ExameFisico" xml:space="preserve">
+    <value>Exame físico</value>
+  </data>
+  <data name="FazUsoSubstanciaPsicoativa" xml:space="preserve">
+    <value>Faz uso de substâncias psicoativas</value>
+  </data>
+  <data name="Febre" xml:space="preserve">
+    <value>Febre</value>
+  </data>
+  <data name="Femural" xml:space="preserve">
+    <value>Femural</value>
+  </data>
+  <data name="Fistula" xml:space="preserve">
+    <value>Fistula</value>
+  </data>
+  <data name="Frituras" xml:space="preserve">
+    <value>Frituras</value>
+  </data>
+  <data name="Fumo" xml:space="preserve">
+    <value>Fumo</value>
+  </data>
+  <data name="FuncaoIntestinal" xml:space="preserve">
+    <value>Função intestinal</value>
+  </data>
+  <data name="Gestacoes" xml:space="preserve">
+    <value>Gestações</value>
+  </data>
+  <data name="Goldman" xml:space="preserve">
+    <value>Goldman</value>
+  </data>
+  <data name="Gota" xml:space="preserve">
+    <value>Gota</value>
+  </data>
+  <data name="HabitosAlimentares" xml:space="preserve">
+    <value>Hábitos alimentares</value>
+  </data>
+  <data name="HabitosVida" xml:space="preserve">
+    <value>Hábito de vida</value>
+  </data>
+  <data name="HAS" xml:space="preserve">
+    <value>HAS</value>
+  </data>
+  <data name="HipertensaoFamiliar" xml:space="preserve">
+    <value>Hipertensão familiar</value>
+  </data>
+  <data name="Hipertiroidismo" xml:space="preserve">
+    <value>Hipertiroidismo</value>
+  </data>
+  <data name="HipotesesDiagnosticadas" xml:space="preserve">
+    <value>Hipoteses diagnosticadas</value>
+  </data>
+  <data name="HipoTireoidismo" xml:space="preserve">
+    <value>Hipotireoidismo</value>
+  </data>
+  <data name="Hirsutismo" xml:space="preserve">
+    <value>Hirsutismo</value>
+  </data>
+  <data name="ImpotenciaSexual" xml:space="preserve">
+    <value>Impotência sexual</value>
+  </data>
+  <data name="IndiciosHASecundaria" xml:space="preserve">
+    <value>IndiciosHASecundaria</value>
+  </data>
+  <data name="InfartoMiocardio" xml:space="preserve">
+    <value>Infarto do miocárdio</value>
+  </data>
+  <data name="Insonia" xml:space="preserve">
+    <value>Insônia</value>
+  </data>
+  <data name="InsuficienciaCardiaca" xml:space="preserve">
+    <value>Insuficiência cardíaca</value>
+  </data>
+  <data name="IntercorrenciasAnestesicas" xml:space="preserve">
+    <value>Intercorrências anestésicas</value>
+  </data>
+  <data name="IntercorrenciasCirurgicas" xml:space="preserve">
+    <value>Intercorrências cirúrgicas</value>
+  </data>
+  <data name="IntercorrenciasPos" xml:space="preserve">
+    <value>Intercorrências pós operatórias</value>
+  </data>
+  <data name="InternacoesSPA" xml:space="preserve">
+    <value>Internações SPA</value>
+  </data>
+  <data name="Intolerancias" xml:space="preserve">
+    <value>Intolerâncias</value>
+  </data>
+  <data name="Lee" xml:space="preserve">
+    <value>Lee</value>
+  </data>
+  <data name="Legumes" xml:space="preserve">
+    <value>Legumes</value>
+  </data>
+  <data name="LeiteDerivados" xml:space="preserve">
+    <value>Leite e derivados</value>
+  </data>
+  <data name="Massa" xml:space="preserve">
+    <value>Massa</value>
+  </data>
+  <data name="MedicacaoAtual" xml:space="preserve">
+    <value>Medicação atual</value>
+  </data>
+  <data name="Medicao" xml:space="preserve">
+    <value>Medição</value>
+  </data>
+  <data name="Melena" xml:space="preserve">
+    <value>Melena</value>
+  </data>
+  <data name="MotivoInsucesso" xml:space="preserve">
+    <value>Motivo do insucesso do tratamento</value>
+  </data>
+  <data name="MSD" xml:space="preserve">
+    <value>MSD</value>
+  </data>
+  <data name="MSE" xml:space="preserve">
+    <value>MSE</value>
+  </data>
+  <data name="Nefropatia" xml:space="preserve">
+    <value>Nefropatia</value>
+  </data>
+  <data name="NumeroTentativasTratamento" xml:space="preserve">
+    <value>Número de tentativas de tratamento</value>
+  </data>
+  <data name="ObitosFamilia" xml:space="preserve">
+    <value>Óbitos na família</value>
+  </data>
+  <data name="ObjetivoTratamento" xml:space="preserve">
+    <value>Objetivo do tratamento</value>
+  </data>
+  <data name="Oleo" xml:space="preserve">
+    <value>Oleo</value>
+  </data>
+  <data name="ParentesObesos" xml:space="preserve">
+    <value>Parentes obesos</value>
+  </data>
+  <data name="PatologiasDosAntecedentes" xml:space="preserve">
+    <value>Histórico de patologias na família</value>
+  </data>
+  <data name="PatologiasNaColuna" xml:space="preserve">
+    <value>Patologias na coluna</value>
+  </data>
+  <data name="Pedioso" xml:space="preserve">
+    <value>Pedioso</value>
+  </data>
+  <data name="Peritonite" xml:space="preserve">
+    <value>Peritonite</value>
+  </data>
+  <data name="PesoMaximo" xml:space="preserve">
+    <value>Peso máximo</value>
+  </data>
+  <data name="PesoMinimo" xml:space="preserve">
+    <value>Peso mínimo</value>
+  </data>
+  <data name="PesoNaAlta" xml:space="preserve">
+    <value>Peso na data de alta</value>
+  </data>
+  <data name="PesoNaCirurgia" xml:space="preserve">
+    <value>Peso na data da cirurgia</value>
+  </data>
+  <data name="PilulaAnticoncepcional" xml:space="preserve">
+    <value>Pílula anticoncepcional</value>
+  </data>
+  <data name="PlanoPropedeutico" xml:space="preserve">
+    <value>Plano propedêutico</value>
+  </data>
+  <data name="Pneumonia" xml:space="preserve">
+    <value>Pneumonia</value>
+  </data>
+  <data name="PrimeiraMeta" xml:space="preserve">
+    <value>Primeira meta</value>
+  </data>
+  <data name="Pulmoes" xml:space="preserve">
+    <value>Pulmões</value>
+  </data>
+  <data name="Quitandas" xml:space="preserve">
+    <value>Quitandas</value>
+  </data>
+  <data name="Radial" xml:space="preserve">
+    <value>Radial</value>
+  </data>
+  <data name="RadiografiaTorax" xml:space="preserve">
+    <value>Radiografia torax</value>
+  </data>
+  <data name="RaioxTorax" xml:space="preserve">
+    <value>Raio-X</value>
+  </data>
+  <data name="Refrigerante" xml:space="preserve">
+    <value>Refrigerante</value>
+  </data>
+  <data name="Reoperacao" xml:space="preserve">
+    <value>Reoperação</value>
+  </data>
+  <data name="RotinaDiaria" xml:space="preserve">
+    <value>Rotina diária</value>
+  </data>
+  <data name="Sal" xml:space="preserve">
+    <value>Sal</value>
+  </data>
+  <data name="SalComidaPronta" xml:space="preserve">
+    <value>Adiciona sal na comida pronta</value>
+  </data>
+  <data name="Sentado" xml:space="preserve">
+    <value>Sentado</value>
+  </data>
+  <data name="SoproAbdominal" xml:space="preserve">
+    <value>Sopro abdominal</value>
+  </data>
+  <data name="Tabagista" xml:space="preserve">
+    <value>Tabagista</value>
+  </data>
+  <data name="TempoAtingirPesoMinimo" xml:space="preserve">
+    <value>Tempo para atingir o peso mínimo</value>
+  </data>
+  <data name="TempoObesidade" xml:space="preserve">
+    <value>Tempo da obesidade</value>
+  </data>
+  <data name="TempoTratamentoPreOperatorio" xml:space="preserve">
+    <value>Tempo de tratamento pré-operatório</value>
+  </data>
+  <data name="TibialPosterior" xml:space="preserve">
+    <value>Tibial posterior</value>
+  </data>
+  <data name="TipoCirurgia" xml:space="preserve">
+    <value>Tipo da cirurgia</value>
+  </data>
+  <data name="TratamentoPsiquiatrico" xml:space="preserve">
+    <value>Tramento psiquiátrico</value>
+  </data>
+  <data name="TVP" xml:space="preserve">
+    <value>TVP</value>
+  </data>
+  <data name="UltraSonografiaAbdomeTotal" xml:space="preserve">
+    <value>Ultrasonografia abdome total</value>
+  </data>
+  <data name="UsoMedicacoes" xml:space="preserve">
+    <value>Faz uso de medicações</value>
+  </data>
+  <data name="UsoMedicamentos" xml:space="preserve">
+    <value>Uso de medicamentos</value>
+  </data>
+  <data name="UsoSuplementos" xml:space="preserve">
+    <value>Uso de suplementos</value>
+  </data>
+  <data name="VarizesMMII" xml:space="preserve">
+    <value>Varizes MMII</value>
+  </data>
+  <data name="Verduras" xml:space="preserve">
+    <value>Verduras</value>
+  </data>
+  <data name="Vomitos" xml:space="preserve">
+    <value>Vômitos</value>
+  </data>
+  <data name="Foto" xml:space="preserve">
+    <value>Foto</value>
+  </data>
+  <data name="Agendada" xml:space="preserve">
+    <value>Agendada</value>
+  </data>
+  <data name="Realizada" xml:space="preserve">
+    <value>Realizada</value>
+  </data>
+  <data name="InternacaoSPA" xml:space="preserve">
+    <value>Internação em SPA?</value>
+  </data>
+  <data name="Frutas" xml:space="preserve">
+    <value>Frutas</value>
+  </data>
+  <data name="HipertensaoFamilia" xml:space="preserve">
+    <value>Caso de hipertensão familiar</value>
+  </data>
+  <data name="MotivoConsulta" xml:space="preserve">
+    <value>Motivo da consulta</value>
+  </data>
+  <data name="CondutaNutricional" xml:space="preserve">
+    <value>Conduta nutricional</value>
+  </data>
+  <data name="Altura" xml:space="preserve">
+    <value>Altura</value>
+  </data>
+  <data name="CircunferenciaBraco" xml:space="preserve">
+    <value>Circunferência do braço</value>
+  </data>
+  <data name="CircunferenciaCintura" xml:space="preserve">
+    <value>Circunferência da cintura</value>
+  </data>
+  <data name="CircunferenciaQuadril" xml:space="preserve">
+    <value>Circunferência do quadrl</value>
+  </data>
+  <data name="MedidaPaciente" xml:space="preserve">
+    <value>Medidas do paciente</value>
+  </data>
+  <data name="PorcentagemGordura" xml:space="preserve">
+    <value>% Gordura</value>
+  </data>
+  <data name="PorcentagemGorduraVisceraol" xml:space="preserve">
+    <value>% Gordura visceral</value>
+  </data>
+  <data name="PorcentagemMuscular" xml:space="preserve">
+    <value>% Muscular</value>
+  </data>
+  <data name="PressaoArterial" xml:space="preserve">
+    <value>Pressão arterial</value>
+  </data>
+  <data name="Remover" xml:space="preserve">
+    <value>Remover</value>
+  </data>
+  <data name="DataMedicao" xml:space="preserve">
+    <value>Data de medição</value>
+  </data>
+  <data name="PesoAlta" xml:space="preserve">
+    <value>Peso no dia da alta</value>
+  </data>
+  <data name="TempoCirurgia" xml:space="preserve">
+    <value>Duração da cirurgia</value>
+  </data>
+  <data name="Indicacao" xml:space="preserve">
+    <value>Indicação</value>
+  </data>
+  <data name="Laudo" xml:space="preserve">
+    <value>Laudo</value>
+  </data>
+  <data name="QueixaPrincipal" xml:space="preserve">
+    <value>Queixa principal</value>
+  </data>
+  <data name="HistoriaMolestiaAtual" xml:space="preserve">
+    <value>História da moléstia atual</value>
+  </data>
+  <data name="Acompanhante" xml:space="preserve">
+    <value>Acompanhante</value>
+  </data>
+  <data name="GrauParentescoAcompanhante" xml:space="preserve">
+    <value>Grau de parentesco do acompanhante</value>
+  </data>
+  <data name="ClassificacaoObesidade" xml:space="preserve">
+    <value>Classificação de obesidade</value>
+  </data>
+  <data name="HistoricoPatologiasFamilia" xml:space="preserve">
+    <value>Histórico de patologias na família</value>
+  </data>
+  <data name="MedicacaoEmUso" xml:space="preserve">
+    <value>Medicações em uso</value>
+  </data>
+  <data name="CategoriaExame" xml:space="preserve">
+    <value>Categoria do exame</value>
+  </data>
+  <data name="Medicacao" xml:space="preserve">
+    <value>Medicação</value>
+  </data>
+  <data name="Link" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="PropertyValueInvalid" xml:space="preserve">
+    <value>Valor inválido</value>
+  </data>
+  <data name="Medico" xml:space="preserve">
+    <value>Profissional</value>
+  </data>
+</root>

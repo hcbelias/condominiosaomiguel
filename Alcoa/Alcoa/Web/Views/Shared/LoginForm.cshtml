@@ -1,0 +1,69 @@
+@using WebControllers
+@using Model
+@model Model.LoginModel
+
+@{
+	Boolean v_IsNewModel = Model== null || Model.Id == 0;
+	String method = v_IsNewModel?"Create": "Edit";
+}
+
+@using (Html.BeginForm(method, "Login", FormMethod.Post, new { id = "saveFormId", @class = "form-horizontal" }))
+{
+	@Html.Partial("CustomSummary")
+	@Html.Partial("ViewBagMessage")
+    <fieldset>
+
+	
+        <h1>
+            Login
+			
+			</h1>
+        <div class="row-fluid">
+            <div class="span6">
+			<legend>Dados</legend>
+
+	@Html.HiddenFor(model => model.Id)
+			<div class="control-group">
+				<label class="control-label" >
+					@Html.LabelFor(model=>model.Password)</label>
+				<div class="controls">
+				    @Html.EditorFor(model => model.Password)
+					<br/>
+					@Html.ValidationMessageFor(model=>model.Password)
+				    
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" >
+					@Html.LabelFor(model=>model.Email)</label>
+				<div class="controls">
+				    @Html.EditorFor(model => model.Email)
+					<br/>
+					@Html.ValidationMessageFor(model=>model.Email)
+				    
+				</div>
+			</div>
+
+ 			<div class="control-group">
+				<label class="control-label" >
+					@Html.LabelFor(model=>model.Perfil)</label>
+				<div class="controls">
+					@Html.Partial("PerfilComboBox", WebControllers.PerfilController.GetComboBox(!v_IsNewModel && Model.Perfil != null ? Model.Perfil.Id : 0))
+				</div>
+			</div>
+
+  	</div>
+			</div>
+	</fieldset>
+}
+@using (Html.BeginForm("Index", "Login", FormMethod.Get, new { id = "cancelFormId"}))
+{ }
+@if (!v_IsNewModel)
+{
+    using (Html.BeginForm("Delete", "Login", new { p_Identifier = Model.Id}, FormMethod.Get, new { id = "deleteFormId"}))
+    { @Html.Hidden("p_Identifier", Model.Id) }
+}
+
+
+
+   

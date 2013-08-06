@@ -1,0 +1,282 @@
+<#
+//*********************************************************
+//
+//    Copyright (c) Microsoft. All rights reserved.
+//    This code is licensed under the Microsoft Public License.
+//    THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF
+//    ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY
+//    IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR
+//    PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
+//
+//*********************************************************
+#>
+<#@ template language="C#" debug="false" hostspecific="true"#>
+<#@ include file="EF.Utility.CS.ttinclude"#><#@
+ output extension=".cs"#><#
+
+CodeGenerationTools code = new CodeGenerationTools(this);
+MetadataLoader loader = new MetadataLoader(this);
+CodeRegion region = new CodeRegion(this, 1);
+MetadataTools ef = new MetadataTools(this);
+
+string inputFile = @"..\DataModel.edmx";
+EdmItemCollection ItemCollection = loader.CreateEdmItemCollection(inputFile);
+string namespaceName = "DAL";
+
+EntityFrameworkTemplateFileManager fileManager = EntityFrameworkTemplateFileManager.Create(this);
+
+// Write out support code to primary template output file
+	
+WriteHeader(fileManager);
+BeginNamespace(namespaceName, code);
+	
+WriteCustomObservableCollection();
+EndNamespace(namespaceName);
+
+// Emit Entity Types
+foreach (EntityType entity in ItemCollection.GetItems<EntityType>().OrderBy(e => e.Name))
+{
+    fileManager.StartNewFile("DAL"+entity.Name + ".cs");
+    #>
+using System.Linq;
+using Model;
+
+<#
+	
+	BeginNamespace(namespaceName, code);
+	
+    bool entityHasNullableFKs = entity.NavigationProperties.Any(np => np.GetDependentProperties().Any(p=>ef.IsNullable(p)));
+#>
+<#=Accessibility.ForType(entity)#> <#=code.SpaceAfter(code.AbstractOption(entity))#>partial class <#=code.Escape(entity)#>
+{
+
+	public string ComboboxText{ get; set; }
+
+	public static <#=code.Escape(entity)#> Get<#=code.Escape(entity)#>(int p_Identifier)
+	{
+		DataContext v_Context = DataContext.GetContext();
+        <#=code.Escape(entity)#> v_Data =
+					(from entity in v_Context.<#=code.Escape(entity)#>
+                    where entity.Id == p_Identifier
+					select entity).FirstOrDefault();
+		if(v_Data!=null)
+			v_Data.setCombobox();
+		return v_Data;
+	}
+
+
+
+	public static ICollection<<#=code.Escape(entity)#>> List<#=code.Escape(entity)#>()
+	{
+		DataContext v_Context = DataContext.GetContext();
+		List<<#=code.Escape(entity)#>> v_List =v_Context.<#=code.Escape(entity)#>.ToList();
+		for(int i=0; i < v_List.Count(); i++)
+		{
+			v_List[i].setCombobox();
+		}
+		return v_List;
+	}
+
+	
+
+    public static void Delete<#=code.Escape(entity)#>(int p_Identifier)
+    {
+        DataContext v_Context = DataContext.GetContext();
+        <#=code.Escape(entity)#> <#=code.Escape(entity)#>DAL = Get<#=code.Escape(entity)#>(p_Identifier);
+        v_Context.DeleteObject(<#=code.Escape(entity)#>DAL);
+    }
+
+
+	public static <#=code.Escape(entity)#> CreateFactory(Model.<#=code.Escape(entity)#>Model p_Model)
+	{
+		if(p_Model == null)
+			return new <#=code.Escape(entity)#>();
+		<#=code.Escape(entity)#> v_New<#=code.Escape(entity)#> = new <#=code.Escape(entity)#>();
+<#foreach (EdmProperty edmProperty in entity.Properties.Where(p => p.TypeUsage.EdmType is PrimitiveType && p.DeclaringType == entity))	{	#>
+		v_New<#=code.Escape(entity)#>.<#=code.Escape(edmProperty)#> = p_Model.<#=code.Escape(edmProperty)#>;
+<#}
+
+	foreach (NavigationProperty navProperty in entity.NavigationProperties)
+	{
+
+		if(navProperty.FromEndMember.RelationshipMultiplicity == RelationshipMultiplicity.Many && navProperty.ToEndMember.RelationshipMultiplicity != RelationshipMultiplicity.Many )
+      {#>
+        if (p_Model.<#=code.Escape(navProperty)#> != null)
+			v_New<#=code.Escape(entity)#>.<#=code.Escape(navProperty)#> = <#=code.Escape(navProperty)#>.Get<#=code.Escape(navProperty)#>(p_Model.<#=code.Escape(navProperty)#>.Id);
+		if (v_New<#=code.Escape(entity)#>.<#=code.Escape(navProperty)#> == null)
+			throw new Exception("Entidade <#=code.Escape(entity)#> deve ter um(a) <#=code.Escape(navProperty)#> associado.");
+<#      }
+		
+
+	}
+#>
+		v_New<#=code.Escape(entity)#>.ComboboxText = p_Model.ComboboxText;
+		return v_New<#=code.Escape(entity)#>;
+	}
+
+	public static void Create(Model.<#=code.Escape(entity)#>Model p_Model)
+	{
+		DataContext v_Context = DataContext.GetContext();
+		<#=code.Escape(entity)#> v_New<#=code.Escape(entity)#> = CreateFactory(p_Model);
+
+
+	}
+
+	public static void Edit(Model.<#=code.Escape(entity)#>Model p_Model)
+	{
+		if(p_Model == null || p_Model.Id == 0)
+			return;
+		DataContext v_Context = DataContext.GetContext();
+		<#=code.Escape(entity)#> v_<#=code.Escape(entity)#> = Get<#=code.Escape(entity)#>(p_Model.Id);
+		v_<#=code.Escape(entity)#>.updateFields(p_Model);
+}
+
+	
+	public void updateFields(<#=code.Escape(entity)#>Model p_Model)
+    {
+		if(p_Model == null)
+			return ;
+
+<#foreach (EdmProperty edmProperty in entity.Properties.Where(p => p.TypeUsage.EdmType is PrimitiveType && p.DeclaringType == entity))	{
+	
+	  bool identifierField = code.Escape(edmProperty).ToLower().Equals("identificador") ||
+		 code.Escape(edmProperty).ToLower().Equals("id") ||
+		 code.Escape(edmProperty).ToLower().Equals("identifier");
+		if(!identifierField)
+        {
+	#>
+		this.<#=code.Escape(edmProperty)#> = p_Model.<#=code.Escape(edmProperty)#>;
+<#		}
+	}
+	#>
+	}
+
+
+	public void delete()
+	{
+		DataContext v_Context = DataContext.GetContext();
+		v_Context.DeleteObject(this);
+	}
+}
+<#
+    EndNamespace(namespaceName);
+}
+
+if (!VerifyTypesAreCaseInsensitiveUnique(ItemCollection))
+{
+    return "";
+}
+
+fileManager.Process();
+
+#>
+<#+
+void WriteHeader(EntityFrameworkTemplateFileManager fileManager, params string[] extraUsings)
+{
+    fileManager.StartHeader();
+#>
+//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated from a template.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Collections.Specialized;
+<#=String.Join(String.Empty, extraUsings.Select(u => "using " + u + ";" + Environment.NewLine).ToArray())#>
+<#+
+    fileManager.EndBlock();
+}
+
+void BeginNamespace(string namespaceName, CodeGenerationTools code)
+{
+    CodeRegion region = new CodeRegion(this);
+    if (!String.IsNullOrEmpty(namespaceName))
+    {
+#>
+namespace <#=code.EscapeNamespace(namespaceName)#>
+{
+<#+
+        PushIndent(CodeRegion.GetIndent(1));
+    }
+}
+
+
+void EndNamespace(string namespaceName)
+{
+    if (!String.IsNullOrEmpty(namespaceName))
+    {
+        PopIndent();
+#>
+}
+<#+
+    }
+}
+
+bool IsReadWriteAccessibleProperty(EdmMember member)
+{
+    string setter = Accessibility.ForWriteOnlyProperty(member);
+    string getter = Accessibility.ForReadOnlyProperty(member);
+
+    return getter != "private" && getter != "protected" && setter != "private" && setter != "protected";
+}
+
+string PropertyVirtualModifier(string accessibility)
+{
+    return accessibility + (accessibility != "private" ? " virtual" : "");
+}
+
+void WriteCustomObservableCollection()
+{
+#>
+// An System.Collections.ObjectModel.ObservableCollection that raises
+// individual item removal notifications on clear and prevents adding duplicates.
+public class FixupCollection<T> : ObservableCollection<T>
+{
+    protected override void ClearItems()
+    {
+        new List<T>(this).ForEach(t => Remove(t));
+    }
+
+    protected override void InsertItem(int index, T item)
+    {
+        if (!this.Contains(item))
+        {
+            base.InsertItem(index, item);
+        }
+    }
+}
+<#+
+}
+
+bool VerifyTypesAreCaseInsensitiveUnique(EdmItemCollection itemCollection)
+{
+    Dictionary<string, bool> alreadySeen = new Dictionary<string, bool>(StringComparer.OrdinalIgnoreCase);
+    foreach(StructuralType type in itemCollection.GetItems<StructuralType>())
+    {
+        if (!(type is EntityType || type is ComplexType))
+        {
+            continue;
+        }
+
+        if (alreadySeen.ContainsKey(type.FullName))
+        {
+            Error(String.Format(CultureInfo.CurrentCulture, "This template does not support types that differ only by case, the types {0} are not supported", type.FullName));
+            return false;
+        }
+        else
+        {
+            alreadySeen.Add(type.FullName, true);
+        }
+
+    }
+
+    return true;
+}
+#>

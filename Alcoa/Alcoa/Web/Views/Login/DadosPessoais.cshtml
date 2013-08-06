@@ -1,0 +1,51 @@
+﻿@model Model.LoginModel
+@{
+    ViewBag.Title = "DadosPessoais";
+}
+<div class="container">
+    <div class="row">
+        <div id="sidenav" class="span3">
+            <ul class="nav nav-list bs-docs-sidenav affix">
+                <li><a href="#dados-pessoais"><i class="icon-chevron-right"></i>Dados Pessoais</a></li>
+                <li><a href="#login"><i class="icon-chevron-right"></i>Login</a></li>
+            </ul>
+        </div>
+        <div class="span9" id="data-content">
+            <div id="dados-pessoais">
+                <div class="page-header">
+                    <h1>
+                        DadosPessoais</h1>
+                </div>
+                <div class="row-fluid">
+                    <div class="span6">
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="login">
+                <div class="page-header">
+                    <h1>
+                        Login</h1>
+                </div>
+                <div class="row-fluid form-horizontal">
+                    <div class="span6">
+                        <div class="control-group">
+                            <label class="control-label">
+                                @Html.LabelFor(model => model.Email)</label>
+                            <div class="controls">
+                                @Html.DisplayFor(model => model.Email, new { @class = "email" })
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">
+                                @Html.LabelFor(model => model.Perfil.Nome)</label>
+                            <div class="controls">
+                                @Html.DisplayFor(model => model.Perfil.Nome)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

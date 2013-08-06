@@ -1,0 +1,59 @@
+@using Util
+@model IEnumerable<Model.SubMenuModel>
+<table id="table-list" class="table table-bordered  table-hover table-striped table-condensed">
+    <thead>
+        <th style="width: 8%; text-align:center;">@Html.Label(Constants.Translate.ACOES)
+        </th>
+	<th style="text-align:center;">@Html.Label(Internationalization.Id)</th>
+	<th style="text-align:center;">@Html.Label(Internationalization.Nome)</th>
+	<th style="text-align:center;">@Html.Label(Internationalization.Link)</th>
+	<th style="text-align:center;">@Html.Label(Internationalization.ClassName)</th>
+	</thead>
+	@if(Model!=null)
+	{
+		<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+			<td style="width: 8%;text-align:center;">
+				@Html.Partial("SubMenuAction",item);
+            </td>
+				
+				
+					<td style="text-align:center;">@Html.DisplayFor(modelItem => item.Nome)</td>
+
+				
+					<td style="text-align:center;">@Html.DisplayFor(modelItem => item.Link)</td>
+
+				
+					<td style="text-align:center;">@Html.DisplayFor(modelItem => item.ClassName)</td>
+
+				
+			</tr>
+
+		}
+		</tbody>
+	}
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

@@ -1,0 +1,194 @@
+@using DAL
+@using Model
+@using WebControllers
+@model Model.ConsultaModel
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#editAnamneseConsultaOlavoForm").submit(function (e) {
+            var queryString = $(e.target).serialize() + '&';
+            $.post('EditarAnamneseConsultaOlavo', queryString, function (data) {
+                
+                $("#anamnese-content").html(data);
+            });
+            return false;
+        });
+    });
+</script>
+<div class="row-fluid form-horizontal tab-pane-content">
+    @using (Ajax.BeginForm("EditarAnamneseConsultaOlavo", "Consulta",
+    new AjaxOptions { HttpMethod = "POST" }, new { id = "editAnamneseConsultaOlavoForm" }))
+    {
+        @Html.Partial("CustomSummary")
+        @Html.Partial("ViewBagMessage")
+        @Html.HiddenFor(model => model.Id)
+            <div class="row-fluid " style="margin-bottom: 20px;">
+            <button class="btn  btn-success pull-left" type="submit">
+                Salvar Dados</button>
+        </div>
+    
+        <div class="row-fluid">
+            <div class="span3">
+                @Html.LabelFor(model => model.AnamneseConsultaOlavo.HipertensaoFamilia)
+                @Html.EditorFor(model => model.AnamneseConsultaOlavo.HipertensaoFamilia)
+            </div>
+            <div class="span3">
+                @Html.LabelFor(model => model.AnamneseConsultaOlavo.InfartoMiocardio)
+                @Html.EditorFor(model => model.AnamneseConsultaOlavo.InfartoMiocardio)
+            </div>
+            <div class="span3">
+                @Html.LabelFor(model => model.AnamneseConsultaOlavo.AVC)
+                @Html.EditorFor(model => model.AnamneseConsultaOlavo.AVC)
+            </div>
+            <div class="span3">
+                @Html.LabelFor(model => model.AnamneseConsultaOlavo.SalComidaPronta)
+                @Html.EditorFor(model => model.AnamneseConsultaOlavo.SalComidaPronta)
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="span3">
+                @Html.LabelFor(model => model.AnamneseConsultaOlavo.PilulaAnticoncepcional)
+                @Html.EditorFor(model => model.AnamneseConsultaOlavo.PilulaAnticoncepcional)
+            </div>
+            <div class="span3">
+                @Html.LabelFor(model => model.AnamneseConsultaOlavo.Gota)
+                @Html.EditorFor(model => model.AnamneseConsultaOlavo.Gota)
+            </div>
+            <div class="span3">
+                @Html.LabelFor(model => model.AnamneseConsultaOlavo.Nefropatia)
+                @Html.EditorFor(model => model.AnamneseConsultaOlavo.Nefropatia)
+            </div>
+            <div class="span3">
+                @Html.LabelFor(model => model.AnamneseConsultaOlavo.Claudicacao)
+                @Html.EditorFor(model => model.AnamneseConsultaOlavo.Claudicacao)
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="span3">
+                @Html.LabelFor(model => model.AnamneseConsultaOlavo.IndiciosHASecundaria)
+                @Html.EditorFor(model => model.AnamneseConsultaOlavo.IndiciosHASecundaria)
+            </div>
+            <div class="span3">
+                @Html.LabelFor(model => model.AnamneseConsultaOlavo.ImpotenciaSexual)
+                @Html.EditorFor(model => model.AnamneseConsultaOlavo.ImpotenciaSexual)
+            </div>
+            <div class="span3">
+                @Html.LabelFor(model => model.AnamneseConsultaOlavo.Insonia)
+                @Html.EditorFor(model => model.AnamneseConsultaOlavo.Insonia)
+            </div>
+        </div>
+            
+        <div class="row-fluid">
+            <div class="span6">
+                @Html.LabelFor(model => model.AnamneseConsultaOlavo.ContraIndicacao)
+                @Html.EditorFor(model => model.AnamneseConsultaOlavo.ContraIndicacao)
+            </div>
+            <div class="span6">
+                @Html.LabelFor(model => model.AnamneseConsultaOlavo.Coracao)
+                @Html.EditorFor(model => model.AnamneseConsultaOlavo.Coracao)
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="span6">
+                @Html.LabelFor(model => model.AnamneseConsultaOlavo.Pulmoes)
+                @Html.EditorFor(model => model.AnamneseConsultaOlavo.Pulmoes)
+            </div>
+            <div class="span6">
+                @Html.LabelFor(model => model.AnamneseConsultaOlavo.Abdome)
+                @Html.EditorFor(model => model.AnamneseConsultaOlavo.Abdome)
+            </div>
+        </div>
+        <div class="row-fluid">
+            <legend>Pulsos</legend>
+            <div class="row-fluid">
+                <div class="span6">
+                    @Html.LabelFor(model => model.AnamneseConsultaOlavo.SoproAbdominal)
+                    @Html.EditorFor(model => model.AnamneseConsultaOlavo.SoproAbdominal)
+                </div>
+                <div class="span6">
+                    @Html.LabelFor(model => model.AnamneseConsultaOlavo.EdemaMembros)
+                    @Html.EditorFor(model => model.AnamneseConsultaOlavo.EdemaMembros)
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span6">
+                    @Html.LabelFor(model => model.AnamneseConsultaOlavo.Carotideo)
+                    @Html.EditorFor(model => model.AnamneseConsultaOlavo.Carotideo)
+                </div>
+                <div class="span6">
+                    @Html.LabelFor(model => model.AnamneseConsultaOlavo.Radial)
+                    @Html.EditorFor(model => model.AnamneseConsultaOlavo.Radial)
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span6">
+                    @Html.LabelFor(model => model.AnamneseConsultaOlavo.Femural)
+                    @Html.EditorFor(model => model.AnamneseConsultaOlavo.Femural)
+                </div>
+                <div class="span6">
+                    @Html.LabelFor(model => model.AnamneseConsultaOlavo.Pedioso)
+                    @Html.EditorFor(model => model.AnamneseConsultaOlavo.Pedioso)
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span6">
+                    @Html.LabelFor(model => model.AnamneseConsultaOlavo.TibialPosterior)
+                    @Html.EditorFor(model => model.AnamneseConsultaOlavo.TibialPosterior)
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <legend>Pressão arterial</legend>
+            <div class="span6">
+                <div class="row-fluid">
+                    @Html.LabelFor(model => model.AnamneseConsultaOlavo.MSD)
+                    @Html.CheckBoxFor(model => model.AnamneseConsultaOlavo.MSD)
+                </div>
+                <div class="row-fluid">
+                    @Html.LabelFor(model => model.AnamneseConsultaOlavo.MSE)
+                    @Html.CheckBoxFor(model => model.AnamneseConsultaOlavo.MSE)
+                </div>
+            </div>
+            <div class="span5">
+                <div class="row-fluid">
+                    @Html.LabelFor(model => model.AnamneseConsultaOlavo.DecubitoDorsal)
+                    @Html.EditorFor(model => model.AnamneseConsultaOlavo.DecubitoDorsal)
+                </div>
+                <div class="row-fluid">
+                    @Html.LabelFor(model => model.AnamneseConsultaOlavo.Sentado)
+                    @Html.EditorFor(model => model.AnamneseConsultaOlavo.Sentado)
+                </div>
+                <div class="row-fluid">
+                    @Html.LabelFor(model => model.AnamneseConsultaOlavo.Ereto)
+                    @Html.EditorFor(model => model.AnamneseConsultaOlavo.Ereto)
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <legend>Conduta</legend>
+            <div class="span6">
+                <div class="row-fluid">
+                    @Html.LabelFor(model => model.AnamneseConsultaOlavo.Sal)
+                    @Html.EditorFor(model => model.AnamneseConsultaOlavo.Sal)
+                </div>
+                <div class="row-fluid">
+                    @Html.LabelFor(model => model.AnamneseConsultaOlavo.Calorias)
+                    @Html.EditorFor(model => model.AnamneseConsultaOlavo.Calorias)
+                </div>
+            </div>
+            <div class="span5">
+                <div class="row-fluid">
+                    @Html.LabelFor(model => model.AnamneseConsultaOlavo.Medicacao)
+                    @Html.EditorFor(model => model.AnamneseConsultaOlavo.Medicacao)
+                </div>
+                <div class="row-fluid">
+                    @Html.LabelFor(model => model.AnamneseConsultaOlavo.EfeitosColaterais)
+                    @Html.EditorFor(model => model.AnamneseConsultaOlavo.EfeitosColaterais)
+                </div>
+                <div class="row-fluid">
+                    @Html.LabelFor(model => model.AnamneseConsultaOlavo.Observacoes)
+                    @Html.TextAreaFor(model => model.AnamneseConsultaOlavo.Observacoes)
+                </div>
+            </div>
+        </div>
+    }
+</div>

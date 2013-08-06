@@ -1,0 +1,62 @@
+@using WebControllers
+@using Model
+@model Model.EstadoModel
+
+@{
+	Boolean v_IsNewModel = Model== null || Model.Id == 0;
+	String method = v_IsNewModel?"Create": "Edit";
+}
+
+@using (Html.BeginForm(method, "Estado", FormMethod.Post, new { id = "saveFormId", @class = "form-horizontal" }))
+{
+	@Html.Partial("CustomSummary")
+	@Html.Partial("ViewBagMessage")
+    <fieldset>
+
+	
+        <h1>
+            Estado
+			
+			</h1>
+        <div class="row-fluid">
+            <div class="span6">
+			<legend>Dados</legend>
+
+	@Html.HiddenFor(model => model.Id)
+			<div class="control-group">
+				<label class="control-label" >
+					@Html.LabelFor(model=>model.Nome)</label>
+				<div class="controls">
+				    @Html.EditorFor(model => model.Nome)
+					<br/>
+					@Html.ValidationMessageFor(model=>model.Nome)
+				    
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" >
+					@Html.LabelFor(model=>model.Sigla)</label>
+				<div class="controls">
+				    @Html.EditorFor(model => model.Sigla)
+					<br/>
+					@Html.ValidationMessageFor(model=>model.Sigla)
+				    
+				</div>
+			</div>
+
+ 
+  	</div>
+			</div>
+	</fieldset>
+}
+@using (Html.BeginForm("Index", "Estado", FormMethod.Get, new { id = "cancelFormId"}))
+{ }
+@if (!v_IsNewModel)
+{
+    using (Html.BeginForm("Delete", "Estado", new { p_Identifier = Model.Id}, FormMethod.Get, new { id = "deleteFormId"}))
+    { @Html.Hidden("p_Identifier", Model.Id) }
+}
+
+
+
+   

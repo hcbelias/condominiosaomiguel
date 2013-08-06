@@ -1,0 +1,32 @@
+@using WebControllers
+@model Model.EstadoModel
+@{
+	String method = "Search";
+}
+
+@using (Html.BeginForm(method, "Estado", FormMethod.Post, new { id = "searchFormId" }))
+{
+ 
+
+			<div class="control-group ">
+				<label class="control-label" >
+					@Html.LabelFor(model=>model.Nome)</label>
+				<div class="controls">
+
+				    @Html.EditorFor(model => model.Nome)
+					@Html.ValidationMessageFor(model=>model.Nome)
+				</div>
+			</div>
+
+			<div class="control-group ">
+				<label class="control-label" >
+					@Html.LabelFor(model=>model.Sigla)</label>
+				<div class="controls">
+
+				    @Html.EditorFor(model => model.Sigla)
+					@Html.ValidationMessageFor(model=>model.Sigla)
+				</div>
+			</div>
+
+}
+

@@ -1,0 +1,13 @@
+@model IEnumerable<Model.LoginModel>
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>Busca - Login</h2>
+
+@Html.Partial("LoginList", Model)
+
+
+   

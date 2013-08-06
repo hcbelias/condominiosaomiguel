@@ -1,0 +1,198 @@
+@using DAL
+@using Model
+@using WebControllers
+@model Model.ConsultaModel
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#editAnamneseConsultaMarcelaForm").submit(function (e) {
+            var queryString = $(e.target).serialize() + '&';
+            $.post('EditarAnamneseConsultaMarcela', queryString, function (data) {
+
+                $("#anamnese-content").html(data);
+            });
+            return false;
+        });
+    });
+</script>
+<div class="row-fluid form-horizontal tab-pane-content">
+    @using (Ajax.BeginForm("EditarAnamneseConsultaMarcela", "Consulta",
+    new AjaxOptions { HttpMethod = "POST" }, new { id = "editAnamneseConsultaMarcelaForm" }))
+    {
+        @Html.Partial("CustomSummary")
+        @Html.Partial("ViewBagMessage")
+        @Html.HiddenFor(model => model.Id)
+        <div class="row-fluid " style="margin-bottom: 20px;">
+            <button class="btn  btn-success pull-left" type="submit">
+                Salvar Dados</button>
+        </div>
+    
+        <div class="row-fluid">
+            <div class="row-fluid">
+                <div class="span3">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.DocesChocolates)
+                    @Html.CheckBoxFor(model => model.AnamneseConsultaMarcela.DocesChocolates)
+                </div>
+                <div class="span3">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.Refrigerante)
+                    @Html.CheckBoxFor(model => model.AnamneseConsultaMarcela.Refrigerante)
+                </div>
+                <div class="span3">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.Massa)
+                    @Html.CheckBoxFor(model => model.AnamneseConsultaMarcela.Massa)
+                </div>
+                <div class="span3">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.CarneGorda)
+                    @Html.CheckBoxFor(model => model.AnamneseConsultaMarcela.CarneGorda)
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.Oleo)
+                    @Html.CheckBoxFor(model => model.AnamneseConsultaMarcela.Oleo)
+                </div>
+                <div class="span3">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.Sal)
+                    @Html.CheckBoxFor(model => model.AnamneseConsultaMarcela.Sal)
+                </div>
+                <div class="span3">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.Quitandas)
+                    @Html.CheckBoxFor(model => model.AnamneseConsultaMarcela.Quitandas)
+                </div>
+                <div class="span3">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.Frituras)
+                    @Html.CheckBoxFor(model => model.AnamneseConsultaMarcela.Frituras)
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.Frutas)
+                    @Html.CheckBoxFor(model => model.AnamneseConsultaMarcela.Frutas)
+                </div>
+                <div class="span3">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.Verduras)
+                    @Html.CheckBoxFor(model => model.AnamneseConsultaMarcela.Verduras)
+                </div>
+                <div class="span3">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.Legumes)
+                    @Html.CheckBoxFor(model => model.AnamneseConsultaMarcela.Legumes)
+                </div>
+                <div class="span3">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.Agua)
+                    @Html.CheckBoxFor(model => model.AnamneseConsultaMarcela.Agua)
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.AlimentacaoNoturna)
+                    @Html.CheckBoxFor(model => model.AnamneseConsultaMarcela.AlimentacaoNoturna)
+                </div>
+                <div class="span3">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.CompulsaoAlimentar)
+                    @Html.CheckBoxFor(model => model.AnamneseConsultaMarcela.CompulsaoAlimentar)
+                </div>
+                <div class="span3">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.Ansiedade)
+                    @Html.CheckBoxFor(model => model.AnamneseConsultaMarcela.Ansiedade)
+                </div>
+                <div class="span3">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.LeiteDerivados)
+                    @Html.CheckBoxFor(model => model.AnamneseConsultaMarcela.LeiteDerivados)
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="control-group">
+                <label class="control-label span6">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.AtividadeFisica)</label>
+                <div class="controls span6">
+                    @Html.EditorFor(model => model.AnamneseConsultaMarcela.AtividadeFisica)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label span6">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.TipoCirurgia)</label>
+                <div class="controls span6">
+                    @Html.EditorFor(model => model.AnamneseConsultaMarcela.TipoCirurgia)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label span6">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.TempoTratamentoPreOperatorio)</label>
+                <div class="controls span6">
+                    @Html.EditorFor(model => model.AnamneseConsultaMarcela.TempoTratamentoPreOperatorio)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label span6">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.UsoSuplementos)</label>
+                <div class="controls span6">
+                    @Html.EditorFor(model => model.AnamneseConsultaMarcela.UsoSuplementos)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label span6">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.FuncaoIntestinal)</label>
+                <div class="controls span6">
+                    @Html.EditorFor(model => model.AnamneseConsultaMarcela.FuncaoIntestinal)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label span6">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.AlteracoesGastricas)</label>
+                <div class="controls span6">
+                    @Html.EditorFor(model => model.AnamneseConsultaMarcela.AlteracoesGastricas)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label span6">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.Intolerancias)</label>
+                <div class="controls span6">
+                    @Html.EditorFor(model => model.AnamneseConsultaMarcela.Intolerancias)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label span6">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.ObjetivoTratamento)</label>
+                <div class="controls span6">
+                    @Html.EditorFor(model => model.AnamneseConsultaMarcela.ObjetivoTratamento)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label span6">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.AlimentoNaoGosta)</label>
+                <div class="controls span6">
+                    @Html.EditorFor(model => model.AnamneseConsultaMarcela.AlimentoNaoGosta)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label span6">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.AlimentoGosta)</label>
+                <div class="controls span6">
+                    @Html.EditorFor(model => model.AnamneseConsultaMarcela.AlimentoGosta)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label span6">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.ComoEFimSemana)</label>
+                <div class="controls span6">
+                    @Html.EditorFor(model => model.AnamneseConsultaMarcela.ComoEFimSemana)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label span6">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.Observacoes)</label>
+                <div class="controls span6">
+                    @Html.EditorFor(model => model.AnamneseConsultaMarcela.Observacoes)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label span6">
+                    @Html.LabelFor(model => model.AnamneseConsultaMarcela.RotinaDiaria)</label>
+                <div class="controls span6">
+                    @Html.TextAreaFor(model => model.AnamneseConsultaMarcela.RotinaDiaria)
+                </div>
+            </div>
+        </div>
+        
+    }
+</div>

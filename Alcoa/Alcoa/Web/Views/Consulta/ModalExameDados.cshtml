@@ -1,0 +1,87 @@
+﻿@using Model
+@model ExameDadosModel
+
+    <div class="modal-body" style="max-height: 800px;">
+        @using (Html.BeginForm("CreateExameDados", "Consulta",
+        FormMethod.Post, new { id = "saveExameDadosForm", @class = "form-horizontal" }))
+        {             
+            @Html.Partial("ViewBagMessage")
+            @Html.Partial("CustomSummary")
+            @Html.HiddenFor(model => model.Id)
+            @Html.HiddenFor(model => model.Paciente.Id)
+            <legend>Dados do exame</legend>
+            <div class="row-fluid">
+                @Html.HiddenFor(model => model.Id)
+                
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.TipoExame)</label>
+                    <div class="controls">
+                        @Html.Partial("TipoExameComboBox", WebControllers.TipoExameController.GetComboBox(Model != null && Model.TipoExame != null ? Model.TipoExame.Id : 0))
+                        <br />
+                        @Html.ValidationMessageFor(model => model.Paciente)
+                    </div>
+                </div>
+                
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.Valor)</label>
+                    <div class="controls">
+                        @Html.EditorFor(model => model.Valor)
+                        <br />
+                        @Html.ValidationMessageFor(model => model.Valor)
+                    </div>
+                </div>
+                
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.DataExame)</label>
+                    <div class="controls">
+                        @Html.EditorFor(model => model.DataExame)
+                        <br />
+                        @Html.ValidationMessageFor(model => model.DataExame)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.Descricao)</label>
+                    <div class="controls">
+                        @Html.EditorFor(model => model.Descricao)
+                        <br />
+                        @Html.ValidationMessageFor(model => model.Descricao)
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal">
+            Fechar</button>
+        <button class="btn btn-success" type="submit" onclick="$('#saveExameDadosForm').submit()">
+            Salvar</button>
+    </div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        validateData();
+        $("#saveExameDadosForm").submit(function (e) {
+            var queryString = $(e.target).serialize() + '&';
+            $.post('CreateExameDados', queryString, function (data) {
+                
+                if (data.Success) {
+                    $("#examedados-content").html(data.Data);
+                    closeExameDadosModal();
+                } else {
+                    $("#examedadosmodal").html(data.Data);
+                }
+            });
+            return false;
+        });
+    });
+
+    function closeExameDadosModal() {
+        closeModal("#examedadosmodal");
+    }
+
+</script>

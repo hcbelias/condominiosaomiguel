@@ -1,0 +1,160 @@
+@model Model.ConsultaModel
+@{
+    Boolean v_IsNewModel = Model == null || Model.Id == 0;
+    String method = v_IsNewModel ? "Create" : "Edit";
+}
+<h1>
+    Consulta
+</h1>
+@Html.Partial("CustomSummary")
+@Html.Partial("ViewBagMessage")
+<div class="span5">
+    @using (Html.BeginForm(method, "Consulta", FormMethod.Post, new { id = "saveFormId", @class = "form-horizontal" }))
+    {
+    
+        <fieldset>
+            <div class="row-fluid">
+                <legend>Dados</legend>
+                @Html.HiddenFor(model => model.Id)
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.Paciente)</label>
+                    <div class="controls">
+                        @if (v_IsNewModel)
+                        {
+                            @Html.Partial("PacienteComboBox", WebControllers.PacienteController.GetComboBox(Model != null && Model.Paciente != null ? Model.Paciente.Id : 0))
+                        }
+                        else
+                        {
+                            @Html.TextBoxFor(model => model.Paciente.Nome, new { @readonly = "readonly" })
+                        }
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.Medico)</label>
+                    <div class="controls">
+                        @if (v_IsNewModel)
+                        {
+                            @Html.Partial("MedicoComboBox", WebControllers.MedicoController.GetComboBox(Model != null && Model.Medico != null ? Model.Medico.Id : 0))
+                        }
+                        else
+                        {
+                            @Html.TextBoxFor(model => model.Medico.Nome, new { @readonly = "readonly" })
+                        }
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.DataConsulta)</label>
+                    <div class="controls">
+                        @if (v_IsNewModel)
+                        {
+                            @Html.EditorFor(model => model.DataConsulta)
+                        }
+                        else
+                        {
+                            @Html.TextBox("DataConsulta", Model.DataConsulta.ToShortDateString(), new { @readonly = "readonly" })
+                        }
+                        <br />
+                        @Html.ValidationMessageFor(model => model.DataConsulta)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.HoraConsulta)</label>
+                    <div class="controls">
+                        @if (v_IsNewModel)
+                        {
+                            @Html.Partial("HoraConsultaComboBox")
+                        }
+                        else
+                        {
+                            @Html.TextBox("HoraConsulta", Model.HoraConsulta.ToShortTimeString(), new { @readonly = "readonly" })
+                        }
+                        <br />
+                        @Html.ValidationMessageFor(model => model.HoraConsulta)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.Retorno)</label>
+                    <div class="controls">
+                        @Html.EditorFor(model => model.Retorno)
+                        <br />
+                        @Html.ValidationMessageFor(model => model.Retorno)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.Acompanhante)</label>
+                    <div class="controls">
+                        @Html.EditorFor(model => model.Acompanhante)
+                        <br />
+                        @Html.ValidationMessageFor(model => model.Acompanhante)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        @Html.LabelFor(model => model.GrauParentescoAcompanhante)</label>
+                    <div class="controls">
+                        @Html.EditorFor(model => model.GrauParentescoAcompanhante)
+                        <br />
+                        @Html.ValidationMessageFor(model => model.GrauParentescoAcompanhante)
+                    </div>
+                </div>
+                @if (!v_IsNewModel && (Model != null && Model.Medico != null
+                    && Model.Medico.Login != null &&
+                    Model.Medico.Login.Email == this.Context.User.Identity.Name))
+                {
+                        
+                    <div class="control-group">
+                        <label class="control-label">
+                            @Html.LabelFor(model => model.HistoriaMolestiaAtual)</label>
+                        <div class="controls">
+                            @Html.EditorFor(model => model.HistoriaMolestiaAtual)
+                            <br />
+                            @Html.ValidationMessageFor(model => model.HistoriaMolestiaAtual)
+                        </div>
+                    </div>
+                    
+                    <div class="control-group">
+                        <label class="control-label">
+                            @Html.LabelFor(model => model.QueixaPrincipal)</label>
+                        <div class="controls">
+                            @Html.EditorFor(model => model.QueixaPrincipal)
+                            <br />
+                            @Html.ValidationMessageFor(model => model.QueixaPrincipal)
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    @Html.HiddenFor(model => model.HistoriaMolestiaAtual)
+                    @Html.HiddenFor(model => model.QueixaPrincipal)
+                }
+                @if (!v_IsNewModel)
+                {  
+                    <div class="control-group">
+                        <label class="control-label">
+                            @Html.LabelFor(model => model.Realizada)</label>
+                        <div class="controls">
+                            @Html.EditorFor(model => model.Realizada)
+                            <br />
+                            @Html.ValidationMessageFor(model => model.Realizada)
+                        </div>
+                    </div>
+                }
+            </div>
+        </fieldset>
+    }
+</div>
+@if (!v_IsNewModel)
+{
+    <div class="span7">
+        <legend>Anamnese</legend>
+        @Html.Partial("Anamnese", Model ?? new Model.ConsultaModel())
+    </div>
+}
+@using (Html.BeginForm("Index", "Consulta", FormMethod.Get, new { id = "cancelFormId" }))
+{ }
