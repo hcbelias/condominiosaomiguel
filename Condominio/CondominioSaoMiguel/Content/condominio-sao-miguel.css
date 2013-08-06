@@ -184,3 +184,8 @@ body.loading .loading-progress
     margin-right: auto;
     margin-top: 300px;
 }
+
+.carousel-inner .item img
+{
+    width:100%;
+}

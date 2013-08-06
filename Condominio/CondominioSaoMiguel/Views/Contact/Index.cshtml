@@ -7,21 +7,17 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
-       
+
 
         $("#sendMessageForm").submit(function () {
-            debugger;
+
             var queryString = $("#sendMessageForm").serialize() + '&';
-            $('#body-content').showLoading({
-                'addClass': 'loading-indicator'
-            });
             $.post(
                 'Contact/SendEmail',
                 queryString,
                 function (data) {
-                    debugger;
                     $("#body-content").html(data.Data);
-                    debugger;
+
                     if (data.Success) {
                         $('.alert-error').hide();
                         $('.alert-success').show();
@@ -29,7 +25,6 @@
                         $('.alert-success').hide();
                         $('.alert-error').show();
                     }
-                    $('#body-content').hideLoading();
                 }
             );
 

@@ -1,0 +1,44 @@
+﻿<div class="container">
+    <div class="footer-content">
+        <div class="row-fluid">
+            <div class="span7">
+                <div class="row-fluid" style="font-style: italic; font-size: x-large;">
+                    Rua Joaquim Esteves de Oliveira, 382
+                </div>
+                <div class="row-fluid">
+                    <div class="span12 " style="margin-top: 15px;">
+                        <ul class="phonelist">
+                            <li>
+                                @Html.Partial("_DDD", "35")
+                                @Html.Partial("_Phone", "3291-3996")
+                            </li>
+                            <li>
+                                @Html.Partial("_DDD", "35")
+                                @Html.Partial("_Phone", "8838-3459")
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="span5">
+                <div class="row-fluid">
+                    <img onclick="replaceOnComplete('Contact', 'IndexPartialView', null, '#body-content');"
+                        style="margin: 10px;" class="pull-left" src="../../Content/img/IconeEmail.jpg" />
+                    <div class="span10">
+                        <div class="row-fluid visible-desktop">
+                            @Html.Partial("_Email", Util.Constants.Information.PRIMARY_EMAIL)
+                        </div>
+                        <div class="row-fluid visible-desktop">
+                            @Html.Partial("_Email", Util.Constants.Information.SECUNDARY_EMAIL)
+                        </div>
+                        <div class="row-fluid visible-desktop">
+                            <div style="font-style: italic; font-size:smaller; margin-top: 10px;">
+                                Desenvolvido por Henrique Elias - hcbe2004@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

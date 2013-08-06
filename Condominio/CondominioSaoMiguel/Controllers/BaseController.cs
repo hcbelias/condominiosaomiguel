@@ -13,6 +13,7 @@ using CondominioSaoMiguel.Util;
 namespace CondominioSaoMiguel.Controllers
 {
     [Compress]
+    [OutputCache(Duration = 3600)]
     public abstract class BaseController : Controller
     {
         
