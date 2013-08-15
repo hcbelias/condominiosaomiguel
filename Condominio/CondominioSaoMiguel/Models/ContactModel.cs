@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using CondominioSaoMiguel.Util;
+
+using UtilWeb;
 
 namespace CondominioSaoMiguel.Models
 {

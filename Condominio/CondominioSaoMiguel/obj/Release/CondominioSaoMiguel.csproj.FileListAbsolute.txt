@@ -15,6 +15,6 @@ E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\System.Web.Mvc.
 E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\System.Web.Razor.xml
 E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\System.Web.Helpers.xml
 E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\System.Web.WebPages.Deployment.xml
-E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\obj\Release\ResolveAssemblyReference.cache
+E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\obj\Release\CondominioSaoMiguel.csprojResolveAssemblyReference.cache
 E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\obj\Release\CondominioSaoMiguel.dll
 E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\obj\Release\CondominioSaoMiguel.pdb

@@ -8,12 +8,12 @@ using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using CondominioSaoMiguel.Models;
-using CondominioSaoMiguel.Util;
+
 
 namespace CondominioSaoMiguel.Controllers
 {
     [Compress]
-    [OutputCache(Duration = 3600)]
+    [OutputCache(Duration = 3600000)]
     public abstract class BaseController : Controller
     {
         

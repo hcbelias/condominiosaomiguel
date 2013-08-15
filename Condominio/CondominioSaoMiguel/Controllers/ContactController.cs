@@ -6,7 +6,7 @@ using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using CondominioSaoMiguel.Models;
-using CondominioSaoMiguel.Util;
+
 using Util;
 
 namespace CondominioSaoMiguel.Controllers
@@ -23,8 +23,8 @@ namespace CondominioSaoMiguel.Controllers
             if (ValidateModel())
             {
                 try{
-                    SendEmail(contact.Email, contact.Name, contact.DDD ?? 000, contact.Phone??00000000, contact.Message);
-                    SendEmailCopyToUser(contact.Email, contact.Name, contact.DDD ?? 000, contact.Phone ?? 00000000, contact.Message);
+                    Util.Util.SendEmail(contact.Email, contact.Name, contact.DDD ?? 000, contact.Phone ?? 00000000, contact.Message);
+                    //Util.Util.SendEmailCopyToUser(contact.Email, contact.Name, contact.DDD ?? 000, contact.Phone ?? 00000000, contact.Message);
                 }
                 catch(Exception error)
                 {
@@ -48,41 +48,8 @@ namespace CondominioSaoMiguel.Controllers
         private void SetError()
         {
             ViewBag.Error = true;
+            ViewBag.Success = false;
         }
 
-        
-        private void SendEmail(string email, string name, int ddd, int phone, string mensagem)
-        {
-            MailMessage mail = new MailMessage();
-            SmtpClient smtp = new SmtpClient(ConfigurationReader.GetEmailServerAddress());
-            mail.To.Add(new MailAddress(ConfigurationReader.GetEmailManager()));
-            mail.To.Add(new MailAddress(ConfigurationReader.GetEmailAdmin()));
-            mail.From = new MailAddress(ConfigurationReader.GetEmailDefault());
-            mail.Subject = Constants.Messages.MSG_EMAIL_SUBJECT;
-            mail.Body = BuildEmailBody(email,name,ddd,phone,mensagem);            
-            smtp.Send(mail);
-        }
-
-        private void SendEmailCopyToUser(string email, string name, int ddd, int phone, string mensagem)
-        {
-            MailMessage mail = new MailMessage();
-            SmtpClient smtp = new SmtpClient(ConfigurationReader.GetEmailServerAddress());
-            mail.To.Add(new MailAddress(email));
-            mail.From = new MailAddress(ConfigurationReader.GetEmailDefault());
-            mail.Subject = Constants.Messages.MSG_EMAIL_SUBJECT;
-            mail.Body = "Esta é uma cópia do e-mail enviado para o Condomínio São Miguel\n\n" + BuildEmailBody(email, name, ddd, phone, mensagem);
-            smtp.Send(mail);
-        }
-
-        private string BuildEmailBody(string email, string name, int ddd, int phone, string mensagem)
-        {
-            StringBuilder messageBody = new StringBuilder();
-            messageBody.AppendLine("Nome: " + name);
-            messageBody.AppendLine("Email: " + email);            
-            messageBody.AppendLine("Telefone: (" + ddd + ") "+ phone);
-            messageBody.AppendLine("Mensagem: ");
-            messageBody.AppendLine(mensagem);
-            return messageBody.ToString();
-        }
     }
 }

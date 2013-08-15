@@ -2,6 +2,7 @@
 
 using System.Web.Mvc;
 using System.Web.Routing;
+using System.Web;
 
 namespace CondominioSaoMiguel
 {
@@ -25,6 +26,25 @@ namespace CondominioSaoMiguel
                 new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
             );
 
+        }
+
+        void Application_Error(object sender, EventArgs e)
+        {
+            var error = Server.GetLastError();
+            var code = (error is HttpException) ? (error as HttpException).GetHttpCode() : 500;
+
+            var v_HTMLErrorMessage =
+                "<strong>Message: </strong><br/>" + error.Message + "<br/><br/><strong>StackTrace: </strong><br/>" +
+                    error.StackTrace + "<br/><br/><strong>InnerException: </strong><br/>" + error.InnerException + "<br/><br/><strong>Servidor:</strong><br/>" + this.Server.MachineName;
+            if (code != 404)
+            {
+                
+                Util.Util.SendErrorEmail("Erro - Condomínio São Miguel", v_HTMLErrorMessage);
+            }
+
+            //Response.Clear();
+            //Server.ClearError();
+            //Context.Server.TransferRequest("/Error/Index", true);
         }
 
         protected void Application_Start()

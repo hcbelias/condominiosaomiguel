@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
+using System.Net.Mail;
 
 namespace Util
 {
@@ -35,5 +36,40 @@ namespace Util
             return stream;
 
         } // FromBase64
+
+        public static void SendEmail(string email, string name, int ddd, int phone, string mensagem)
+        {
+            MailMessage mail = new MailMessage();
+            SmtpClient smtp = new SmtpClient(ConfigurationReader.GetEmailServerAddress());
+            mail.To.Add(new MailAddress(ConfigurationReader.GetEmailManager()));
+            mail.To.Add(new MailAddress(ConfigurationReader.GetEmailAdmin()));
+            mail.From = new MailAddress(ConfigurationReader.GetEmailDefault());
+            mail.Subject = Constants.Messages.MSG_EMAIL_SUBJECT;
+            mail.Body = BuildEmailBody(email, name, ddd, phone, mensagem);
+            smtp.Send(mail);
+        }
+
+        private static string BuildEmailBody(string email, string name, int ddd, int phone, string mensagem)
+        {
+            StringBuilder messageBody = new StringBuilder();
+            messageBody.AppendLine("Nome: " + name);
+            messageBody.AppendLine("Email: " + email);
+            messageBody.AppendLine("Telefone: (" + ddd + ") " + phone);
+            messageBody.AppendLine("Mensagem: ");
+            messageBody.AppendLine(mensagem);
+            return messageBody.ToString();
+        }
+
+        public static void SendErrorEmail(string p_Title, string v_HTMLErrorMessage)
+        {
+            MailMessage mail = new MailMessage();
+            SmtpClient smtp = new SmtpClient(ConfigurationReader.GetEmailServerAddress());
+            mail.To.Add(new MailAddress(ConfigurationReader.GetEmailManager()));
+            mail.To.Add(new MailAddress(ConfigurationReader.GetEmailAdmin()));
+            mail.From = new MailAddress(ConfigurationReader.GetEmailDefault());
+            mail.Subject = p_Title;
+            mail.Body = v_HTMLErrorMessage;
+            smtp.Send(mail);
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Web.Mvc.Html;
 using System.Text;
 using System.Web.Mvc;
 
-namespace CondominioSaoMiguel.Util
+namespace UtilWeb
 {
     public static class CustomHelpers
     {

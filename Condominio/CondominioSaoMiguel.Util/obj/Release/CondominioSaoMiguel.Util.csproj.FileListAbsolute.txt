@@ -4,6 +4,5 @@ C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Cond
 C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\CondominioSaoMiguel.Util\obj\Release\CondominioSaoMiguel.Util.pdb
 E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel.Util\bin\Release\CondominioSaoMiguel.Util.dll
 E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel.Util\bin\Release\CondominioSaoMiguel.Util.pdb
-E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel.Util\obj\Release\ResolveAssemblyReference.cache
 E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel.Util\obj\Release\CondominioSaoMiguel.Util.dll
 E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel.Util\obj\Release\CondominioSaoMiguel.Util.pdb
