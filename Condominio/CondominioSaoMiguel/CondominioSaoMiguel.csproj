@@ -118,7 +118,6 @@
     <Content Include="Content\img\AbaLazer.jpg" />
     <Content Include="Content\img\AbaSeguranca.jpg" />
     <Content Include="Content\img\branirext.jpg" />
-    <Content Include="Content\img\DSC_9164.JPG" />
     <Content Include="Content\img\Ed.Rama.jpg" />
     <Content Include="Content\img\frente.jpg" />
     <Content Include="Content\img\frente2.jpg" />
@@ -136,17 +135,14 @@
     <Content Include="Content\img\nav-icon.png" />
     <Content Include="Content\img\pasirpajang.jpg" />
     <Content Include="Content\img\piscina.JPG" />
-    <Content Include="Content\img\placacond.JPG" />
     <Content Include="Content\img\PortariaGanesh.png" />
     <Content Include="Content\img\PortariaPrincipal.png" />
     <Content Include="Content\img\ramaext.jpg" />
-    <Content Include="Content\img\seguranca.jpg" />
     <Content Include="Content\img\seguranca2.jpg" />
     <Content Include="Content\img\SetaBaixo.png" />
     <Content Include="Content\img\SetaCima.png" />
     <Content Include="Content\img\SetaDireita.png" />
     <Content Include="Content\img\SetaEsquerda.png" />
-    <Content Include="Content\img\sguranca.jpg" />
     <Content Include="Content\img\Shiva.jpg" />
     <Content Include="Content\img\shivaint.jpg" />
     <Content Include="Content\img\visnhu.jpg" />

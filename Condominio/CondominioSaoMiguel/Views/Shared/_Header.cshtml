@@ -12,14 +12,20 @@
                         href="javascript:void(0);" id="Home">
                         <img alt="Condomínio São Miguel" src="../../Content/img/LogoClaro.png"/>
                     </a></li>
-                    <li><a onclick="replaceOnComplete(this.id, 'IndexPartialView', null, '#body-content');" id="About">O Condomínio</a></li>
+                    <li>@Html.ActionLink("O Condomínio", "Index", "About",null, null)</li>
+                    <li>@Html.ActionLink("Estrutura", "Index", "Structure",null, null)</li>
+                    <li>@Html.ActionLink("Apartamentos", "Index", "Apartment",null, null)</li>
+                    <li>@Html.ActionLink("Localização", "Index", "Localization",null, null)</li>
+                    <li>@Html.ActionLink("Fotos", "Index", "PhotoGallery",null, null)</li>
+                    <li>@Html.ActionLink("Contato", "Index", "Contact",null, null)</li>
+                    @*<li><a onclick="replaceOnComplete(this.id, 'IndexPartialView', null, '#body-content');" id="About">O Condomínio</a></li>
                     <li><a onclick="replaceOnComplete(this.id, 'IndexPartialView', null, '#body-content');" id="Structure">Estrutura</a></li>
                     <li><a onclick="replaceOnComplete(this.id, 'IndexPartialView', null, '#body-content');" id="Apartment">Apartamentos</a></li>
                     <li><a onclick="replaceOnComplete(this.id, 'IndexPartialView', null, '#body-content');" id="Localization">
                         Localização</a></li>
                     <li><a onclick="replaceOnComplete(this.id, 'IndexPartialView', null, '#body-content');" id="PhotoGallery">
                         Fotos</a></li>
-                    <li><a onclick="replaceOnComplete(this.id, 'IndexPartialView', null, '#body-content');" id="Contact">Contato</a></li>
+                    <li><a onclick="replaceOnComplete(this.id, 'IndexPartialView', null, '#body-content');" id="Contact">Contato</a></li>*@
                 </ul>
             </div>
         </div>
