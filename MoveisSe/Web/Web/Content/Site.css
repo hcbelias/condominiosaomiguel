@@ -6,7 +6,7 @@ html, body
     padding: 0;
     height: 100%;
     background-color: white;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro' , sans-serif;
 }
 
 
@@ -18,12 +18,13 @@ html, body
 
 .navbar .nav > .active > a
 {
-    background-image:url("../Content/img/FundoMenuItemSelecionado.jpg")
+    background-image: url("../Content/img/FundoMenuItemSelecionado.jpg");
 }
 
 .navbar .nav > li > a
 {
-    font-style:italic;font-size: large;
+    font-style: italic;
+    font-size: large;
     font-size: large;
     letter-spacing: 3px;
 }
@@ -59,45 +60,47 @@ html, body
 .header-content
 {
     margin: 0 auto;
-    
     background-color: #4A71AF;
     padding: 20px;
-    color: #223452 ! important;
+    color: #223452 !important;
 }
 
-.phone-number {
+.phone-number
+{
     border-right: 1px solid #ccc;
     padding-right: 10px;
 }
 
-.phonelist {
+.phonelist
+{
     list-style: none;
-    
 }
 
-.phonelist li {
+.phonelist li
+{
     float: left;
     padding-left: 5px;
 }
 
-.phonelist li:first {
+.phonelist li:first
+{
     border-left: 1px solid #ccc;
 }
 
-.media {
+.media
+{
     padding: 10px;
-    font-style:italic;font-size: large;
+    font-style: italic;
+    font-size: large;
     color: #A5A29D;
-   
 }
 
-.title 
+.title
 {
     padding: 5px;
-    
     font-size: xx-large;
     font-weight: bold;
-    color: #0167a7;
+    color: #A9A3E0;
     font-style: normal;
 }
 
@@ -105,31 +108,33 @@ html, body
 label
 {
     padding: 5px;
-    
-    
     font-weight: bold;
-    color: #0167a7;
+    color: #A9A3E0;
     font-style: normal;
 }
 
-.media-body .row-fluid {
+.media-body .row-fluid
+{
     margin-bottom: 5px;
 }
 
-.structure-description {
+.structure-description
+{
     padding: 5px;
     display: none !important;
 }
 
 
-.apartment-description {
+.apartment-description
+{
     margin-top: 20px;
 }
-.apartment-description li {
+.apartment-description li
+{
     margin-top: 10px;
-    font-style:italic;font-size: large;
+    font-style: italic;
+    font-size: large;
     color: #A5A29D;
-   
 }
 
 
@@ -157,6 +162,51 @@ label
 
 small-square-top-menu
 {
-    height:30px;
+    height: 30px;
     width: 120px;
+}
+
+#body-content
+{
+    background-color: white;
+    padding: 10px;
+}
+
+#hdr-overlay
+{
+    position: relative;
+    top: -15px;
+    left: 14px;
+    width: 780px;
+    height: 145px;
+    background: url('img/logo.jpg') top right no-repeat;
+}
+
+#menu
+{
+    margin: 0;
+    padding: 1px 0;
+    list-style-type: none;
+    height: 26px;
+}
+
+#menu a.sel
+{
+    background: silver;
+    color: black;
+}
+
+#menu a
+{
+    position: relative;
+    display: block;
+    margin: 1px;
+    height: 24px;
+    font-size: 10px;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    background: gray;
+    color: white;
 }
