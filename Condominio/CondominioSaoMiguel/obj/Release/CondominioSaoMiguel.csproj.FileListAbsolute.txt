@@ -18,3 +18,27 @@ E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\System.Web.WebP
 E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\obj\Release\CondominioSaoMiguel.csprojResolveAssemblyReference.cache
 E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\obj\Release\CondominioSaoMiguel.dll
 E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\obj\Release\CondominioSaoMiguel.pdb
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\CondominioSaoMiguel.dll
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\CondominioSaoMiguel.pdb
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\CondominioSaoMiguel.Util.dll
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\EntityFramework.dll
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\System.Web.Helpers.dll
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\System.Web.Mvc.dll
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\System.Web.Razor.dll
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\System.Web.Routing.dll
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\CondominioSaoMiguel.Util.pdb
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\EntityFramework.xml
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\System.Web.Mvc.xml
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\System.Web.Razor.xml
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\System.Web.Helpers.xml
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\pt-br\System.Web.Mvc.resources.dll
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\pt-br\System.Web.Razor.resources.dll
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\pt-br\System.Web.Helpers.resources.dll
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\obj\Release\CondominioSaoMiguel.csprojResolveAssemblyReference.cache
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\obj\Release\CondominioSaoMiguel.dll
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel\obj\Release\CondominioSaoMiguel.pdb

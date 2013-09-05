@@ -6,3 +6,7 @@ E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel.Util\bin\Release\Co
 E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel.Util\bin\Release\CondominioSaoMiguel.Util.pdb
 E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel.Util\obj\Release\CondominioSaoMiguel.Util.dll
 E:\DotNet\CondominioSaoMiguel\Condominio\CondominioSaoMiguel.Util\obj\Release\CondominioSaoMiguel.Util.pdb
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel.Util\bin\Release\CondominioSaoMiguel.Util.dll
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel.Util\bin\Release\CondominioSaoMiguel.Util.pdb
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel.Util\obj\Release\CondominioSaoMiguel.Util.dll
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\Condominio\CondominioSaoMiguel.Util\obj\Release\CondominioSaoMiguel.Util.pdb
