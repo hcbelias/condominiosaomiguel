@@ -11,3 +11,8 @@ C:\Users\henrique\Documents\Visual Studio 2010\Projects\StaEdwirges\Util\bin\Deb
 C:\Users\henrique\Documents\Visual Studio 2010\Projects\StaEdwirges\Util\obj\Debug\Util.csprojResolveAssemblyReference.cache
 C:\Users\henrique\Documents\Visual Studio 2010\Projects\StaEdwirges\Util\obj\Debug\Util.dll
 C:\Users\henrique\Documents\Visual Studio 2010\Projects\StaEdwirges\Util\obj\Debug\Util.pdb
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\Util\obj\Debug\Util.csprojResolveAssemblyReference.cache
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\Util\obj\Debug\Util.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\Util\obj\Debug\Util.pdb
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\Util\bin\Debug\Util.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\Util\bin\Debug\Util.pdb

@@ -140,6 +140,9 @@
     <Content Include="Content\bootstrap\img\glyphicons-halflings.png" />
     <Content Include="Content\bootstrap\js\bootstrap.js" />
     <Content Include="Content\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\img\cad1.jpg" />
+    <Content Include="Content\img\cad2.jpg" />
+    <Content Include="Content\img\cad3.jpg" />
     <Content Include="Content\img\FundoMenuItemSelecionado.jpg" />
     <Content Include="Content\img\IconeEmail.jpg" />
     <Content Include="Content\img\loading-bars.gif" />
@@ -147,6 +150,7 @@
     <Content Include="Content\img\logo.jpg" />
     <Content Include="Content\img\menuAlinhado.png" />
     <Content Include="Content\img\nav-icon.png" />
+    <Content Include="Content\img\seloGarantia.png" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -230,6 +234,7 @@
     <Content Include="Views\Shared\_Phone.cshtml" />
     <Content Include="Views\Shared\_StandardImage.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Util\Util.csproj">

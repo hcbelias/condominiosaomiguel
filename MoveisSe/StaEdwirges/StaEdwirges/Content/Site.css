@@ -101,7 +101,7 @@ html, body
     padding: 5px;
     font-size: xx-large;
     font-weight: bold;
-    color: #A9A3E0;
+    color: #404194;
     font-style: normal;
 }
 
@@ -110,32 +110,13 @@ label
 {
     padding: 5px;
     font-weight: bold;
-    color: #A9A3E0;
+    color: #404194;
     font-style: normal;
 }
 
 .media-body .row-fluid
 {
     margin-bottom: 5px;
-}
-
-.structure-description
-{
-    padding: 5px;
-    display: none !important;
-}
-
-
-.apartment-description
-{
-    margin-top: 20px;
-}
-.apartment-description li
-{
-    margin-top: 10px;
-    font-style: italic;
-    font-size: large;
-    color: #A5A29D;
 }
 
 
@@ -172,17 +153,6 @@ small-square-top-menu
     background-color: white;
     padding: 10px;
 }
-
-#hdr-overlay
-{
-    position: relative;
-    top: -15px;
-    left: 14px;
-    width: 780px;
-    height: 145px;
-    background: url('img/logo.jpg') top right no-repeat;
-}
-
 #menu
 {
     margin: 0;
@@ -192,11 +162,6 @@ small-square-top-menu
     padding-bottom: 10px;
 }
 
-#menu a.sel
-{
-    background: silver;
-    color: black;
-}
 
 #menu a
 {
@@ -221,4 +186,45 @@ small-square-top-menu
     font-size: medium;
     font-weight: bold;
     
+}
+
+.btn-sample {
+	color: #FFFFFF;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #404194;
+	*background-color: #404194;
+	background-image: -moz-linear-gradient(top, #404194, #404194);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#404194), to(#404194));
+	background-image: -webkit-linear-gradient(top, #404194, #404194);
+	background-image: -o-linear-gradient(top, #404194, #404194);
+	background-image: linear-gradient(to bottom, #404194, #404194);
+	background-repeat: repeat-x;
+	border-color: #404194;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#404194', endColorstr='#404194', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-sample:hover,
+.btn-sample:active,
+.btn-sample.active,
+.btn-sample.disabled,
+.btn-sample[disabled] {
+	color: #FFFFFF;
+	background-color: #404194;
+	*background-color: #003bb3;
+}
+
+.legend
+{
+    color:#404194;
+}
+
+
+.footer-content
+{
+    margin: 0 auto;
+    
+    background-color: #EFF0ED;
+    padding: 8px;
+    color: #A5A29D;
 }

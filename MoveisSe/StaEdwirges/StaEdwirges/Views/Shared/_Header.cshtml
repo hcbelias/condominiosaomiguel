@@ -1,4 +1,5 @@
-﻿<div class="container">
-
-    <img src="../../Content/img/menuAlinhado.png" />
+﻿@using UtilWeb
+<div class="container">
+    
+    <img src="@UtilWeb.HtmlHelper.GetImageSourceFromFilePath(Server.MapPath("~/Content/img/menuAlinhado.png"))" />
 </div>

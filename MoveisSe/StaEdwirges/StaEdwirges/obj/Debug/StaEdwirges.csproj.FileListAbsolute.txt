@@ -33,3 +33,38 @@ c:\users\henrique\documents\visual studio 2010\Projects\StaEdwirges\StaEdwirges\
 c:\users\henrique\documents\visual studio 2010\Projects\StaEdwirges\StaEdwirges\bin\Antlr3.Runtime.dll
 c:\users\henrique\documents\visual studio 2010\Projects\StaEdwirges\StaEdwirges\bin\System.Web.Optimization.dll
 c:\users\henrique\documents\visual studio 2010\Projects\StaEdwirges\StaEdwirges\bin\WebGrease.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\StaEdwirges.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\StaEdwirges.pdb
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\Antlr3.Runtime.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\Microsoft.Web.Infrastructure.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\Newtonsoft.Json.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Net.Http.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Net.Http.Formatting.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Net.Http.WebRequest.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Web.Helpers.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Web.Http.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Web.Http.WebHost.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Web.Mvc.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Web.Optimization.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Web.Razor.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Web.WebPages.Deployment.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Web.WebPages.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Web.WebPages.Razor.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\Util.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\WebGrease.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\Util.pdb
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\Newtonsoft.Json.xml
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Net.Http.xml
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Net.Http.Formatting.xml
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Net.Http.WebRequest.xml
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Web.Helpers.xml
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Web.Http.xml
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Web.Http.WebHost.xml
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Web.Mvc.xml
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Web.Razor.xml
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Web.WebPages.xml
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Web.WebPages.Deployment.xml
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\bin\System.Web.WebPages.Razor.xml
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\obj\Debug\StaEdwirges.csprojResolveAssemblyReference.cache
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\obj\Debug\StaEdwirges.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\StaEdwirges\StaEdwirges\obj\Debug\StaEdwirges.pdb
