@@ -6,11 +6,8 @@
 }
 <script type="text/javascript">
 
-    $(document).ready(function () {
-       
-
+    $(document).ready(function () {      
         $("#sendMessageForm").submit(function () {
-            debugger;
             var queryString = $("#sendMessageForm").serialize() + '&';
             $('#body-content').showLoading({
                 'addClass': 'loading-indicator'
@@ -19,9 +16,7 @@
                 'Contact/SendEmail',
                 queryString,
                 function (data) {
-                    debugger;
                     $("#body-content").html(data.Data);
-                    debugger;
                     if (data.Success) {
                         $('.alert-error').hide();
                         $('.alert-success').show();
@@ -32,7 +27,6 @@
                     $('#body-content').hideLoading();
                 }
             );
-
             return false;
         });
     });
@@ -51,7 +45,7 @@
             <br />
             <div id="message-success" style="display: none;" class="alert alert-success">
                 Mensagem enviada com sucesso</div>
-            @using (Ajax.CustomBeginForm("SendEmail", "Contact", new AjaxOptions() { InsertionMode = InsertionMode.Replace, UpdateTargetId = "sendMessage", HttpMethod = "Post" }, new { @id = "sendMessageForm", @class = "form-horizontal" }))
+            @using (Html.BeginForm("SendEmail", "Contact", FormMethod.Post, new { @id = "sendMessageForm", @class = "form-horizontal" }))
             {
                 
                 <div class="control-group">

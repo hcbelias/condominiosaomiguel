@@ -45,6 +45,7 @@ html, body
     background-color: #95A8C7;
     padding: 20px;
     padding-bottom: 0px;
+    height: 191px;
 }
 
 .body
@@ -188,6 +189,7 @@ small-square-top-menu
     padding: 1px 0;
     list-style-type: none;
     height: 26px;
+    padding-bottom: 10px;
 }
 
 #menu a.sel
@@ -207,6 +209,16 @@ small-square-top-menu
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    background: gray;
     color: white;
+}
+
+
+.menu-button
+{
+    background-color: lightsteelblue;
+    color: rgb(19, 11, 91);
+    background-position: initial initial;
+    font-size: medium;
+    font-weight: bold;
+    
 }
