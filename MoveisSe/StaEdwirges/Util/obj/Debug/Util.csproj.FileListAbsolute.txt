@@ -1,0 +1,13 @@
+E:\DotNet\CondominioSaoMiguel\MoveisSe\Web\Util\bin\Debug\Util.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\Web\Util\bin\Debug\Util.pdb
+E:\DotNet\CondominioSaoMiguel\MoveisSe\Web\Util\obj\Debug\Util.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\Web\Util\obj\Debug\Util.pdb
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\MoveisSe\Web\Util\bin\Debug\Util.dll
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\MoveisSe\Web\Util\bin\Debug\Util.pdb
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\MoveisSe\Web\Util\obj\Debug\Util.dll
+C:\Users\Henrique\Documents\Visual Studio 2010\Projects\CondominioSaoMiguel\MoveisSe\Web\Util\obj\Debug\Util.pdb
+C:\Users\henrique\Documents\Visual Studio 2010\Projects\StaEdwirges\Util\bin\Debug\Util.dll
+C:\Users\henrique\Documents\Visual Studio 2010\Projects\StaEdwirges\Util\bin\Debug\Util.pdb
+C:\Users\henrique\Documents\Visual Studio 2010\Projects\StaEdwirges\Util\obj\Debug\Util.csprojResolveAssemblyReference.cache
+C:\Users\henrique\Documents\Visual Studio 2010\Projects\StaEdwirges\Util\obj\Debug\Util.dll
+C:\Users\henrique\Documents\Visual Studio 2010\Projects\StaEdwirges\Util\obj\Debug\Util.pdb

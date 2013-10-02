@@ -1,0 +1,10 @@
+E:\DotNet\CondominioSaoMiguel\MoveisSe\Web\Util\bin\Release\Util.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\Web\Util\bin\Release\Util.pdb
+E:\DotNet\CondominioSaoMiguel\MoveisSe\Web\Util\obj\Release\Util.dll
+E:\DotNet\CondominioSaoMiguel\MoveisSe\Web\Util\obj\Release\Util.pdb
+E:\DotNet\CondominioSaoMiguel\MoveisSe\Web\Util\obj\Release\Util.csprojResolveAssemblyReference.cache
+C:\Users\henrique\Documents\Visual Studio 2010\Projects\StaEdwirges\Util\bin\Release\Util.dll
+C:\Users\henrique\Documents\Visual Studio 2010\Projects\StaEdwirges\Util\bin\Release\Util.pdb
+C:\Users\henrique\Documents\Visual Studio 2010\Projects\StaEdwirges\Util\obj\Release\Util.csprojResolveAssemblyReference.cache
+C:\Users\henrique\Documents\Visual Studio 2010\Projects\StaEdwirges\Util\obj\Release\Util.dll
+C:\Users\henrique\Documents\Visual Studio 2010\Projects\StaEdwirges\Util\obj\Release\Util.pdb
