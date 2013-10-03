@@ -25,7 +25,6 @@ namespace Web.Controllers
                 try
                 {
                     SendEmail(contact.Email, contact.Name, contact.DDD ?? 000, contact.Phone ?? 00000000, contact.Message);
-                    SendEmailCopyToUser(contact.Email, contact.Name, contact.DDD ?? 000, contact.Phone ?? 00000000, contact.Message);
                 }
                 catch (Exception error)
                 {
@@ -55,10 +54,9 @@ namespace Web.Controllers
         private void SendEmail(string email, string name, int ddd, int phone, string mensagem)
         {
             MailMessage mail = new MailMessage();
-            SmtpClient smtp = new SmtpClient(ConfigurationReader.GetEmailServerAddress());
+            SmtpClient smtp = new SmtpClient();
             mail.To.Add(new MailAddress(ConfigurationReader.GetEmailManager()));
             mail.To.Add(new MailAddress(ConfigurationReader.GetEmailAdmin()));
-            mail.From = new MailAddress(ConfigurationReader.GetEmailDefault());
             mail.Subject = Constants.Messages.MSG_EMAIL_SUBJECT;
             mail.Body = BuildEmailBody(email, name, ddd, phone, mensagem);
             smtp.Send(mail);

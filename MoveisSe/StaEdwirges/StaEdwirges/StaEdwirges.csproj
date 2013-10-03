@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ApplicationIcon>Content\img\icone.ico</ApplicationIcon>
+  </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -141,13 +144,14 @@
     <Content Include="Content\bootstrap\js\bootstrap.js" />
     <Content Include="Content\bootstrap\js\bootstrap.min.js" />
     <Content Include="Content\img\cad1.jpg" />
-    <Content Include="Content\img\cad2.jpg" />
-    <Content Include="Content\img\cad3.jpg" />
+    <Content Include="Content\img\cad2.png" />
+    <Content Include="Content\img\cad3.png" />
     <Content Include="Content\img\FundoMenuItemSelecionado.jpg" />
+    <Content Include="Content\img\icone.ico" />
+    <Content Include="Content\img\icone.png" />
     <Content Include="Content\img\IconeEmail.jpg" />
     <Content Include="Content\img\loading-bars.gif" />
     <Content Include="Content\img\loading.gif" />
-    <Content Include="Content\img\logo.jpg" />
     <Content Include="Content\img\menuAlinhado.png" />
     <Content Include="Content\img\nav-icon.png" />
     <Content Include="Content\img\seloGarantia.png" />
