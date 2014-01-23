@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Business.dll">
+      <publishTime>12/17/2013 20:12:13</publishTime>
+    </File>
+    <File Include="bin/Business.pdb">
+      <publishTime>12/17/2013 20:12:13</publishTime>
+    </File>
+    <File Include="bin/Controller.dll">
+      <publishTime>12/09/2013 21:19:59</publishTime>
+    </File>
+    <File Include="bin/DALC4NET.dll">
+      <publishTime>12/14/2013 14:15:16</publishTime>
+    </File>
+    <File Include="bin/DALC4NET.pdb">
+      <publishTime>12/14/2013 14:15:16</publishTime>
+    </File>
+    <File Include="bin/DataAccess.dll">
+      <publishTime>12/17/2013 20:12:12</publishTime>
+    </File>
+    <File Include="bin/DataAccess.pdb">
+      <publishTime>12/17/2013 20:12:12</publishTime>
+    </File>
+    <File Include="bin/DataController.dll">
+      <publishTime>12/17/2013 20:12:13</publishTime>
+    </File>
+    <File Include="bin/DataController.pdb">
+      <publishTime>12/17/2013 20:12:13</publishTime>
+    </File>
+    <File Include="bin/EmecIds.txt">
+      <publishTime>12/07/2013 15:00:08</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="bin/Facebook.dll">
+      <publishTime>12/07/2013 15:00:10</publishTime>
+    </File>
+    <File Include="bin/GoogleMapsApi.dll">
+      <publishTime>12/14/2013 14:15:16</publishTime>
+    </File>
+    <File Include="bin/GoogleMapsApi.pdb">
+      <publishTime>12/14/2013 14:15:16</publishTime>
+    </File>
+    <File Include="bin/HtmlAgilityPack.dll">
+      <publishTime>12/07/2013 15:00:10</publishTime>
+    </File>
+    <File Include="bin/HtmlAgilityPack.pdb">
+      <publishTime>12/07/2013 15:00:10</publishTime>
+    </File>
+    <File Include="bin/Internationalization.Designer.cs">
+      <publishTime>01/05/2014 21:54:42</publishTime>
+    </File>
+    <File Include="bin/Internationalization.resx">
+      <publishTime>01/05/2014 21:54:42</publishTime>
+    </File>
+    <File Include="bin/Mono.Security.dll">
+      <publishTime>12/07/2013 15:00:11</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>12/16/2013 19:37:25</publishTime>
+    </File>
+    <File Include="bin/Npgsql.dll">
+      <publishTime>12/07/2013 15:00:11</publishTime>
+    </File>
+    <File Include="bin/Npgsql.pdb">
+      <publishTime>12/07/2013 15:00:11</publishTime>
+    </File>
+    <File Include="bin/policy.2.0.Npgsql.config">
+      <publishTime>12/07/2013 15:00:11</publishTime>
+    </File>
+    <File Include="bin/policy.2.0.Npgsql.dll">
+      <publishTime>12/07/2013 15:00:11</publishTime>
+    </File>
+    <File Include="bin/System.Web.Extensions.dll">
+      <publishTime>07/08/2012 23:40:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>07/10/2012 20:51:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>07/10/2012 11:03:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>07/10/2012 11:03:34</publishTime>
+    </File>
+    <File Include="bin/Util.dll">
+      <publishTime>01/08/2014 23:56:20</publishTime>
+    </File>
+    <File Include="bin/Util.pdb">
+      <publishTime>01/06/2014 00:26:49</publishTime>
+    </File>
+    <File Include="bin/Web.dll">
+      <publishTime>01/11/2014 19:08:00</publishTime>
+    </File>
+    <File Include="bin/Web.pdb">
+      <publishTime>01/08/2014 23:48:29</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/css/bootstrap-formhelpers-countries.flags.css">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/css/bootstrap-formhelpers-currencies.flags.css">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/css/bootstrap-formhelpers.css">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/img/bootstrap-formhelpers-countries.flags-LICENSE.txt">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/img/bootstrap-formhelpers-countries.flags.png">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/img/bootstrap-formhelpers-currencies.flags.png">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/img/bootstrap-formhelpers-googlefonts.png">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-countries.ar.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-countries.de_DE.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-countries.en_US.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-countries.es_ES.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-countries.it_IT.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-countries.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-countries.pt_BR.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-currencies.en_US.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-currencies.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-datepicker.en_US.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-datepicker.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-fonts.codes.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-fonts.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-fontsizes.codes.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-fontsizes.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-googlefonts.codes.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-googlefonts.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-languages.codes.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-languages.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-phone.format.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-phone.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-selectbox.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-states.en_US.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-states.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-timepicker.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-timezones.codes.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-helpers/js/bootstrap-formhelpers-timezones.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap/css/bootstrap.css">
+      <publishTime>12/18/2013 22:02:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap/css/bootstrap.min.css">
+      <publishTime>12/18/2013 22:02:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>12/18/2013 22:02:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>12/18/2013 22:02:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>12/18/2013 22:02:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>12/18/2013 22:02:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap/js/bootstrap.js">
+      <publishTime>12/18/2013 22:02:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap/js/bootstrap.min.js">
+      <publishTime>12/18/2013 22:02:10</publishTime>
+    </File>
+    <File Include="Content/content.css">
+      <publishTime>01/06/2014 00:15:01</publishTime>
+    </File>
+    <File Include="Content/datetimepicker/css/bootstrap-datetimepicker.min.css">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/datetimepicker/js/bootstrap-datetimepicker.min.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/loading-bars.gif">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Content/loading.gif">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>01/04/2014 16:59:29</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="images/background.gif">
+      <publishTime>01/04/2014 14:32:03</publishTime>
+    </File>
+    <File Include="images/bg_black25.png">
+      <publishTime>01/04/2014 14:39:34</publishTime>
+    </File>
+    <File Include="images/bg_black35.png">
+      <publishTime>01/04/2014 14:39:26</publishTime>
+    </File>
+    <File Include="images/bg_border.png">
+      <publishTime>01/04/2014 14:39:13</publishTime>
+    </File>
+    <File Include="images/bg_shell.png">
+      <publishTime>01/04/2014 14:37:21</publishTime>
+    </File>
+    <File Include="images/border.png">
+      <publishTime>01/04/2014 15:07:52</publishTime>
+    </File>
+    <File Include="images/loginwithfb.png">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="images/TM.jpg">
+      <publishTime>01/04/2014 16:51:41</publishTime>
+    </File>
+    <File Include="images/TM.png">
+      <publishTime>01/04/2014 17:15:45</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/16/2013 19:43:10</publishTime>
+    </File>
+    <File Include="README.jQuery.vsdoc.txt">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.0.3.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.0.3.min.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.0.3.min.map">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Scripts/site.js">
+      <publishTime>12/17/2013 23:48:42</publishTime>
+    </File>
+    <File Include="Service/CarPoolService.svc">
+      <publishTime>12/11/2013 00:23:52</publishTime>
+    </File>
+    <File Include="Service/PlaceService.svc">
+      <publishTime>12/08/2013 14:11:16</publishTime>
+    </File>
+    <File Include="Service/UserService.svc">
+      <publishTime>12/11/2013 00:41:06</publishTime>
+    </File>
+    <File Include="Views/Email/ContactEmail.cshtml">
+      <publishTime>01/06/2014 00:12:59</publishTime>
+    </File>
+    <File Include="Views/Facebook/FacebookLoginComplete.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/GoogleMaps/GoogleMaps.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Home/ApoioCliente.cshtml">
+      <publishTime>01/05/2014 20:12:18</publishTime>
+    </File>
+    <File Include="Views/Home/Atuacao.cshtml">
+      <publishTime>01/05/2014 19:17:17</publishTime>
+    </File>
+    <File Include="Views/Home/Contato.cshtml">
+      <publishTime>01/06/2014 00:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/Escritorio.cshtml">
+      <publishTime>01/05/2014 19:03:47</publishTime>
+    </File>
+    <File Include="Views/Home/Glossario.cshtml">
+      <publishTime>01/05/2014 20:04:17</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>01/05/2014 18:38:08</publishTime>
+    </File>
+    <File Include="Views/Home/INSS.cshtml">
+      <publishTime>01/05/2014 19:20:28</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Currency.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Date.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/DateTime.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Decimal.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Duration.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/EmailAddress.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Number.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Password.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/PhoneNumber.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Range.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/String.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Time.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Url.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Shared/Footer.cshtml">
+      <publishTime>01/05/2014 21:49:11</publishTime>
+    </File>
+    <File Include="Views/Shared/Header.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Shared/Home.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Shared/LeftPanel.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Shared/Login.cshtml">
+      <publishTime>01/04/2014 01:14:13</publishTime>
+    </File>
+    <File Include="Views/Shared/LoginFormSmall.cshtml">
+      <publishTime>12/26/2013 19:32:57</publishTime>
+    </File>
+    <File Include="Views/Shared/Modal.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Shared/NavigationBar.cshtml">
+      <publishTime>01/05/2014 18:09:37</publishTime>
+    </File>
+    <File Include="Views/Shared/NavigationLeftBar.cshtml">
+      <publishTime>01/04/2014 14:22:54</publishTime>
+    </File>
+    <File Include="Views/Shared/NavigationRightBar.cshtml">
+      <publishTime>01/04/2014 14:24:46</publishTime>
+    </File>
+    <File Include="Views/Shared/NotLoggedIn.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Shared/TextBlockDefault.cshtml">
+      <publishTime>01/05/2014 19:19:00</publishTime>
+    </File>
+    <File Include="Views/Shared/ViewBagMessage.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Shared/_EmailLayout.cshtml">
+      <publishTime>01/07/2014 01:35:53</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>01/05/2014 21:49:07</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutGoogleMap.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>01/11/2014 19:30:11</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>12/07/2013 15:00:09</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/11/2014 19:30:49</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

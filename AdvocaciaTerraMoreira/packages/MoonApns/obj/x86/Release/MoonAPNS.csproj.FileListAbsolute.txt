@@ -1,0 +1,9 @@
+C:\Users\Henrique\Desktop\Moon-APNS-master\Application\MoonApns\bin\Release\NLog.config
+C:\Users\Henrique\Desktop\Moon-APNS-master\Application\MoonApns\bin\Release\MoonAPNS.dll
+C:\Users\Henrique\Desktop\Moon-APNS-master\Application\MoonApns\bin\Release\MoonAPNS.pdb
+C:\Users\Henrique\Desktop\Moon-APNS-master\Application\MoonApns\bin\Release\Newtonsoft.Json.dll
+C:\Users\Henrique\Desktop\Moon-APNS-master\Application\MoonApns\bin\Release\NLog.dll
+C:\Users\Henrique\Desktop\Moon-APNS-master\Application\MoonApns\bin\Release\Newtonsoft.Json.xml
+C:\Users\Henrique\Desktop\Moon-APNS-master\Application\MoonApns\bin\Release\NLog.xml
+C:\Users\Henrique\Desktop\Moon-APNS-master\Application\MoonApns\obj\x86\Release\MoonAPNS.dll
+C:\Users\Henrique\Desktop\Moon-APNS-master\Application\MoonApns\obj\x86\Release\MoonAPNS.pdb

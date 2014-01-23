@@ -1,0 +1,9 @@
+C:\Users\Henrique\Documents\condominiosaomiguel\AdvocaciaTerraMoreira\Util\bin\Release\Internationalization.resx
+C:\Users\Henrique\Documents\condominiosaomiguel\AdvocaciaTerraMoreira\Util\bin\Release\Internationalization.Designer.cs
+C:\Users\Henrique\Documents\condominiosaomiguel\AdvocaciaTerraMoreira\Util\bin\Release\Util.dll
+C:\Users\Henrique\Documents\condominiosaomiguel\AdvocaciaTerraMoreira\Util\bin\Release\Util.pdb
+C:\Users\Henrique\Documents\condominiosaomiguel\AdvocaciaTerraMoreira\Util\obj\Release\Util.Internationalization.resources
+C:\Users\Henrique\Documents\condominiosaomiguel\AdvocaciaTerraMoreira\Util\obj\Release\Util.csproj.GenerateResource.Cache
+C:\Users\Henrique\Documents\condominiosaomiguel\AdvocaciaTerraMoreira\Util\obj\Release\Util.dll
+C:\Users\Henrique\Documents\condominiosaomiguel\AdvocaciaTerraMoreira\Util\obj\Release\Util.pdb
+C:\Users\Henrique\Documents\condominiosaomiguel\AdvocaciaTerraMoreira\Util\obj\Release\Util.csprojResolveAssemblyReference.cache

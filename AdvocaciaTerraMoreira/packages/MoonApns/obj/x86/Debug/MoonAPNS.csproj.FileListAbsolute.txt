@@ -1,0 +1,10 @@
+C:\Users\Henrique\Desktop\Moon-APNS-master\Application\MoonApns\bin\Debug\NLog.config
+C:\Users\Henrique\Desktop\Moon-APNS-master\Application\MoonApns\bin\Debug\MoonAPNS.dll
+C:\Users\Henrique\Desktop\Moon-APNS-master\Application\MoonApns\bin\Debug\MoonAPNS.pdb
+C:\Users\Henrique\Desktop\Moon-APNS-master\Application\MoonApns\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Henrique\Desktop\Moon-APNS-master\Application\MoonApns\bin\Debug\NLog.dll
+C:\Users\Henrique\Desktop\Moon-APNS-master\Application\MoonApns\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Henrique\Desktop\Moon-APNS-master\Application\MoonApns\bin\Debug\NLog.xml
+C:\Users\Henrique\Desktop\Moon-APNS-master\Application\MoonApns\obj\x86\Debug\MoonAPNS.csprojResolveAssemblyReference.cache
+C:\Users\Henrique\Desktop\Moon-APNS-master\Application\MoonApns\obj\x86\Debug\MoonAPNS.dll
+C:\Users\Henrique\Desktop\Moon-APNS-master\Application\MoonApns\obj\x86\Debug\MoonAPNS.pdb

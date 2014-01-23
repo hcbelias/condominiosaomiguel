@@ -1,0 +1,12 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Login";
+}
+
+@if (ViewBag.Error != null)
+{
+    <div class="error-message">
+
+        @ViewBag.Error
+    </div>
+}

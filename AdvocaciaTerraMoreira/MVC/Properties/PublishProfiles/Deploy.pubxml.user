@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Internationalization.Designer.cs">
+      <publishTime>01/05/2014 21:54:42</publishTime>
+    </File>
+    <File Include="bin/Internationalization.resx">
+      <publishTime>01/05/2014 21:54:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>12/07/2013 15:00:10</publishTime>
+    </File>
+    <File Include="bin/MVC.dll">
+      <publishTime>01/19/2014 16:51:47</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>01/11/2014 19:40:44</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>12/07/2013 15:00:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>12/07/2013 15:00:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>12/07/2013 15:00:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>12/07/2013 15:00:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>12/07/2013 15:00:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>12/07/2013 15:00:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>12/07/2013 15:00:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>12/07/2013 15:00:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>12/07/2013 15:00:10</publishTime>
+    </File>
+    <File Include="bin/Util.dll">
+      <publishTime>01/12/2014 12:39:44</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/css/bootstrap.css">
+      <publishTime>01/11/2014 19:41:04</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/css/bootstrap.min.css">
+      <publishTime>01/11/2014 19:41:04</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>01/11/2014 19:41:04</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>01/11/2014 19:41:04</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>01/11/2014 19:41:04</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>01/11/2014 19:41:04</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/js/bootstrap.js">
+      <publishTime>01/11/2014 19:41:04</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/js/bootstrap.min.js">
+      <publishTime>01/11/2014 19:41:04</publishTime>
+    </File>
+    <File Include="Content/content.css">
+      <publishTime>01/11/2014 19:41:04</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>01/11/2014 19:41:36</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>01/11/2014 19:40:43</publishTime>
+    </File>
+    <File Include="images/background.gif">
+      <publishTime>01/11/2014 19:41:21</publishTime>
+    </File>
+    <File Include="images/bg_black25.png">
+      <publishTime>01/11/2014 19:41:21</publishTime>
+    </File>
+    <File Include="images/bg_black35.png">
+      <publishTime>01/11/2014 19:41:21</publishTime>
+    </File>
+    <File Include="images/bg_border.png">
+      <publishTime>01/11/2014 19:41:21</publishTime>
+    </File>
+    <File Include="images/bg_shell.png">
+      <publishTime>01/11/2014 19:41:21</publishTime>
+    </File>
+    <File Include="images/border.png">
+      <publishTime>01/11/2014 19:41:21</publishTime>
+    </File>
+    <File Include="images/TM.jpg">
+      <publishTime>01/11/2014 19:41:21</publishTime>
+    </File>
+    <File Include="images/TM.png">
+      <publishTime>01/11/2014 19:41:21</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>01/11/2014 19:40:45</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.0.3.js">
+      <publishTime>01/11/2014 19:41:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.0.3.min.js">
+      <publishTime>01/11/2014 19:41:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.0.3.min.map">
+      <publishTime>01/11/2014 19:41:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>01/11/2014 19:41:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>01/11/2014 19:41:24</publishTime>
+    </File>
+    <File Include="Scripts/site.js">
+      <publishTime>01/11/2014 19:41:24</publishTime>
+    </File>
+    <File Include="Views/Email/ContactEmail.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Home/ApoioCliente.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Home/Atuacao.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Home/Contato.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Home/Escritorio.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Home/Glossario.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Home/Home.cshtml">
+      <publishTime>01/11/2014 19:45:41</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Home/INSS.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Currency.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Date.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/DateTime.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Decimal.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Duration.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/EmailAddress.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Number.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Password.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/PhoneNumber.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Range.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/String.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Time.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/Url.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/Footer.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/Login.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/LoginFormSmall.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/NavigationBar.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/NavigationLeftBar.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/NavigationRightBar.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/NotLoggedIn.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/TextBlockDefault.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/_EmailLayout.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>01/11/2014 19:42:41</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>01/11/2014 20:05:48</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/21/2014 22:08:25</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

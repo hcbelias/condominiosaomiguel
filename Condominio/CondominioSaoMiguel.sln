@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CondominioSaoMiguel", "CondominioSaoMiguel\CondominioSaoMiguel.csproj", "{484D536D-8508-4C2D-992D-8C1AB9DE2122}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CondominioSaoMiguel.Util", "CondominioSaoMiguel.Util\CondominioSaoMiguel.Util.csproj", "{CEABB67C-AB12-47C2-BB82-68D9A6F33D2B}"
