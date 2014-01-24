@@ -1,0 +1,27 @@
+﻿@if (HttpContext.Current.User.Identity.IsAuthenticated)
+{
+    
+    <div class="loginFormSmall space">
+
+
+        <div class="">
+            <i class="icon-user icon-white "></i>@HttpContext.Current.User.Identity.Name
+            <small>
+
+                <p class="">
+                    <a href="@Url.Action("Logout", "Login")">Sair</a>
+                </p>
+
+            </small>
+        </div>
+
+    </div>
+    
+}
+else
+{
+    using (Html.BeginForm("Login", "Login", new { p_ReturnUrl = Request.QueryString["ReturnUrl"] }
+                           , FormMethod.Post, new { id = "idLoginFormSmall" }))
+    {
+    }
+}
