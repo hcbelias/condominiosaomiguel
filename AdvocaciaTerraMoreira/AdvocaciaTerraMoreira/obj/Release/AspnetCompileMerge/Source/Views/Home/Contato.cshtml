@@ -11,8 +11,9 @@
         $("#sendMessageForm").submit(function () {
 
             var queryString = $("#sendMessageForm").serialize() + '&';
+            
             $.post(
-                'Email/SendEmail',
+                '/Email/SendEmail',
                 queryString,
                 function (data) {
                     $("#content").html(data.Data);
@@ -44,7 +45,7 @@
             <div id="message-success" style="display: none;" class="alert alert-success">
                 Mensagem enviada com sucesso
             </div>
-            @using (Ajax.BeginForm("SendEmail", "Contact", new AjaxOptions() { InsertionMode = InsertionMode.Replace, UpdateTargetId = "sendMessage", HttpMethod = "Post" }, new { @id = "sendMessageForm", @class = "form-horizontal" }))
+            @using (Ajax.BeginForm("SendEmail", "Email", "Contact", new AjaxOptions() { InsertionMode = InsertionMode.Replace, UpdateTargetId = "sendMessage", HttpMethod = "Post" }, new { @id = "sendMessageForm", @class = "form-horizontal" }))
             {
                 
                 <div class="form-group">

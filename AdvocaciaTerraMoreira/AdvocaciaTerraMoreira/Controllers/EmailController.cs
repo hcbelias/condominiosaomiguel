@@ -12,9 +12,9 @@ namespace Web.Controllers
     [OutputCache(CacheProfile = "NoCache")]
     public class EmailController : BaseController
     {
-        public string BuildContactEmailBody(string email, string name, string phone, string mensagem)
+        public string BuildContactEmailBody(string email, string name, string phone, string mensagem, string view)
         {
-            return RenderRazorViewToString("ContactEmail", new ContactModel() { Email = email, Name = name, Phone = phone, Message = mensagem });
+            return RenderRazorViewToString("ContactEmailPartial", new ContactModel() { Email = email, Name = name, Phone = phone, Message = mensagem });
         }
 
         public ActionResult ContactEmail()
@@ -22,14 +22,15 @@ namespace Web.Controllers
             return View(new AdvocaciaTerraMoreira.Models.ContactModel() { Message = "Teste", Phone = "989898010982", Email = "23123@sdasd.com", Name = "name" });
         }
 
-        public ActionResult SendEmail(ContactModel contact)
+        public ActionResult SendEmail(string Email, string Name, string Phone, string Message)
         {
             if (ValidateModel())
             {
-                string returnString = BuildContactEmailBody(contact.Email, contact.Name, contact.Name, contact.Message);
+                string returnString = BuildContactEmailBody(Email, Name, Name, Message, "ContactEmailPartial");
                 try
                 {
-                    Util.Email.SendEmail(Constants.MSG_CONTACT_EMAIL_SUBJECT, returnString, new string[] { contact.Email });
+                    string emailBody = BuildContactEmailBody(Email, Name, Name, Message, "ContactEmail");
+                    Util.Email.SendEmail(Constants.MSG_CONTACT_EMAIL_SUBJECT, emailBody, new string[] { Util.Configuration.ConfigurationReader.GetEmailManager() });
                     //Util.Email.SendContactEmail(contact.Email, contact.Name, contact.Phone, contact.Message);
                     //Util.Util.SendEmailCopyToUser(contact.Email, contact.Name, contact.DDD ?? 000, contact.Phone ?? 00000000, contact.Message);
                 }

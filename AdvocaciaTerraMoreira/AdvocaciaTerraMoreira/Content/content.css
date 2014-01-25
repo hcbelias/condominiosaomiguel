@@ -125,7 +125,7 @@ nav {
     .nav_list dt {
         padding-bottom: 15px;
         font-family: 'GoudyBookletter1911Regular';
-        font-size: 12px;
+    
         line-height: 15px;
         font-weight: normal;
         text-transform: uppercase;
@@ -329,7 +329,7 @@ blockquote small {
         background-color: #ffffff;
     }
 
-label {
+.title-form-integra, label {
     font-weight: normal;
     font-size: 17px;
     color: #A12924;
@@ -348,3 +348,4 @@ label {
 .featurette-image {
     padding: 35px;
 }
+

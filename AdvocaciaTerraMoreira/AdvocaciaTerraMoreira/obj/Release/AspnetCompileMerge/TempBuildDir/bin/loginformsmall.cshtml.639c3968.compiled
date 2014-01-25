@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<preserve resultType="2" virtualPath="/Views/Shared/LoginFormSmall.cshtml" hash="31162e71" filehash="ffffe22efcbac225" flags="110000" assembly="App_Web_4ah33ro0" type="ASP._Page_Views_Shared_LoginFormSmall_cshtml">
+<preserve resultType="2" virtualPath="/Views/Shared/LoginFormSmall.cshtml" hash="31162e71" filehash="1e66ab959c06" flags="110000" assembly="App_Web_opvunwtc" type="ASP._Page_Views_Shared_LoginFormSmall_cshtml">
     <filedeps>
         <filedep name="/Views/Shared/LoginFormSmall.cshtml" />
     </filedeps>

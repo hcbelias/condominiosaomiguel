@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/Views/Email/ContactEmailPartial.cshtml" hash="31162e71" filehash="ffffe845bbe48c0e" flags="110000" assembly="App_Web_nggg4i5f" type="ASP._Page_Views_Email_ContactEmailPartial_cshtml">
+    <filedeps>
+        <filedep name="/Views/Email/ContactEmailPartial.cshtml" />
+    </filedeps>
+</preserve>

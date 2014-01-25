@@ -27,17 +27,7 @@ namespace Util.Configuration
 
         public static String GetEmailManager()
         {
-            return GetString("EMAIL_MANAGER");
-        }
-
-        public static String GetEmailAdmin()
-        {
-            return GetString("EMAIL_ADMIN");
-        }
-
-        public static String GetEmailDefault()
-        {
-            return GetString("EMAIL_DEFAULT");
+            return GetString("EmailGerencia");
         }
 
     }

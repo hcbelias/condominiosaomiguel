@@ -17,7 +17,7 @@ namespace Util
 
         public static void SendErrorEmail(string p_Body)
         {
-            SendEmail("Erro - Advocacia Moreira Terra", p_Body, new string[] { ConfigurationReader.GetEmailManager(), ConfigurationReader.GetEmailAdmin() });
+            SendEmail("Erro - Advocacia Moreira Terra", p_Body, new string[] { ConfigurationReader.GetEmailManager(), ConfigurationReader.GetEmailManager() });
         }
 
         public static void SendEmail(string p_Subject, string p_Body, string p_To)

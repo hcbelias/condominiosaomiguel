@@ -1,27 +1,22 @@
-﻿@if (HttpContext.Current.User.Identity.IsAuthenticated)
-{
-    
-    <div class="loginFormSmall space">
-
-
+﻿<dl>
+    <dt class="title-form-integra">Controle de Processos</dt>
+    <dd class="form-group">
+        <label class="control-label">Usuário Integra</label>
         <div class="">
-            <i class="icon-user icon-white "></i>@HttpContext.Current.User.Identity.Name
-            <small>
-
-                <p class="">
-                    <a href="@Url.Action("Logout", "Login")">Sair</a>
-                </p>
-
-            </small>
+            <input id="usuario_integra" type="text" class="form-control" placeholder="Usuario Integra" />
         </div>
 
-    </div>
-    
-}
-else
-{
-    using (Html.BeginForm("Login", "Login", new { p_ReturnUrl = Request.QueryString["ReturnUrl"] }
-                           , FormMethod.Post, new { id = "idLoginFormSmall" }))
-    {
-    }
-}
+    </dd>
+    <dd class="form-group">
+        <label class="control-label">Senha</label>
+        <div class="">
+            <input type="password" id="senha_integra" class="form-control" placeholder="Senha" />
+        </div>
+    </dd>
+    <dd class="form-group">
+        <label>&nbsp;</label>
+        <input class="btn btn-default btn-red" type="submit" value="Entrar" />
+
+    </dd>
+
+</dl>

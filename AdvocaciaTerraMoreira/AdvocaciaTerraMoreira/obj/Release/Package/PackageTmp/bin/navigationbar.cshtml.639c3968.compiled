@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<preserve resultType="2" virtualPath="/Views/Shared/NavigationBar.cshtml" hash="31162e71" filehash="ffffcafd1e2e646e" flags="110000" assembly="App_Web_4ah33ro0" type="ASP._Page_Views_Shared_NavigationBar_cshtml">
+<preserve resultType="2" virtualPath="/Views/Shared/NavigationBar.cshtml" hash="31162e71" filehash="34746871aebe" flags="110000" assembly="App_Web_opvunwtc" type="ASP._Page_Views_Shared_NavigationBar_cshtml">
     <filedeps>
         <filedep name="/Views/Shared/NavigationBar.cshtml" />
     </filedeps>

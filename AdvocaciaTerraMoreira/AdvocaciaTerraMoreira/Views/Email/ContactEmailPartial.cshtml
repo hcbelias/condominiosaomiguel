@@ -1,0 +1,31 @@
+﻿
+@model AdvocaciaTerraMoreira.Models.ContactModel
+
+<div class="email-field">
+    <label for="inputEmail" class="">Email</label>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Email, new { maxlength = 200, @class = "form-control input-lg", id = "inputEmail" })
+    </div>
+
+</div>
+<div class="email-field">
+    <label for="inputName" class="">Nome</label>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name, new { maxlength = 100, @class = "form-control input-lg ", id = "inputName" })
+    </div>
+</div>
+<div class="email-field">
+    <label for="inputPhone" class="">Telefone</label>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Phone, new { maxlength = 16, @class = "input-sm form-control", id = "inputPhone" })
+    </div>
+
+</div>
+
+<div class="email-field">
+    <label for="inputMessage" class="">Message</label>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Message, new { @class = "input-lg form-control", id = "inputMessage" })
+    </div>
+
+</div>
