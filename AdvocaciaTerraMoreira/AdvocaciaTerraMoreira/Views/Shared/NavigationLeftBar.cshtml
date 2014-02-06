@@ -1,21 +1,23 @@
 ﻿
 <nav id="nav_categories" class="nav_list">
-    <form class="form-horizontal" role="form" action="http://www.api.adv.br/integra/login1.asp" target="_blank" method="post" onsubmit="return ValidaDados()">
+    <form class="form-horizontal" role="form" action="http://www.api.adv.br/integra4/include/logarSistema.asp" method="get" onsubmit="return ValidaDados()">
         @Html.Partial("LoginFormSmall")
     </form>
 </nav>
 <script type="text/javascript">
     function ValidaDados() {
-        if ($('#usuario_integra').val() == "") {
+        debugger;
+        if ($('#txtUsuario').val() == "") {
             alert("O campo usuário é obrigatório");
             return false;
         }
-        if ($('#senha_integra').val() == "") {
+        if ($('#txtSenha').val() == "") {
             alert("O campo senha é obrigatório");
             return false;
         }
         return true;
     }
+
 </script>
 
 
