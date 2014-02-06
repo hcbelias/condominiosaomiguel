@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<preserve resultType="2" virtualPath="/Views/Shared/LoginFormSmall.cshtml" hash="ffffffffc35264d4" filehash="fffff3f6688a949c" flags="110000" assembly="App_Web_yz3xfkgs" type="ASP._Page_Views_Shared_LoginFormSmall_cshtml">
-    <filedeps>
-        <filedep name="/Views/Shared/LoginFormSmall.cshtml" />
-    </filedeps>
-</preserve>
