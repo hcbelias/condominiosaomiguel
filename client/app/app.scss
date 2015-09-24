@@ -1,0 +1,35 @@
+$fa-font-path: "../bower_components/font-awesome/fonts";
+@import '../bower_components/font-awesome/scss/font-awesome';
+
+
+/*************   Overriding options on Materialize   ************************/
+
+
+
+
+@import '../bower_components/Materialize/sass/materialize.scss';
+
+
+.ilike-blue-container {
+	@extend .blue, .lighten-4;
+}
+/*************   Overriding options on Materialize   ************************/
+
+
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+
+// Component styles are injected through grunt
+// injector
+@import 'admin/admin.scss';
+@import 'main/main.scss';
+@import '../components/footer/footer.scss';
+@import '../components/oauth-buttons/oauth-buttons.scss';
+// endinjector
+
