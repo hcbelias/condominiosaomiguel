@@ -1,0 +1,35 @@
+.main-navbar{
+	margin-bottom: 20px;
+	.nav-wrapper{
+		.brand-logo{
+			height: 64px;
+		}
+		
+		.button-collapse{
+			width: 64px;
+		}
+	}
+}
+
+
+ @media #{$large-and-up} {
+    // styles for medium screens and larger
+      .main-navbar{	
+        padding: 30px 100px 180px 100px;
+        
+      }
+  }
+  
+  
+  @media #{$small-and-down} {
+    // styles for small screens and down
+  }
+  @media #{$medium-and-up} {
+    // styles for medium screens and larger
+  }
+  @media #{$medium-and-down} {
+    // styles for medium screens and down
+  }
+  @media #{$large-and-up} {
+    // styles for large screens and up
+  }

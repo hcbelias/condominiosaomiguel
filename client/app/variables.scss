@@ -1,0 +1,22 @@
+@import '../bower_components/Materialize/sass/components/_color.scss';
+
+
+
+
+//Color overriding
+$primary-color: $color-primary-0;
+$primary-color-light: lighten($primary-color, 15%);
+$primary-color-dark: darken($primary-color, 15%);
+$secondary-color: $color-secondary-1-0;
+$success-color: color("green", "base");
+$error-color: $color-secondary-2-0;
+$link-color: color("light-blue", "darken-1");
+
+
+//Components overriding
+//Navbar
+
+
+
+
+@import '../bower_components/Materialize/sass/materialize.scss';

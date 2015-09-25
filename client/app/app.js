@@ -5,9 +5,14 @@ angular.module('condominiosmApp', [
   'ngResource',
   'ngSanitize',
   'ui.router',
-  'validation.match'
+  'validation.match',
+  'pascalprecht.translate'
 ])
-  .config(function($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
+  .config(function($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider, $translateProvider, ptBR) {
+	  //I18N
+      $translateProvider.translations('pt-BR', ptBR);
+      $translateProvider.preferredLanguage('pt-BR');
+      
     $urlRouterProvider
       .otherwise('/');
 

@@ -1,23 +1,25 @@
-nav
-    .nav-wrapper
-        a.brand-logo(href='#!') Logo       |       
-        a.button-collapse(href='#', data-activates='mobile-demo')
-          i.material-icons menu        |       
-        ul.right.hide-on-med-and-down
-          li
-            a(href='sass.html') Sass          |         
-          li
-            a(href='badges.html') Components          |         
-          li
-            a(href='collapsible.html') Javascript          |         
-          li
-            a(href='mobile.html') Mobile        |       
-        ul#mobile-demo.side-nav
-          li
-            a(href='sass.html') Sass          |         
-          li
-            a(href='badges.html') Components          |         
-          li
-            a(href='collapsible.html') Javascript          |         
-          li
-            a(href='mobile.html') Mobiles
+nav.main-navbar.container
+  .nav-wrapper.row
+      a.brand-logo.valign-wrapper.col.s4.waves-light.waves-circle(href='#!')
+        img(src='assets/images/logo-navbar3.png', alt="{{ 'CONDOMINIO_SAO_MIGUEL' | translate }}")
+      a.button-collapse.waves-effect.waves-light.waves-circle(href="#", data-activates="left-menu")
+        i.mdi-navigation-menu
+      ul.right.hide-on-med-and-down
+        li(ui-sref-active='active').animated.fadeInDown.delay-1
+          a.md-default-theme(ui-sref="main") {{ 'HOME' | translate }}
+        li(ui-sref-active='active').animated.fadeInDown.delay-2
+          a.md-default-theme(ui-sref="structure") {{ 'STRUCTURE' | translate }}
+        li(ui-sref-active='active').animated.fadeInDown.delay-3
+          a.md-default-theme(ui-sref="apartaments") {{ 'APARTMENTS' | translate }}
+        li(ui-sref-active='active').animated.fadeInDown.delay-4
+          a.md-default-theme(ui-sref="localization")  {{ 'LOCALIZATION' | translate }}
+      ul#left-menu.side-nav
+        li(ui-sref-active='active')
+          a.md-default-theme(ui-sref="main") {{ 'HOME' | translate }}
+        li(ui-sref-active='active')
+          a.md-default-theme(ui-sref="structure") {{ 'STRUCTURE' | translate }}
+        li(ui-sref-active='active')
+          a.md-default-theme(ui-sref="apartaments") {{ 'APARTMENTS' | translate }}
+        li(ui-sref-active='active')
+          a.md-default-theme(ui-sref="localization")  {{ 'LOCALIZATION' | translate }}
+    
