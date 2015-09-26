@@ -61,8 +61,8 @@
     // styles for medium screens and down
     .main-navbar{
   	 	.nav-wrapper{   
-        .row{
-          margin: 0;
+        &.row{
+            margin: 0;
         }    
       }  
     }

@@ -78,6 +78,22 @@ body {
 	background: rgba(255,0,0,0.4); 
 }
 
+  
+.delay-1{
+    animation-delay: 0.5s;
+}
+.delay-2{
+    animation-delay: 0.6s;
+}
+.delay-3{
+    animation-delay: 0.7s;
+}
+.delay-4{
+    animation-delay: 0.8s;
+}
+.delay-5{
+    animation-delay: 0.9s;
+}
 
 // Component styles are injected through grunt
 // injector
