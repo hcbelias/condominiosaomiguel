@@ -46,7 +46,7 @@
     // styles for medium screens and larger
       .main-navbar{	
         padding: 30px 100px 180px 100px;
-        
+                
       }
   }
   
@@ -59,7 +59,11 @@
   }
   @media #{$medium-and-down} {
     // styles for medium screens and down
-  }
-  @media #{$large-and-up} {
-    // styles for large screens and up
+    .main-navbar{
+  	 	.nav-wrapper{   
+        .row{
+          margin: 0;
+        }    
+      }  
+    }
   }
