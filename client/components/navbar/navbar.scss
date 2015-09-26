@@ -1,14 +1,44 @@
 .main-navbar{
 	margin-bottom: 20px;
-	.nav-wrapper{
+
+	.nav-wrapper{    
+    ul li:hover, 
+    ul li.active {
+        background-color: transparent;        
+    }
+    ul li.active{
+        border-bottom: white solid 1px;        
+    }
+    ul li:hover{
+        border-bottom: rgba(255, 255, 255, 0.5) solid 1px;
+        &.active{
+          border-bottom: white solid 1px;
+        }
+    }
+    
+    
+    
 		.brand-logo{
 			height: 64px;
+      img{
+          padding: 3px;
+          height: 55px;
+      }
 		}
 		
 		.button-collapse{
 			width: 64px;
+      padding: 3px;
+      height: 55px;
 		}
 	}
+  
+  .title-navbar-row{
+    margin-top: 90px;
+    .title-navbar{
+      font-size: 64px;
+    }
+  }
 }
 
 
