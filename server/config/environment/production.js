@@ -19,6 +19,6 @@ module.exports = {
             process.env.MONGOHQ_URL ||
             process.env.OPENSHIFT_MONGODB_DB_URL +
             process.env.OPENSHIFT_APP_NAME ||
-            'mongodb://localhost/condominiosaomiguelsass'
+            'mongodb://admin:poioiu098@ds053178.mongolab.com:53178/condominiosaomiguel'
   }
 };
