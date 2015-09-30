@@ -98,13 +98,13 @@
     "supertest": "^1.1.0"
   },
   "engines": {
-    "node": ">=0.12.0"
+    "node": "~0.12.0"
   },
   "scripts": {
     "start": "node server",
     "test": "grunt test",
     "update-webdriver": "node node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update",
-    "postinstall": "bower install"
+    "postinstall": "npm install bower"
   },
   "private": true
 }

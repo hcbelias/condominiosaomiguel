@@ -20,16 +20,12 @@
     
 		.brand-logo{
 			height: 64px;
-      img{
-          padding: 3px;
-          height: 55px;
-      }
 		}
 		
 		.button-collapse{
 			width: 64px;
       padding: 3px;
-      height: 55px;
+      height: 100%;
 		}
 	}
   
@@ -51,15 +47,13 @@
   }
   
   
-  @media #{$small-and-down} {
-    // styles for small screens and down
-  }
-  @media #{$medium-and-up} {
-    // styles for medium screens and larger
-  }
+  
   @media #{$medium-and-down} {
     // styles for medium screens and down
     .main-navbar{
+      
+      max-width: 100%;
+      width: 100%;
   	 	.nav-wrapper{   
         &.row{
             margin: 0;

@@ -5,13 +5,13 @@ nav.main-navbar.container.z-depth-3
       a.button-collapse.waves-effect.waves-light.waves-circle(href="#", data-activates="left-menu")
         i.mdi-navigation-menu
       ul.right.hide-on-med-and-down.right
-        li(ui-sref-active='active').animated.fadeInDown.delay-1
+        li(ui-sref-active='active').waves-effect.waves-light.animated.fadeInDown.delay-1
           a.md-default-theme(ui-sref="main") {{ 'HOME' | translate }}
-        li(ui-sref-active='active').animated.fadeInDown.delay-2
+        li(ui-sref-active='active').waves-effect.waves-light.animated.fadeInDown.delay-2
           a.md-default-theme(ui-sref="structure") {{ 'STRUCTURE' | translate }}
-        li(ui-sref-active='active').animated.fadeInDown.delay-3
+        li(ui-sref-active='active').waves-effect.waves-light.animated.fadeInDown.delay-3
           a.md-default-theme(ui-sref="apartaments") {{ 'APARTMENTS' | translate }}
-        li(ui-sref-active='active').animated.fadeInDown.delay-4
+        li(ui-sref-active='active').waves-effect.waves-light.animated.fadeInDown.delay-4
           a.md-default-theme(ui-sref="localization")  {{ 'LOCALIZATION' | translate }}
       ul#left-menu.side-nav
         li(ui-sref-active='active')
@@ -22,5 +22,7 @@ nav.main-navbar.container.z-depth-3
           a.md-default-theme(ui-sref="apartaments") {{ 'APARTMENTS' | translate }}
         li(ui-sref-active='active')
           a.md-default-theme(ui-sref="localization")  {{ 'LOCALIZATION' | translate }}
-  .row.title-navbar-row.hide-on-med-and-down.animated.fadeInUp.delay-4
-    p.title-navbar {{ Title }}
+  .row.title-navbar-row.hide-on-med-and-down.animated.fadeIn.delay-4
+    p.title-navbar {{ Title }}    
+  div.row(floatingbutton='true')
+    

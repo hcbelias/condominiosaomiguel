@@ -3,7 +3,7 @@
 angular.module('condominiosmApp')
   .controller('NavbarCtrl', function ($scope, Auth, ptBR, $state) {
     $scope.menu = [{
-      'title': ptBR.HOME,
+      'title': 'Condomínio São Miguel',
       'state': 'main'
     },
     {
