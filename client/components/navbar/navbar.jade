@@ -1,6 +1,6 @@
-nav.main-navbar.container.z-depth-3
-  .nav-wrapper.row
-      a.brand-logo.valign-wrapper.waves-light.waves-circle(href='#!')
+nav.main-navbar.z-depth-3
+  .nav-wrapper.row.container
+      a.brand-logo.waves-light.waves-circle(href='#!')
         img(src='assets/images/logo-navbar3.png', alt="{{ 'CONDOMINIO_SAO_MIGUEL' | translate }}")
       a.button-collapse.waves-effect.waves-light.waves-circle(href="#", data-activates="left-menu")
         i.mdi-navigation-menu
@@ -22,7 +22,7 @@ nav.main-navbar.container.z-depth-3
           a.md-default-theme(ui-sref="apartaments") {{ 'APARTMENTS' | translate }}
         li(ui-sref-active='active')
           a.md-default-theme(ui-sref="localization")  {{ 'LOCALIZATION' | translate }}
-  .row.title-navbar-row.hide-on-med-and-down.animated.fadeIn.delay-4
+  .row.title-navbar-row.hide-on-med-and-down.animated.fadeIn.delay-4.container
     p.title-navbar {{ Title }}    
-  div.row(floatingbutton='true')
+  
     

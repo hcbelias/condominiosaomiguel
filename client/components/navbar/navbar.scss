@@ -1,5 +1,4 @@
 .main-navbar{
-	margin-bottom: 20px;
 
 	.nav-wrapper{    
     ul li:hover, 
@@ -41,7 +40,7 @@
  @media #{$large-and-up} {
     // styles for medium screens and larger
       .main-navbar{	
-        padding: 30px 100px 180px 100px;
+        padding: 30px 100px 300px 100px;
                 
       }
   }

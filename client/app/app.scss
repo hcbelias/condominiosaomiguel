@@ -1,5 +1,6 @@
 $fa-font-path: "../bower_components/font-awesome/fonts";
 @import '../bower_components/font-awesome/scss/font-awesome';
+@import '../bower_components/Materialize/sass/materialize.scss';
 
 $color-primary-0: #0060A4;	// Main Primary color */
 $color-primary-1: #0B98FB;
@@ -46,11 +47,13 @@ html {
 }
 body {
 	background: url('/assets/images/blue-abstract-background.jpg') no-repeat;
+    padding: 0;
 }
 
 .main-content{
-	background-color: transparent;
+	background-color: transparent;    
 } 
+
 
 /* Let's get this party started */
 ::-webkit-scrollbar {
@@ -92,6 +95,14 @@ body {
 .delay-5{
     animation-delay: 0.9s;
 }
+
+
+ @media #{$large-and-up} {
+    .main-content{
+        top: -110px;
+        position: relative;
+    }
+  }
 
 // Component styles are injected through grunt
 // injector
