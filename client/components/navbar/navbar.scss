@@ -1,5 +1,5 @@
 .main-navbar{
-
+  padding: 0px;
 	.nav-wrapper{    
     ul li:hover, 
     ul li.active {
@@ -19,7 +19,32 @@
     
 		.brand-logo{
 			height: 64px;
+      img{
+        max-width: 200px;
+      }
+      
 		}
+    
+    #left-menu.side-nav{
+      background-color: $rgba-primary-0;
+      padding: 10px;
+      border-right-color: rgb(0, 78, 133);
+      border-right-style: solid;
+      border-right-width: 2px;
+      a{
+        color: white;
+      } 
+      li{
+        &:hover{
+            background-color: transparent;        
+            border-bottom: rgba(255, 255, 255, 0.5) solid 1px;
+        }
+        &.active{
+            border-bottom: white solid 1px;
+            background-color: transparent;        
+        }
+      }   
+    }
 		
 		.button-collapse{
 			width: 64px;

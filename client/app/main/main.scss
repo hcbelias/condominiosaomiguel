@@ -1,5 +1,18 @@
 #main{
-  .card.main-card{
-    margin-top: 0; 
-  }
+  color: $rgba-secondary-1-4;
+  margin-bottom: 50px;
+  padding-bottom: 25px;
+}
+
+
+#structure{
+	color: $color-primary-0;
+	padding-top: 40px;
+	
+	margin-bottom: 50px;
+  	padding-bottom: 25px;
+	.card{
+		background-color: $color-primary-0;
+		min-height: 200px;
+	}
 }
