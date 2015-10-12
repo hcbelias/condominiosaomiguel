@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('condominiosmApp')
-  .controller('NavbarCtrl', function ($scope, Auth, ptBR, $state) {
+  .controller('NavbarCtrl', function ($scope, Auth, ptBR) {
     $scope.menu = [{
       'title': 'Condomínio São Miguel',
       'state': 'main'
@@ -24,5 +24,5 @@ angular.module('condominiosmApp')
     $scope.isAdmin = Auth.isAdmin;
     $scope.getCurrentUser = Auth.getCurrentUser;
     
-    $scope.Title = $scope.menu[0].title; //$state.current.name
+    $scope.Title = $scope.menu[0].title;
   });

@@ -6,9 +6,9 @@ angular.module('condominiosmApp')
       templateUrl: 'components/navbar/navbar.html',
       restrict: 'E',
       controller: 'NavbarCtrl',
-      link: function(scope, element, attrs) {
+      link: function(scope, element) {
         
-        element.find(".button-collapse").sideNav();
+        element.find('.button-collapse').sideNav();
       }
     };
   });

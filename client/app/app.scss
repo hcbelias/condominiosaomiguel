@@ -45,7 +45,7 @@ html {
     overflow: auto;
 }
 body {
-	background: url('/assets/images/blue-abstract-background.jpg') no-repeat;
+	background: url('/assets/images/blue-abstract-background.jpg') repeat-y;
     padding: 0;
     font-size: 1.5em;
     .no-padding-side{
@@ -60,6 +60,7 @@ body {
 .main-content{
 	background-color: transparent;
     margin-top: 30px;
+    
 } 
 
 
@@ -117,7 +118,6 @@ body {
 @import 'admin/admin.scss';
 @import 'main/main.scss';
 @import 'variables.scss';
-@import '../components/floatingbutton/floatingbutton.scss';
 @import '../components/footer/footer.scss';
 @import '../components/navbar/navbar.scss';
 @import '../components/oauth-buttons/oauth-buttons.scss';

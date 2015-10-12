@@ -1,14 +1,14 @@
-.col.s12#landing
-  .card.animated.fadeInUp.delay-1.z-depth-2.hoverable
+#landing.container
+  .card.animated.fadeInUp.delay-1.z-depth-2
     .card-image
       img.img-fadein(src='assets/images/marketing-card.png')
 
       
 
 
-.col.s12#main.flow-text
-  .card.animated.fadeInUp.delay-1.z-depth-2
-    .card-image.waves-effect.waves-block.waves-light
+#main.flow-text.container.animated.fadeInLeft.delay-1
+  .card.z-depth-2
+    .card-image
       img(src='assets/images/banner-desc.png', alt="{{ 'CONDOMINIO_SAO_MIGUEL' | translate }}").main-picture.z-depth-2
     .card-content
       .row
@@ -17,60 +17,44 @@
         .col.s6
           div Nosso objetivo é a satisfação e tranquilidade dos moradores do Condomínio, visando a proporcionar um ambiente agradável a todos.
         
-.col.s12#structure.flow-text.white.z-depth-2
-  .row
-    .col.s12.m4
-        .card.z-depth-4
+#structure.flow-text.white.z-depth-2.row.container.fadeInRight.delay-1.animated
+  .col.s12.m4.fadeInUp.delay-2.animated
+      .card.z-depth-4
+        .card-content.white-text.center-align
+            img(src='assets/images/camera.jpg', alt="{{ 'SECURITY' | translate }}").main-picture.z-depth-2
+            br
+            span.card-title Segurança               
+            p Portaria e Sistema de Monitoramento 24h
+  .col.s12.m4.fadeInUp.delay-3.animated
+      .card.z-depth-4
+        .card-content.white-text.center-align
+            img(src='assets/images/shivaint.png', alt="{{ 'COMFORT' | translate }}").main-picture.z-depth-2
+            br
+            span.card-title Conforto               
+            p Área de Lavanderia
+            p Garagem
+            p Bem Localizado
+            
+  .col.s12.m4.fadeInUp.delay-4.animated
+      .card.z-depth-4
           .card-content.white-text.center-align
-              i.material-icons lock
-              br
-              span.card-title Segurança               
-              p Portaria e Sistema de Monitoramento 24h
-    .col.s12.m4
-        .card.z-depth-4
-          .card-content.white-text.center-align
-              i.material-icons store
-              br
-              span.card-title Conforto               
-              p Área de Lavanderia
-              p Garagem
-              p Bem Localizado
-              
-    .col.s12.m4
-        .card.z-depth-4
-          .card-content.white-text.center-align
-              i.material-icons shopping_basket
-              br
-              span.card-title Lazer               
-              p Piscina
-              p Área de Churrasqueira
-              p Pacote de canais SKY
+            img(src='assets/images/piscina.jpg', alt="{{ 'RECREATION' | translate }}").main-picture.z-depth-2
+            br
+            span.card-title Lazer               
+            p Piscina
+            p Área de Churrasqueira
+            p Pacote de canais SKY
               
 
 
-.col.s12#main.flow-text
-  .card.animated.fadeInUp.delay-1.z-depth-2
-    .card-image.waves-effect.waves-block.waves-light
-      img(src='assets/images/front-door.png', alt="{{ 'CONDOMINIO_SAO_MIGUEL' | translate }}").main-picture.z-depth-2
+#location.flow-text.container
+  .card.z-depth-2
+    .card-image
+    iframe(src='https://www.google.com/maps/embed?pb=!1m0!3m2!1spt-BR!2sus!4v1444674365473!6m8!1m7!1stvcDmeymBh-zRmKUUIJsBA!2m2!1d-21.43864120345469!2d-45.94393332497332!3f238.61325814777254!4f1.3956035521741086!5f0.7820865974627469', width='600', height='450', frameborder='0', style='border:0',  allowfullscreen='').z-depth-2
     .card-content
       .row
         .col.s12
-          div O Condomínio é constituído por sete prédios de dois andares, com entradas e interfones independentes para cada prédio, em um total de 52 apartamentos disponíveis para aluguel.
+          div Desde 1997, o Condomínio São Miguel vem prestando um serviço de qualidade para seus moradores. Nosso objetivo é a satisfação e tranquilidade dos moradores do Condomínio, visando a proporcionar um ambiente agradável a todos.
           br
         .col.s12
-          div Internamente, os prédios se comunicam através das áreas comuns e da área de lazer.
-
-
-.col.s12#main.flow-text
-  .card.animated.fadeInUp.delay-1.z-depth-2
-    .card-image.waves-effect.waves-block.waves-light
-      img(src='assets/images/banner-desc.png', alt="{{ 'CONDOMINIO_SAO_MIGUEL' | translate }}").main-picture.z-depth-2
-    .card-content
-      .row
-        .col.s6.first
-          div Desde 1997, o Condomínio São Miguel vem prestando um serviço de qualidade para seus moradores.
-          br
-        
-        .col.s6
-          div Nosso objetivo é a satisfação e tranquilidade dos moradores do Condomínio, visando a proporcionar um ambiente agradável a todos.
-                               
+          div O Condomínio é constituído por sete prédios de dois andares, com entradas e interfones independentes para cada prédio, em um total de 52 apartamentos disponíveis para aluguel. Internamente, os prédios se comunicam através das áreas comuns e da área de lazer.

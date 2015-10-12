@@ -434,7 +434,11 @@ module.exports = function (grunt) {
     karma: {
       unit: {
         configFile: 'karma.conf.js',
-        singleRun: true
+        singleRun: false
+      },
+      continuous: {
+        // keep karma running in the background
+        background: true
       }
     },
 
