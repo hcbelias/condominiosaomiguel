@@ -7,12 +7,12 @@
       .row.container
         .input-field.col.s12
           i.material-icons.prefix perm_identity
-          input#input_name(type='text', length='10', ng-model='name', data-error='Campo nome obrigatório' data-success=':)', required='true')
+          input#input_name(type='text', length='10', ng-model='name', required='true')
           label(for='input_name') Nome
       .row.container
         .input-field.col.s12
           i.material-icons.prefix email         
-          input#input_email(type='email', length='25', ng-model='email', data-error='Por favor, digite um e-mail válido' data-success=':)', required='true').validate
+          input#input_email(type='email', length='25', ng-model='email', required='true').validate
           label(for='input_email') Email        
       .row.container
         .input-field.col.s12
