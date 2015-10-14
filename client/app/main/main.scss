@@ -1,5 +1,5 @@
 #main{
-  color: $rgba-secondary-1-4;
+  color: $color-primary-0;
   margin-bottom: 50px;
   padding-bottom: 25px;
 }
@@ -7,14 +7,21 @@
 
 #structure{
 	color: $color-primary-0;
-	padding-top: 40px;
-	
-	margin-bottom: 50px;
+	padding-top: 40px;	
   	padding-bottom: 25px;
 	.card{
+		transition: all 0.5s ease-in-out;
+		&:hover {
+			transform: scale(1.05);
+		}
 		background-color: $color-primary-0;
 		min-height: 250px;
+		
+		
 		.card-content{			
+			img{
+				width: 100%;
+			}
 			.card-title{
 			    line-height: 60px;
 				font-size: 30px;
@@ -26,11 +33,28 @@
 }
 
 #location{
+	color: $color-primary-0;
 	iframe{
 		height: 100%;
 		width: 100%;
-	}	
+		min-height: 300px;
+		padding: 20px;
+		
+	}
 	
+	.card-image{
+		&.card-image-google{
+			max-width: 500px;
+			a{
+				transition: all 0.5s ease-in-out;
+				&:hover {
+					transform: scale(1.05);
+				}
+			}	
+		}
+	}
+
+
 }
 
 
@@ -39,13 +63,13 @@
     
 	#structure{
 		.card{
-			min-height: 450px;
+			min-height: 500px;
 		}
 	}
 	
 	#location{
 		iframe{
-			height: 500px;
+			height: 400px;
 		}
 	}	
   }

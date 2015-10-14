@@ -1,12 +1,78 @@
+$basic-color-contact-form: #2BBBAD;
 footer{    
+  color: white;
+  background-color: $color-primary-0;
+  
   &.footer {
-    border-top: solid 80px red;
     text-align: center;
-    padding: 30px 0;
-    border-top: 1px solid #E5E5E5;
+    padding: 20px;
   }
   #contact{
-    
-	 
+    h3{
+      color: $basic-color-contact-form;
+    }
+    form{
+      padding-top: 35px;
+    }
+    .container{
+       padding: 5px;
+    } 
+    .input-field{
+      label {
+        color: $basic-color-contact-form;
+      }
+      input:focus + label,
+      textarea:focus + label {
+        color: $basic-color-contact-form;
+      }
+      input:focus,
+      textarea:focus {
+        border-bottom: 1px solid $basic-color-contact-form;
+        box-shadow: 0 1px 0 0 $basic-color-contact-form;
+      }
+      .prefix {
+        color: $basic-color-contact-form
+      }
+      input,
+      textarea {
+        border-bottom: 1px solid $basic-color-contact-form;
+        box-shadow: 0 1px 0 0 $basic-color-contact-form;
+      }
+      input.valid,
+      textarea.valid {
+        border-bottom: 1px solid $basic-color-contact-form;
+        box-shadow: 0 1px 0 0 $basic-color-contact-form;
+      }
+      input.invalid,
+      textarea.invalid {
+        border-bottom: 1px solid red;
+        box-shadow: 0 1px 0 0 red;
+      }
+    }
   }
+  
+  .footer-info{
+    color: $basic-color-contact-form;
+    background-color: $color-primary-0;
+    padding: 0;
+    margin: 0;
+    i.fa{
+      padding: 10px;
+      &:before {
+        padding: 10px;
+      }
+    }
+    
+  }
+  
 }
+
+
+
+
+  @media #{$large-and-up} {
+    footer.footer {
+      top: -66px;
+      position: relative;
+    }
+  }
