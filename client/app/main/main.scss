@@ -12,7 +12,7 @@
 	.card{
 		transition: all 0.5s ease-in-out;
 		&:hover {
-			transform: scale(1.05);
+			transform: scale(1.02);
 		}
 		background-color: $color-primary-0;
 		min-height: 250px;
@@ -42,10 +42,9 @@
 		
 	}
 	
-	.card-image{
+	.card-content{
 		&.card-image-google{
-			max-width: 500px;
-			a{
+			img{
 				transition: all 0.5s ease-in-out;
 				&:hover {
 					transform: scale(1.05);
