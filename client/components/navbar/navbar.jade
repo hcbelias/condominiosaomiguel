@@ -3,14 +3,14 @@ nav.main-navbar.z-depth-3
       a.brand-logo.waves-light.waves-circle(href='#!')
         img(src='assets/images/logo-navbar3.png', alt="{{ 'CONDOMINIO_SAO_MIGUEL' | translate }}")
       ul.right.hide-on-med-and-down.right
-        li(ui-sref-active='active').waves-effect.waves-light.animated.fadeInDown.delay-1
-          a.md-default-theme(ui-sref="main") {{ 'HOME' | translate }}
-        li(ui-sref-active='active').waves-effect.waves-light.animated.fadeInDown.delay-2
-          a.md-default-theme(ui-sref="structure") Quem Somos
-        li(ui-sref-active='active').waves-effect.waves-light.animated.fadeInDown.delay-4
-          a.md-default-theme(ui-sref="localization")  {{ 'LOCALIZATION' | translate }}
-        li(ui-sref-active='active').waves-effect.waves-light.animated.fadeInDown.delay-3
-          a.md-default-theme(ui-sref="contact") {{ 'CONTACT' | translate }}
+        li.waves-effect.waves-light.animated.fadeInDown.delay-1.active(id="home-link")
+          a.md-default-theme(href="#main", ng-click="setActive('#home-link')") {{ 'HOME' | translate }}
+        li.waves-effect.waves-light.animated.fadeInDown.delay-2(id="structure-link")
+          a.md-default-theme(href="#structure", ng-click="setActive('#structure-link')") Quem Somos
+        li.waves-effect.waves-light.animated.fadeInDown.delay-4(id="location-link")
+          a.md-default-theme(href="#location", ng-click="setActive('#location-link')")  {{ 'LOCALIZATION' | translate }}
+        li.waves-effect.waves-light.animated.fadeInDown.delay-3(id="contact-link")
+          a.md-default-theme(href="#contact", ng-click="setActive('#contact-link')") {{ 'CONTACT' | translate }}
       
       
   .row.title-navbar-row.hide-on-med-and-down.animated.fadeIn.delay-4.container
@@ -20,15 +20,15 @@ nav.main-navbar.z-depth-3
 
 .floating-button-container.hide-on-large-only
   .fixed-action-btn
-    a.btn-floating.btn-large.blue.waves-effect.waves-light
+    a.btn-floating.btn-large.blue.waves-effect.waves-light(href="#contact")
         i.large.material-icons email
-      ul
-        li
-          a.btn-floating.blue.waves-effect.waves-light
-            i.large.material-icons home
-        li
-          a.btn-floating.blue.darken-1.waves-effect.waves-light
-            i.large.material-icons business
-        li
-          a.btn-floating.blue.waves-effect.waves-light
-            i.large.material-icons place
+    ul
+      li
+        a.btn-floating.blue.waves-effect.waves-light(href="#main")
+          i.large.material-icons home
+      li
+        a.btn-floating.blue.darken-1.waves-effect.waves-light(href="#structure")
+          i.large.material-icons business
+      li
+        a.btn-floating.blue.waves-effect.waves-light(href="#location")
+          i.large.material-icons place

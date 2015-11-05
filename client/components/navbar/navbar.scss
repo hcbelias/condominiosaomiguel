@@ -79,6 +79,11 @@
       max-width: 100%;
       width: 100%;
   	 	.nav-wrapper{   
+         .brand-logo{
+           left: 50%;
+           transform: translateX(-50%);
+         }
+         
         &.row{
             margin: 0;
         }    
@@ -89,7 +94,13 @@
   
 .floating-button-container{
   .fixed-action-btn{
-    right: 15px;
+    top: 2%;
+    right: 2%;
+    
+    ul{
+      top: 15%;
+      right: 2%;
+    }
   }
 }
   

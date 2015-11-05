@@ -1,28 +1,13 @@
+/* global angular */
 'use strict';
 
 angular.module('condominiosmApp')
   .controller('NavbarCtrl', function ($scope, Auth, ptBR) {
-    $scope.menu = [{
-      'title': 'Condomínio São Miguel',
-      'state': 'main'
-    },
-    {
-      'title': ptBR.STRUCTURE,
-      'state': 'structure'
-    },
-    {
-      'title': ptBR.LOCALIZATION,
-      'state': 'localization'
-    },
-    {
-      'title': ptBR.APARTMENTS,
-      'state': 'apartments'
-    }];
 
-    $scope.isCollapsed = true;
-    $scope.isLoggedIn = Auth.isLoggedIn;
-    $scope.isAdmin = Auth.isAdmin;
-    $scope.getCurrentUser = Auth.getCurrentUser;
+    $scope.Title = 'Condomínio São Miguel'; //$scope.menu[0].title;
     
-    $scope.Title = $scope.menu[0].title;
+    $scope.setActive = function(elementSelector){
+      angular.element('.nav-wrapper ul li').removeClass('active');
+      angular.element(elementSelector).addClass('active');      
+    };
   });
