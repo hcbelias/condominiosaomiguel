@@ -2,7 +2,7 @@
 'use strict';
 
 angular.module('condominiosmApp')
-  .controller('NavbarCtrl', function ($scope, Auth, ptBR) {
+  .controller('NavbarCtrl', function ($scope) {
 
     $scope.Title = 'Condomínio São Miguel'; //$scope.menu[0].title;
     

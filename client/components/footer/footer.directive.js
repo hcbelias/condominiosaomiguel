@@ -5,6 +5,7 @@ angular.module('condominiosmApp')
     return {
       templateUrl: 'components/footer/footer.html',
       restrict: 'E',
+      controller: 'FooterCtrl',
       link: function (scope, element) {
         element.addClass('footer');
       }
