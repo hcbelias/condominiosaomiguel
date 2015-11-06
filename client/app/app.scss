@@ -46,8 +46,7 @@ html {
     height: 100%;
 }
 body {
-    height: 100%;
-	background: url('/assets/images/blue-abstract-background.jpg') no-repeat;
+    height: 100%;	
     background-color: $color-primary-4;
     padding: 0;
     font-size: 1.5em;
@@ -113,10 +112,19 @@ body {
 }
 
 
+
+
  @media #{$large-and-up} {
     .main-content{
         top: -110px;
         position: relative;
+    }
+  }
+
+
+ @media #{$medium-and-up} {
+    body {
+        background: url('/assets/images/blue-abstract-background.jpg') no-repeat;    
     }
   }
 
