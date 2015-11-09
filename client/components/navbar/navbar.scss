@@ -16,15 +16,7 @@
     }
     
     
-    
-		.brand-logo{
-			height: 64px;
-      img{
-        max-width: 200px;
-      }
-      
-		}
-    
+   
     #left-menu.side-nav{
       background-color: $rgba-primary-0;
       padding: 10px;
@@ -90,17 +82,4 @@
       }  
     }
   }
-  
-  
-.floating-button-container{
-  .fixed-action-btn{
-    top: 2%;
-    right: 2%;
-    
-    ul{
-      top: 15%;
-      right: 2%;
-    }
-  }
-}
   

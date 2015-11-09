@@ -7,11 +7,11 @@
     i.material-icons.large(ng-show="showSuccessfullMessage") done
      
   p.help-blockcentered(ng-show="showErrorMessage") {{ contactForm.$error.message }}
-  form.container#contact-form(name='contactForm', novalidate='', method='post', ng-submit='sendMessage()', ng-show='showForm')
+  form.container#contact-form(name='contactForm', method='post', ng-submit='sendMessage()', ng-show='showForm', autocomplete="off")
     h3 Contato
     .input-field.col.s12
       i.material-icons.prefix perm_identity
-      input(type='text', length='10', ng-model='name', required='', name='name', id='name',ng-blur="showValidationMessage('name')", autocomplete="off").validate
+      input(ng-model='name', required='', name='name', id='name',ng-blur="showValidationMessage('name')", autocomplete="off", type="text").validate
       .help-block(ng-show="showValidationMessage('name')", ng-messages='contactForm.name.$error')
         p(ng-message='required') Obrigatório o preenchimento do nome
       label(for='name') Nome
@@ -24,7 +24,7 @@
       label(for='email') Email        
     .input-field.col.s12
       i.material-icons.prefix phone          
-      input(type='text', length='15', ng-model='phone',  name='phone',  id='phone', autocomplete="off").validate
+      input(type='tel', length='15', ng-model='phone', name='phone',  id='phone', autocomplete="off").validate
       label(for='phone') Telefone            
     .input-field.col.s12
       i.material-icons.prefix message
@@ -41,6 +41,6 @@
 
 .col.s12.footer-info
   .row
-    i.fa.fa-home.fa-fw.col.s12.m4 Rua Joaquim Esteves de Oliveira, 382
-    i.fa.fa-phone.col.s12.m4 35 32924218
-    i.fa.fa-whatsapp.col.s12.m4 35 88383459
+    i.small.fa.fa-home.fa-fw.col.s12.m4 Rua Joaquim Esteves de Oliveira, 382
+    i.small.fa.fa-phone.col.s12.m4 (35) 3292-4218
+    i.small.fa.fa-whatsapp.col.s12.m4 (35) 8838-3459

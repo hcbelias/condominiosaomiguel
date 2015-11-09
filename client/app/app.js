@@ -12,7 +12,7 @@ angular.module('condominiosmApp', [
 	  //I18N
       $translateProvider.translations('pt-BR', ptBR);
       $translateProvider.preferredLanguage('pt-BR');
-      
+      $translateProvider.useSanitizeValueStrategy('escape');
     $urlRouterProvider
       .otherwise('/');
 

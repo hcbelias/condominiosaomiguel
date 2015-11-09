@@ -245,9 +245,7 @@ module.exports = function (grunt) {
     filerev: {
       dist: {
         src: [
-          '<%= yeoman.dist %>/client/!(bower_components){,*/}*.{js,css}',
-          '<%= yeoman.dist %>/client/assets/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-          '<%= yeoman.dist %>/client/assets/fonts/*'
+          '<%= yeoman.dist %>/client/!(bower_components){,*/}*.{js,css}'
         ]
       }
     },
@@ -312,13 +310,13 @@ module.exports = function (grunt) {
         // This should be the name of your apps angular module
         module: 'condominiosmApp',
         htmlmin: {
-          collapseBooleanAttributes: true,
+          collapseBooleanAttributes: false,
           collapseWhitespace: true,
-          removeAttributeQuotes: true,
-          removeEmptyAttributes: true,
-          removeRedundantAttributes: true,
-          removeScriptTypeAttributes: true,
-          removeStyleLinkTypeAttributes: true
+          removeAttributeQuotes: false,
+          removeEmptyAttributes: false,
+          removeRedundantAttributes: false,
+          removeScriptTypeAttributes: false,
+          removeStyleLinkTypeAttributes: false
         },
         usemin: 'app/app.js'
       },
@@ -521,7 +519,7 @@ module.exports = function (grunt) {
       compile: {
         options: {
           data: {
-            debug: false
+            debug: true
           }
         },
         files: [{
