@@ -71,10 +71,15 @@
       max-width: 100%;
       width: 100%;
   	 	.nav-wrapper{   
-         .brand-logo{
-           left: 50%;
-           transform: translateX(-50%);
-         }
+        height: 100%;
+        
+        .waves-light{
+           width: 100%;
+           
+           img{
+             height: 55px;
+           }
+        }
          
         &.row{
             margin: 0;
