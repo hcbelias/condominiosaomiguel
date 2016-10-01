@@ -1,46 +1,9 @@
 
-#contact.flow-text.z-depth-2
-
-  p.help-block.centered
-    p(ng-show="showSuccessfullMessage") Recebemos sua mensagem! Entraremos em contato!
-  p.help-block.centered
-    i.material-icons.large(ng-show="showSuccessfullMessage") done
-     
-  p.help-blockcentered(ng-show="showErrorMessage") {{ contactForm.$error.message }}
-  form.container#contact-form(name='contactForm', method='post', ng-submit='sendMessage()', ng-show='showForm', autocomplete="off")
-    h3 Contato
-    .input-field.col.s12
-      i.material-icons.prefix perm_identity
-      input(ng-model='name', required='', name='name', id='name',ng-blur="showValidationMessage('name')", autocomplete="off", type="text").validate
-      .help-block(ng-show="showValidationMessage('name')", ng-messages='contactForm.name.$error')
-        p(ng-message='required') Obrigatório o preenchimento do nome
-      label(for='name') Nome
-    .input-field.col.s12
-      i.material-icons.prefix email         
-      input(type='email', ng-model='email',   required='true',  name='email', id='email',ng-blur="showValidationMessage('email')", autocomplete="off").validate
-      .help-block(ng-show="showValidationMessage('email')", ng-messages='contactForm.email.$error')
-        p(ng-message='required') Obrigatório o preenchimento do e-mail.
-        p(ng-message='email') Preencha com um e-mail válido.
-      label(for='email') Email        
-    .input-field.col.s12
-      i.material-icons.prefix phone          
-      input(type='text', length='15', ng-model='phone', name='phone',  id='phone', autocomplete="off").validate
-      label(for='phone') Telefone            
-    .input-field.col.s12
-      i.material-icons.prefix message
-      textarea.materialize-textarea(length='270', required='true',  name='message',  id='message',   ng-model='message', ng-blur="showValidationMessage('message')").validate
-      .help-block(ng-show="showValidationMessage('message')", ng-messages='contactForm.message.$error')
-        p(ng-message='required') Obrigatório o preenchimento da mensagem.
-      label(for='message') Mensagem            
-    button.waves-effect.waves-light.btn#submit-button.btn-contact-submit.btn-block(value='Enviar', ng-disabled='submitButtonDisabled', type='submit') Enviar
-      i.material-icons.right send
-
-
-
-          
-
-.col.s12.footer-info
+#contact.col.s12.footer-info
+  h3 Contato
+  br 
+  br 
   .row
-    i.small.fa.fa-home.fa-fw.col.s12.m4 Rua Joaquim Esteves de Oliveira, 382
-    i.small.fa.fa-phone.col.s12.m4 (35) 3292-4218
-    i.small.fa.fa-whatsapp.col.s12.m4 (35) 8838-3459
+    i.small.fa.fa-home.fa-fw.col.s12 Rua Joaquim Esteves de Oliveira, 382
+    i.small.fa.fa-phone.col.s12 (35) 3292-4218
+    i.small.fa.fa-whatsapp.col.s12 (35) 8838-3459
