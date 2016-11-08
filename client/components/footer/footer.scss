@@ -1,68 +1,17 @@
-$basic-color-contact-form: #2BBBAD;
 footer{
-  color: white;
-  &.footer {
-    text-align: center;
     padding: 20px;
+    background-color: $rgba-primary-0;
+}
 
+footer.page-footer {
+    margin-top: 20px;
+    padding: 0px 40px;
+}
 
-  }
-  #contact{
-    background-color: $color-primary-3;
-    padding: 10px;
-
-    
-    form{
-      padding-top: 35px;
-      padding-bottom: 35px;
-    }
-    .input-field{
-      padding-top: 10px;
-      label {
-        color: $basic-color-contact-form;
-      }
-      input:focus + label,
-      textarea:focus + label {
-        color: $basic-color-contact-form;
-      }
-      input:focus,
-      textarea:focus {
-        border-bottom: 1px solid $basic-color-contact-form;
-        box-shadow: 0 1px 0 0 $basic-color-contact-form;
-      }
-      .prefix {
-        color: $basic-color-contact-form
-      }
-      input,
-      textarea {
-        border-bottom: 1px solid $basic-color-contact-form;
-        box-shadow: 0 1px 0 0 $basic-color-contact-form;
-      }
-      input.valid,
-      textarea.valid {
-        border-bottom: 1px solid $basic-color-contact-form;
-        box-shadow: 0 1px 0 0 $basic-color-contact-form;
-      }
-      input.invalid,
-      textarea.invalid {
-        border-bottom: 1px solid red;
-        box-shadow: 0 1px 0 0 red;
-      }
-    }
-  }
-
-  .footer-info{
-    color: $color-primary-2;
-    background-color: $color-primary-4;
-    padding: 0;
-    margin: 0;
-    i.fa{
-      padding: 10px;
-      &:before {
-        padding: 10px;
-      }
-    }
-
-  }
-
+footer.page-footer .footer-copyright {
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    color: rgba(255,255,255,0.8);
+    background-color: rgba(51,51,51,0.08)
 }
