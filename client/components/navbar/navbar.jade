@@ -2,21 +2,4 @@ nav.main-navbar.z-depth-3
   .nav-wrapper.container
       .waves-light.waves-circle.left(href='#!')
           img(src='assets/images/logo-navbar3.png', alt="{{ 'CONDOMINIO_SAO_MIGUEL' | translate }}")
-      ul.right.hide-on-med-and-down.right
-        li.waves-effect.waves-light.animated.fadeInDown.delay-1.active(id="home-link")
-          a.md-default-theme(href="#landing", ng-click="setActive('#home-link')") {{ 'HOME' | translate }}
-        li.waves-effect.waves-light.animated.fadeInDown.delay-2(id="structure-link")
-          a.md-default-theme(href="#main", ng-click="setActive('#structure-link')") Quem Somos
-        li.waves-effect.waves-light.animated.fadeInDown.delay-4(id="location-link")
-          a.md-default-theme(href="#location", ng-click="setActive('#location-link')")  {{ 'LOCALIZATION' | translate }}
-        li.waves-effect.waves-light.animated.fadeInDown.delay-3(id="contact-link")
-          a.md-default-theme(href="#contact", ng-click="setActive('#contact-link')") {{ 'CONTACT' | translate }}
       
-      
-  .row.title-navbar-row.hide-on-med-and-down.animated.fadeIn.delay-4.container
-    p.title-navbar {{ Title }}    
- 
-.floating-button-container.hide-on-large-only
-  .fixed-action-btn
-    a.btn-floating.btn-large.green.waves-effect.waves-light(href="#contact")
-        i.large.material-icons email

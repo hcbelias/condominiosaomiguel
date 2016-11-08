@@ -1,6 +1,6 @@
 'use strict';
 
 angular.module('condominiosmApp')
-  .controller('MainCtrl', function() {
+  .controller('MainCtrl', function($scope, Email) {
     
   });

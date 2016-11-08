@@ -131,10 +131,8 @@ body {
 
 // Component styles are injected through grunt
 // injector
-@import 'admin/admin.scss';
 @import 'main/main.scss';
 @import 'variables.scss';
 @import '../components/footer/footer.scss';
 @import '../components/navbar/navbar.scss';
-@import '../components/oauth-buttons/oauth-buttons.scss';
 // endinjector
