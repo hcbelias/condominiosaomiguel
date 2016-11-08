@@ -15,6 +15,6 @@ angular.module('condominiosmApp', [
       $translateProvider.useSanitizeValueStrategy('escape');     
 
       $urlRouterProvider.otherwise('/');
-
+      $locationProvider.hashPrefix('!')
       $locationProvider.html5Mode(true);
   });
